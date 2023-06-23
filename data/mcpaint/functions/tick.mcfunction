@@ -26,3 +26,6 @@ scoreboard players enable @a mcpaint.debug
 execute as @a[scores={mcpaint.debug=1..}] at @s run function mcpaint:trigger/debug
 
 tag @a[tag=mcpaint.player.using_pro_brush] remove mcpaint.player.using_pro_brush
+
+
+execute if score #reload_finished mcpaint.calc matches 1 run schedule function mcpaint:tick 1t replace

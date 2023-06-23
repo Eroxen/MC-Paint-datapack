@@ -139,3 +139,7 @@ data modify storage mcpaint:calc item_registry.fake_player set value {Count:1b,i
 data modify storage mcpaint:calc item_registry.studio_spawner set value {Count:1b,id:"minecraft:item_frame",tag:{EntityTag:{Silent:1b,Invisible:1b,Tags:["mcpaint.trigger_item_frame"],Item:{Count:1b,id:"minecraft:stone",tag:{display:{Name:'{"translate":"item.mcpaint.illegal_item"}'},mcpaint:{trigger:"studio_spawner"}}}},display:{Name:'{"translate":"item.mcpaint.studio_spawner","italic":false}'},mcpaint:{trigger_item_frame:1b}}}
 
 data modify storage mcpaint:calc item_registry.custom_painting set value {Count:1b,id:"minecraft:item_frame",tag:{EntityTag:{Silent:1b,Invisible:1b,Tags:["mcpaint.trigger_item_frame"],Item:{Count:1b,id:"minecraft:stone",tag:{display:{Name:'{"translate":"item.mcpaint.illegal_item"}'},mcpaint:{trigger:"custom_painting"}}}},display:{Name:'{"translate":"item.mcpaint.custom_painting","italic":false}',Lore:[]},mcpaint:{trigger_item_frame:1b}}}
+
+scoreboard players set #reload_phase mcpaint.calc 0
+scoreboard players set #reload_finished mcpaint.calc 0
+schedule function mcpaint:pre_tick 1t replace

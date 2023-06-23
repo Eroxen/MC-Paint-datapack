@@ -2,12 +2,12 @@
   "parent": "mcpaint:trigger/root",
   "criteria": {
     "interact": {
-      "trigger": "minecraft:player_hurt_entity",
+      "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
           "type": "minecraft:interaction",
 	  "nbt": "{
-            Tags:[\"mcpaint.computer.interaction\"]
+            Tags:[\"mcpaint.non_existent_tag\"]
 	  }"
         }
       }
@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "mcpaint:trigger/lclick_computer"
+    "function": "mcpaint:setup/click_advandements_work"
   }
 }
