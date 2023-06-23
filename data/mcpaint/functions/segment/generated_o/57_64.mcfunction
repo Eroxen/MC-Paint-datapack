@@ -1,0 +1,8 @@
+execute if score length mcpaint.calc matches 57 run data modify storage mcpaint:calc segment.text set value "PPPI"
+execute if score length mcpaint.calc matches 58 run data modify storage mcpaint:calc segment.text set value "PPPJ"
+execute if score length mcpaint.calc matches 59 run data modify storage mcpaint:calc segment.text set value "PPPK"
+execute if score length mcpaint.calc matches 60 run data modify storage mcpaint:calc segment.text set value "PPPL"
+execute if score length mcpaint.calc matches 61 run data modify storage mcpaint:calc segment.text set value "PPPM"
+execute if score length mcpaint.calc matches 62 run data modify storage mcpaint:calc segment.text set value "PPPN"
+execute if score length mcpaint.calc matches 63 run data modify storage mcpaint:calc segment.text set value "PPPO"
+execute if score length mcpaint.calc matches 64 run data modify storage mcpaint:calc segment.text set value "PPPP"

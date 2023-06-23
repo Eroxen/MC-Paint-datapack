@@ -1,0 +1,7 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Item:{id:\"minecraft:shield\",tag:{mcpaint:{pro_brush:1b}}}}"
+  }
+}

@@ -1,0 +1,16 @@
+execute if score length mcpaint.calc matches 32 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 32
+execute if score length mcpaint.calc matches 33 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 33
+execute if score length mcpaint.calc matches 34 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 34
+execute if score length mcpaint.calc matches 35 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 35
+execute if score length mcpaint.calc matches 36 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 36
+execute if score length mcpaint.calc matches 37 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 37
+execute if score length mcpaint.calc matches 38 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 38
+execute if score length mcpaint.calc matches 39 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 39
+execute if score length mcpaint.calc matches 40 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 40
+execute if score length mcpaint.calc matches 41 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 41
+execute if score length mcpaint.calc matches 42 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 42
+execute if score length mcpaint.calc matches 43 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 43
+execute if score length mcpaint.calc matches 44 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 44
+execute if score length mcpaint.calc matches 45 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 45
+execute if score length mcpaint.calc matches 46 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 46
+execute if score length mcpaint.calc matches 47 run data modify storage mcpaint:calc b64.encode.strings append string storage mcpaint:calc b64.encode.cut_string 0 47

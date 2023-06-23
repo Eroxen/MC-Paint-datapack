@@ -1,0 +1,8 @@
+execute if score length mcpaint.calc matches 1 run data modify storage mcpaint:calc segment.colour set value '{"text":"a"}'
+execute if score length mcpaint.calc matches 2 run data modify storage mcpaint:calc segment.colour set value '{"text":"b"}'
+execute if score length mcpaint.calc matches 3 run data modify storage mcpaint:calc segment.colour set value '{"text":"c"}'
+execute if score length mcpaint.calc matches 4 run data modify storage mcpaint:calc segment.colour set value '{"text":"d"}'
+execute if score length mcpaint.calc matches 5 run data modify storage mcpaint:calc segment.colour set value '{"text":"e"}'
+execute if score length mcpaint.calc matches 6 run data modify storage mcpaint:calc segment.colour set value '{"text":"f"}'
+execute if score length mcpaint.calc matches 7 run data modify storage mcpaint:calc segment.colour set value '{"text":"g"}'
+execute if score length mcpaint.calc matches 8 run data modify storage mcpaint:calc segment.colour set value '{"text":"h"}'

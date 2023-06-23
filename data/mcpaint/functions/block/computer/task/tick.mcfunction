@@ -1,0 +1,2 @@
+execute if data entity @s data.task{task:"encode"} run function mcpaint:block/computer/task/encode/tick
+execute if data entity @s data.task{task:"decode"} run function mcpaint:block/computer/task/decode/tick

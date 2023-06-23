@@ -1,0 +1,1 @@
+execute if predicate mcpaint:can_break_computer as @e[type=marker,tag=mcpaint.computer.marker,distance=..0.1] at @s run function mcpaint:block/computer/break

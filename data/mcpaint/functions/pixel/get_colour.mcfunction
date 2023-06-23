@@ -1,0 +1,2 @@
+execute if score colour mcpaint.calc matches -1 run data modify storage mcpaint:calc pixel set value '{"text":"a"}'
+execute if score colour mcpaint.calc matches 0..32767 run function mcpaint:pixel/try_cache

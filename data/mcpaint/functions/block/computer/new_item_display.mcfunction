@@ -1,0 +1,4 @@
+execute if data storage mcpaint:calc {horizontal_direction:"north"} run summon item_display ~ ~ ~ {Rotation:[180f,0f],Tags:["mcpaint.computer","mcpaint.computer.item_display","mcpaint.computer.item_display.new"],item_display:"fixed"}
+execute if data storage mcpaint:calc {horizontal_direction:"east"} run summon item_display ~ ~ ~ {Rotation:[270f,0f],Tags:["mcpaint.computer","mcpaint.computer.item_display","mcpaint.computer.item_display.new"],item_display:"fixed"}
+execute if data storage mcpaint:calc {horizontal_direction:"south"} run summon item_display ~ ~ ~ {Rotation:[0f,0f],Tags:["mcpaint.computer","mcpaint.computer.item_display","mcpaint.computer.item_display.new"],item_display:"fixed"}
+execute if data storage mcpaint:calc {horizontal_direction:"west"} run summon item_display ~ ~ ~ {Rotation:[90f,0f],Tags:["mcpaint.computer","mcpaint.computer.item_display","mcpaint.computer.item_display.new"],item_display:"fixed"}

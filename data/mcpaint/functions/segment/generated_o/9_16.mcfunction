@@ -1,0 +1,8 @@
+execute if score length mcpaint.calc matches 9 run data modify storage mcpaint:calc segment.text set value "I"
+execute if score length mcpaint.calc matches 10 run data modify storage mcpaint:calc segment.text set value "J"
+execute if score length mcpaint.calc matches 11 run data modify storage mcpaint:calc segment.text set value "K"
+execute if score length mcpaint.calc matches 12 run data modify storage mcpaint:calc segment.text set value "L"
+execute if score length mcpaint.calc matches 13 run data modify storage mcpaint:calc segment.text set value "M"
+execute if score length mcpaint.calc matches 14 run data modify storage mcpaint:calc segment.text set value "N"
+execute if score length mcpaint.calc matches 15 run data modify storage mcpaint:calc segment.text set value "O"
+execute if score length mcpaint.calc matches 16 run data modify storage mcpaint:calc segment.text set value "P"

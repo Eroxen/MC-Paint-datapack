@@ -1,0 +1,21 @@
+{
+"type": "minecraft:entity",
+"pools": [
+  {
+    "rolls": 1,
+    "entries": [
+      {
+        "type": "minecraft:item",
+        "name": "minecraft:paper",
+        "functions": [
+          {
+              "function": "set_name",
+              "name": {"nbt":"resolve_text","storage":"mcpaint:calc","interpret":"true"},
+              "entity": "this"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": [
+          "minecraft:glow_ink_sac",
+          "minecraft:ink_sac",
+          "minecraft:shears",
+          "minecraft:white_wool",
+          "minecraft:spyglass"
+        ]
+      }
+    }
+  }
+}

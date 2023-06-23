@@ -1,0 +1,24 @@
+{
+  "parent": "mcpaint:trigger/root",
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+	  "nbt": "{
+            Tags:[\"mcpaint.custom_painting.interaction\"]
+	  }"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "interact"
+    ]
+  ],
+  "rewards": {
+    "function": "mcpaint:trigger/right_click_custom_painting"
+  }
+}

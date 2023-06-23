@@ -1,0 +1,24 @@
+{
+  "parent": "mcpaint:trigger/root",
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:shield"
+          ],
+	  "nbt": "{mcpaint:{pro_brush:1b}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "use"
+    ]
+  ],
+  "rewards": {
+    "function": "mcpaint:trigger/use_pro_brush"
+  }
+}

@@ -1,0 +1,8 @@
+execute if score colour mcpaint.calc = get_colour_cache.0 mcpaint.calc run data modify storage mcpaint:calc pixel set from storage mcpaint:calc get_colour_cache[0]
+execute if score colour mcpaint.calc = get_colour_cache.1 mcpaint.calc run data modify storage mcpaint:calc pixel set from storage mcpaint:calc get_colour_cache[1]
+execute if score colour mcpaint.calc = get_colour_cache.2 mcpaint.calc run data modify storage mcpaint:calc pixel set from storage mcpaint:calc get_colour_cache[2]
+execute if score colour mcpaint.calc = get_colour_cache.3 mcpaint.calc run data modify storage mcpaint:calc pixel set from storage mcpaint:calc get_colour_cache[3]
+execute if score colour mcpaint.calc = get_colour_cache.4 mcpaint.calc run data modify storage mcpaint:calc pixel set from storage mcpaint:calc get_colour_cache[4]
+execute if score colour mcpaint.calc = get_colour_cache.5 mcpaint.calc run data modify storage mcpaint:calc pixel set from storage mcpaint:calc get_colour_cache[5]
+execute if score colour mcpaint.calc = get_colour_cache.6 mcpaint.calc run data modify storage mcpaint:calc pixel set from storage mcpaint:calc get_colour_cache[6]
+execute if score colour mcpaint.calc = get_colour_cache.7 mcpaint.calc run data modify storage mcpaint:calc pixel set from storage mcpaint:calc get_colour_cache[7]

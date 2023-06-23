@@ -1,0 +1,12 @@
+{
+  "condition": "location_check",
+  "predicate": {
+    "block": {
+      "nbt": "{SkullOwner:{Name:\"mcpaint.computer\"}}",
+      "blocks": [
+        "minecraft:player_head",
+        "minecraft:player_wall_head"
+      ]
+    }
+  }
+}

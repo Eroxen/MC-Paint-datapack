@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=mcpaint.studio.marker,tag=mcpaint.studio.change_size.1] at @s run function mcpaint:studio/change_size/animate_1

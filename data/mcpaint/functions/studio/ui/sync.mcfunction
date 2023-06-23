@@ -1,0 +1,2 @@
+data modify entity @e[type=marker,tag=mcpaint.studio.ui_controller,distance=..0.1,limit=1] data.ui set from entity @s data.ui
+execute as @e[type=marker,tag=mcpaint.studio.ui_controller,distance=..0.1,limit=1] run function mcpaint:studio/ui/dynamic_elements

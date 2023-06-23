@@ -1,0 +1,8 @@
+execute if score length mcpaint.calc matches 41 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPI"}'
+execute if score length mcpaint.calc matches 42 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPJ"}'
+execute if score length mcpaint.calc matches 43 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPK"}'
+execute if score length mcpaint.calc matches 44 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPL"}'
+execute if score length mcpaint.calc matches 45 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPM"}'
+execute if score length mcpaint.calc matches 46 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPN"}'
+execute if score length mcpaint.calc matches 47 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPO"}'
+execute if score length mcpaint.calc matches 48 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPP"}'

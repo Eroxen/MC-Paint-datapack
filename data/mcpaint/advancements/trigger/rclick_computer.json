@@ -1,0 +1,24 @@
+{
+  "parent": "mcpaint:trigger/root",
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+	  "nbt": "{
+            Tags:[\"mcpaint.computer.interaction\"]
+	  }"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "interact"
+    ]
+  ],
+  "rewards": {
+    "function": "mcpaint:trigger/rclick_computer"
+  }
+}

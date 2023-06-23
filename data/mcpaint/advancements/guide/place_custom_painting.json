@@ -1,0 +1,29 @@
+{
+  "parent": "mcpaint:guide/apply_egg",
+  "display": {
+    "icon": {
+      "item": "minecraft:item_frame"
+    },
+    "title": {
+      "translate": "mcpaint.advancements.place_custom_painting.title"
+    },
+    "description": {
+      "translate": "mcpaint.advancements.place_custom_painting.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

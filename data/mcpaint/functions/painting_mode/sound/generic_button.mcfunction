@@ -1,0 +1,1 @@
+playsound minecraft:ui.button.click block @s ~ ~ ~ 1 1

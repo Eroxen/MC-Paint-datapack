@@ -1,0 +1,1 @@
+execute if data storage mcpaint:calc painter_ping_studio.responder.data.ui.file_menu.hover run data modify storage mcpaint:calc painter_command set value {command:"unhover_file_menu"}

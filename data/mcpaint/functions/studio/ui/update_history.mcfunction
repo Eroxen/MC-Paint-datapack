@@ -1,0 +1,5 @@
+execute if data entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.history.undo[0] run data modify entity @e[type=item_display,tag=mcpaint.studio.ui_element.history.undo,distance=..0.1,limit=1] item set from storage mcpaint:calc custom_models.history_undo
+execute unless data entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.history.undo[0] run data modify entity @e[type=item_display,tag=mcpaint.studio.ui_element.history.undo,distance=..0.1,limit=1] item set value {id:"minecraft:air"}
+
+execute if data entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.history.redo[0] run data modify entity @e[type=item_display,tag=mcpaint.studio.ui_element.history.redo,distance=..0.1,limit=1] item set from storage mcpaint:calc custom_models.history_redo
+execute unless data entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.history.redo[0] run data modify entity @e[type=item_display,tag=mcpaint.studio.ui_element.history.redo,distance=..0.1,limit=1] item set value {id:"minecraft:air"}

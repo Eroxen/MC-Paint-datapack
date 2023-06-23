@@ -1,0 +1,8 @@
+execute if score length mcpaint.calc matches 41 run data modify storage mcpaint:calc segment.text set value "PPI"
+execute if score length mcpaint.calc matches 42 run data modify storage mcpaint:calc segment.text set value "PPJ"
+execute if score length mcpaint.calc matches 43 run data modify storage mcpaint:calc segment.text set value "PPK"
+execute if score length mcpaint.calc matches 44 run data modify storage mcpaint:calc segment.text set value "PPL"
+execute if score length mcpaint.calc matches 45 run data modify storage mcpaint:calc segment.text set value "PPM"
+execute if score length mcpaint.calc matches 46 run data modify storage mcpaint:calc segment.text set value "PPN"
+execute if score length mcpaint.calc matches 47 run data modify storage mcpaint:calc segment.text set value "PPO"
+execute if score length mcpaint.calc matches 48 run data modify storage mcpaint:calc segment.text set value "PPP"

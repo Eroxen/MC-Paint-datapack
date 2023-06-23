@@ -1,0 +1,29 @@
+{
+  "parent": "mcpaint:guide/craft_computer",
+  "display": {
+    "icon": {
+      "item": "minecraft:writable_book"
+    },
+    "title": {
+      "translate": "mcpaint.advancements.encode_base64.title"
+    },
+    "description": {
+      "translate": "mcpaint.advancements.encode_base64.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}
