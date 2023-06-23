@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "mcpaint:setup/click_advandements_work"
+    "function": "mcpaint:setup/click_advancements_work"
   }
 }
