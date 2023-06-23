@@ -6,6 +6,8 @@ execute as @e[type=egg,tag=!mcpaint.tracked_egg] at @s run function mcpaint:egg/
 
 execute as @e[type=marker,tag=mcpaint.marker.ticking] at @s run function mcpaint:entity/marker/tick
 
+execute if score interaction_detection mcpaint.config matches 1 run function mcpaint:entity/interaction/player_search_tick
+
 
 scoreboard players remove @a[scores={mcpaint.extended_brush_stroke=1..}] mcpaint.extended_brush_stroke 1
 scoreboard players remove @a[scores={mcpaint.pro_brush_cooldown=1..}] mcpaint.pro_brush_cooldown 1

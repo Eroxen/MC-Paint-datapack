@@ -37,7 +37,7 @@ execute if data storage mcpaint:calc custom_painting{horizontal_direction:"west"
 ride @e[type=marker,tag=mcpaint.custom_painting.marker.new,distance=..0.1,limit=1] mount @e[type=item_display,tag=mcpaint.custom_painting.item_display.new,distance=..0.1,limit=1]
 ride @e[type=text_display,tag=mcpaint.custom_painting.text_display.new,distance=..0.1,limit=1] mount @e[type=item_display,tag=mcpaint.custom_painting.item_display.new,distance=..0.1,limit=1]
 
-execute positioned ~ ~-0.25 ~ unless entity @e[type=interaction,tag=mcpaint.custom_painting.interaction,distance=..0.03,limit=1] run summon interaction ~ ~ ~ {Tags:["mcpaint.custom_painting","mcpaint.custom_painting.interaction"],width:0.5,height:0.5,response:1b}
+execute positioned ~ ~-0.25 ~ unless entity @e[type=interaction,tag=mcpaint.custom_painting.interaction,distance=..0.03,limit=1] summon interaction run function mcpaint:custom_painting/internal/place/interaction_data
 
 
 

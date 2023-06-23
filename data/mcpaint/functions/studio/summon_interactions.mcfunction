@@ -1,4 +1,4 @@
-execute positioned ^0.375 ^ ^-0.375 run summon interaction ~ ~-0.75 ~ {Tags:["mcpaint.studio","mcpaint.studio.interaction"],width:0.25,height:1.25,response:1b}
-execute positioned ^0.125 ^ ^-0.375 run summon interaction ~ ~-0.75 ~ {Tags:["mcpaint.studio","mcpaint.studio.interaction"],width:0.25,height:1.25,response:1b}
-execute positioned ^-0.125 ^ ^-0.375 run summon interaction ~ ~-0.75 ~ {Tags:["mcpaint.studio","mcpaint.studio.interaction"],width:0.25,height:1.25,response:1b}
-execute positioned ^-0.375 ^ ^-0.375 run summon interaction ~ ~-0.75 ~ {Tags:["mcpaint.studio","mcpaint.studio.interaction"],width:0.25,height:1.25,response:1b}
+execute positioned ^0.375 ^ ^-0.375 positioned ~ ~-0.75 ~ summon interaction run function mcpaint:studio/internal/place/interaction_data
+execute positioned ^0.125 ^ ^-0.375 positioned ~ ~-0.75 ~ summon interaction run function mcpaint:studio/internal/place/interaction_data
+execute positioned ^-0.125 ^ ^-0.375 positioned ~ ~-0.75 ~ summon interaction run function mcpaint:studio/internal/place/interaction_data
+execute positioned ^-0.375 ^ ^-0.375 positioned ~ ~-0.75 ~ summon interaction run function mcpaint:studio/internal/place/interaction_data

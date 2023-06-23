@@ -1,0 +1,3 @@
+execute as @a at @s positioned ^ ^ ^4 if entity @e[type=interaction,tag=mcpaint.clickable_interaction,distance=..8,predicate=mcpaint:interaction_attacked,limit=1] run function mcpaint:entity/interaction/player_lclicked
+
+execute as @a at @s positioned ^ ^ ^4 if entity @e[type=interaction,tag=mcpaint.clickable_interaction,distance=..8,predicate=mcpaint:interaction_interacted,limit=1] run function mcpaint:entity/interaction/player_rclicked

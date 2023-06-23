@@ -1,0 +1,32 @@
+{
+  "condition": "inverted",
+  "term": {
+    "condition": "value_check",
+    "range": {
+      "max": {
+        "score": "mcpaint.datafixer_version",
+        "target": {
+          "name": ".version",
+          "type": "fixed"
+        },
+        "type": "score"
+      },
+      "min": {
+        "score": "mcpaint.datafixer_version",
+        "target": {
+          "name": ".version",
+          "type": "fixed"
+        },
+        "type": "score"
+      }
+    },
+    "value": {
+      "score": "mcpaint.datafixer_version",
+      "target": {
+        "target": "this",
+        "type": "context"
+      },
+      "type": "score"
+    }
+  }
+}

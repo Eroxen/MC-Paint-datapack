@@ -1,3 +1,0 @@
-execute store success score different mcpaint.calc run data modify entity @s interaction.player set from storage mcpaint:calc interactor.UUID
-execute if score different mcpaint.calc matches 0 positioned ~ ~1 ~ align x align y align z positioned ~0.5 ~0.5 ~0.5 as @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] run function mcpaint:studio/get_right_clicked
-data remove entity @s interaction

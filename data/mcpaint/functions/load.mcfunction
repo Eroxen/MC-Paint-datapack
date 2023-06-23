@@ -7,9 +7,15 @@ scoreboard objectives add mcpaint.reload trigger
 scoreboard objectives add mcpaint.debug trigger
 scoreboard objectives add mcpaint.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add mcpaint.config dummy
+scoreboard objectives add mcpaint.datafixer_version dummy
+
+scoreboard players set .version mcpaint.datafixer_version 6
+schedule function mcpaint:datafixer/clock 1s replace
 
 execute unless score b64.max_iter mcpaint.config matches 1..1000 run scoreboard players set b64.max_iter mcpaint.config 250
 execute unless score canvas.async.max_iter mcpaint.config matches 1..100 run scoreboard players set canvas.async.max_iter mcpaint.config 8
+# 0: advancements, 1: ticking
+execute unless score interaction_detection mcpaint.config matches 0..1 run scoreboard players set canvas.async.max_iter mcpaint.config 0
 
 execute store result score maxCommandChainLength mcpaint.calc run gamerule maxCommandChainLength
 execute unless score maxCommandChainLength mcpaint.calc matches 1000000.. run gamerule maxCommandChainLength 1000000

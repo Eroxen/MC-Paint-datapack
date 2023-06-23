@@ -1,0 +1,2 @@
+data merge entity @s {Tags:["mcpaint.studio","mcpaint.studio.interaction","mcpaint.clickable_interaction"],width:0.25,height:1.25,response:1b}
+scoreboard players operation @s mcpaint.datafixer_version = .version mcpaint.datafixer_version

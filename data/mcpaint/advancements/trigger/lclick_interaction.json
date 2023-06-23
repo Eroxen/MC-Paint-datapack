@@ -7,7 +7,7 @@
         "entity": {
           "type": "minecraft:interaction",
 	  "nbt": "{
-            Tags:[\"mcpaint.studio.interaction\"]
+            Tags:[\"mcpaint.clickable_interaction\"]
 	  }"
         }
       }
@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "mcpaint:trigger/left_click_studio"
+    "function": "mcpaint:trigger/lclick_interaction"
   }
 }
