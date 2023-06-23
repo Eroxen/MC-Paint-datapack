@@ -9,7 +9,7 @@ scoreboard objectives add mcpaint.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add mcpaint.config dummy
 scoreboard objectives add mcpaint.datafixer_version dummy
 
-scoreboard players set .version mcpaint.datafixer_version 6
+scoreboard players set .version mcpaint.datafixer_version 7
 schedule function mcpaint:datafixer/clock 1s replace
 
 execute unless score b64.max_iter mcpaint.config matches 1..1000 run scoreboard players set b64.max_iter mcpaint.config 250
@@ -24,7 +24,7 @@ function mcpaint:trigger/revoke_all
 
 ### version ###
 data modify storage mcpaint:calc version set value {}
-data modify storage mcpaint:calc version.message set value "MC Paint v0.7.1 by Eroxen"
+data modify storage mcpaint:calc version.message set value "MC Paint v0.7.2 by Eroxen"
 data modify storage mcpaint:calc version.rp_version_message set value '{"translate":"mcpaint.message.resource_pack_version","with":[{"translate":"mcpaint.message.resource_pack_version.0.7","with":[{"text":"download page","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"planetminecraft.com"}]},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/mc-paint-create-your-own-custom-paintings/"}},{"text":"/trigger mcpaint.reload","color":"white","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"Click to auto-fill command"}]},"clickEvent":{"action":"suggest_command","value":"/trigger mcpaint.reload"}}],"fallback":"§cYou have installed a version of the Resource Pack that does not mach with the Datapack version (0.7). You can download the correct version from the %1$s.","color":"green","bold":false}],"fallback":""}'
 ######
 
