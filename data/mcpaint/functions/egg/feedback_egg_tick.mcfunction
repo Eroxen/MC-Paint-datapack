@@ -5,7 +5,7 @@ execute if score @s mcpaint.calc matches 2 run data modify entity @e[type=item_d
 execute if score @s mcpaint.calc matches 2 run data merge entity @e[type=item_display,tag=mcpaint.feedback_egg.item_display,distance=..0.1,limit=1] {start_interpolation:0,interpolation_duration:10}
 
 
-execute if score @s mcpaint.calc matches 20 run tellraw @a[distance=..32] {"translate":"mcpaint.cutscene.egg.1"}
+execute if score send_egg_chat mcpaint.config matches 1 if score @s mcpaint.calc matches 20 run tellraw @a[distance=..32] {"translate":"mcpaint.cutscene.egg.1"}
 
 
 execute if score @s mcpaint.calc matches 40 run data modify entity @e[type=item_display,tag=mcpaint.feedback_egg.item_display,distance=..0.1,limit=1] transformation merge value {translation:[0f,-0.15f,0f],left_rotation:[0f,0f,0.196f,-0.981f]}
@@ -14,10 +14,10 @@ execute if score @s mcpaint.calc matches 40 run data merge entity @e[type=item_d
 
 execute if score @s mcpaint.calc matches 60 run data modify entity @e[type=item_display,tag=mcpaint.feedback_egg.item_display,distance=..0.1,limit=1] transformation merge value {translation:[0f,-0.3f,0f],left_rotation:[0f,0f,-0.056f,-0.998f]}
 execute if score @s mcpaint.calc matches 60 run data merge entity @e[type=item_display,tag=mcpaint.feedback_egg.item_display,distance=..0.1,limit=1] {start_interpolation:0,interpolation_duration:10}
-execute if score @s mcpaint.calc matches 60 run tellraw @a[distance=..32] {"translate":"mcpaint.cutscene.egg.2"}
+execute if score send_egg_chat mcpaint.config matches 1 if score @s mcpaint.calc matches 60 run tellraw @a[distance=..32] {"translate":"mcpaint.cutscene.egg.2"}
 
 
-execute if score @s mcpaint.calc matches 100 run tellraw @a[distance=..32] {"translate":"mcpaint.cutscene.egg.3"}
+execute if score send_egg_chat mcpaint.config matches 1 if score @s mcpaint.calc matches 100 run tellraw @a[distance=..32] {"translate":"mcpaint.cutscene.egg.3"}
 execute if score @s mcpaint.calc matches 100 align x align y align z run kill @e[type=painting,dx=0,dy=0,dz=0]
 execute if score @s mcpaint.calc matches 100 run particle minecraft:explosion_emitter ~ ~ ~
 execute if score @s mcpaint.calc matches 100 run playsound minecraft:entity.generic.explode block @a[distance=..32] ~ ~ ~ 1 1

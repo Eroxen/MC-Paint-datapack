@@ -1,21 +1,22 @@
+schedule function mcpaint:clock_10s 1t replace
+
 scoreboard objectives add mcpaint.calc dummy
 scoreboard objectives add mcpaint.extended_brush_stroke dummy
-scoreboard objectives add mcpaint.message minecraft.custom:minecraft.leave_game
+scoreboard objectives add mcpaint.leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add mcpaint.rp_message_delay dummy
 scoreboard objectives add mcpaint.pro_brush_cooldown dummy
 scoreboard objectives add mcpaint.reload trigger
 scoreboard objectives add mcpaint.debug trigger
+scoreboard objectives add mcpaint.settings trigger
 scoreboard objectives add mcpaint.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add mcpaint.config dummy
 scoreboard objectives add mcpaint.datafixer_version dummy
+scoreboard objectives add mcpaint.client_settings.send_rp_message dummy
 
 scoreboard players set .version mcpaint.datafixer_version 7
 schedule function mcpaint:datafixer/clock 1s replace
 
-execute unless score b64.max_iter mcpaint.config matches 1..1000 run scoreboard players set b64.max_iter mcpaint.config 250
-execute unless score canvas.async.max_iter mcpaint.config matches 1..100 run scoreboard players set canvas.async.max_iter mcpaint.config 8
-# 0: advancements, 1: ticking
-execute unless score interaction_detection mcpaint.config matches 0..1 run scoreboard players set interaction_detection mcpaint.config 0
+function mcpaint:settings/default_server_settings
 
 execute store result score maxCommandChainLength mcpaint.calc run gamerule maxCommandChainLength
 execute unless score maxCommandChainLength mcpaint.calc matches 1000000.. run gamerule maxCommandChainLength 1000000
@@ -25,7 +26,7 @@ function mcpaint:trigger/revoke_all
 ### version ###
 data modify storage mcpaint:calc version set value {}
 data modify storage mcpaint:calc version.message set value "MC Paint v0.7.2 by Eroxen"
-data modify storage mcpaint:calc version.rp_version_message set value '{"translate":"mcpaint.message.resource_pack_version","with":[{"translate":"mcpaint.message.resource_pack_version.0.7","with":[{"text":"download page","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"planetminecraft.com"}]},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/mc-paint-create-your-own-custom-paintings/"}},{"text":"/trigger mcpaint.reload","color":"white","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"Click to auto-fill command"}]},"clickEvent":{"action":"suggest_command","value":"/trigger mcpaint.reload"}}],"fallback":"§cYou have installed a version of the Resource Pack that does not mach with the Datapack version (0.7). You can download the correct version from the %1$s.","color":"green","bold":false}],"fallback":""}'
+data modify storage mcpaint:calc version.rp_version_message set value '{"translate":"mcpaint.message.resource_pack_version","with":[{"translate":"mcpaint.message.resource_pack_version.0.7","with":[{"text":"download page","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"planetminecraft.com"}]},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/mc-paint-create-your-own-custom-paintings/"}},{"translate":"mcpaint.message.resource_pack_reload","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_reload.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.reload"}},{"translate":"mcpaint.message.resource_pack_dismiss","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_dismiss.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 20001"}}],"fallback":"§cYou have installed a version of the Resource Pack that does not mach with the Datapack version (0.7). You can download the correct version from the %1$s.","color":"green","bold":false}],"fallback":""}'
 ######
 
 

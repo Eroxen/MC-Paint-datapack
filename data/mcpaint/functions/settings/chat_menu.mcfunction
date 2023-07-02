@@ -1,0 +1,14 @@
+tellraw @s {"text":"\n\n\n\n\n\n\n\n"}
+
+tellraw @s {"translate":"mcpaint.setting.server.title","color":"yellow","bold":true}
+
+execute if score interaction_detection mcpaint.config matches 0 run tellraw @s ["",{"text":"G","font":"mcpaint:icon","clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 10001"}},{"text":" "},{"translate":"mcpaint.setting.server.use_click_detection_advancements"},{"text":" "},{"text":"ⓘ","color":"aqua","hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.setting.server.use_click_detection_advancements.info"}]}}]
+execute if score interaction_detection mcpaint.config matches 1 run tellraw @s ["",{"text":"H","font":"mcpaint:icon","clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 10002"}},{"text":" "},{"translate":"mcpaint.setting.server.use_click_detection_advancements"},{"text":" "},{"text":"ⓘ","color":"aqua","hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.setting.server.use_click_detection_advancements.info"}]}}]
+
+execute if score send_egg_chat mcpaint.config matches 1 run tellraw @s ["",{"text":"G","font":"mcpaint:icon","clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 10011"}},{"text":" "},{"translate":"mcpaint.setting.server.send_egg_chat"},{"text":" "},{"text":"ⓘ","color":"aqua","hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.setting.server.send_egg_chat.info"}]}}]
+execute if score send_egg_chat mcpaint.config matches 0 run tellraw @s ["",{"text":"H","font":"mcpaint:icon","clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 10012"}},{"text":" "},{"translate":"mcpaint.setting.server.send_egg_chat"},{"text":" "},{"text":"ⓘ","color":"aqua","hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.setting.server.send_egg_chat.info"}]}}]
+
+tellraw @s {"translate":"mcpaint.setting.client.title","color":"yellow","bold":true}
+
+execute if score @s mcpaint.client_settings.send_rp_message matches 1 run tellraw @s ["",{"text":"G","font":"mcpaint:icon","clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 11001"}},{"text":" "},{"translate":"mcpaint.setting.client.send_rp_message"},{"text":" "},{"text":"ⓘ","color":"aqua","hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.setting.client.send_rp_message.info"}]}}]
+execute if score @s mcpaint.client_settings.send_rp_message matches 0 run tellraw @s ["",{"text":"H","font":"mcpaint:icon","clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 11002"}},{"text":" "},{"translate":"mcpaint.setting.client.send_rp_message"},{"text":" "},{"text":"ⓘ","color":"aqua","hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.setting.client.send_rp_message.info"}]}}]

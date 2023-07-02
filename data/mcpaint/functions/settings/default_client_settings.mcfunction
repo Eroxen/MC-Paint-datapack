@@ -1,0 +1,1 @@
+execute unless score @s mcpaint.client_settings.send_rp_message matches 0..1 run scoreboard players set @s mcpaint.client_settings.send_rp_message 1
