@@ -2,6 +2,7 @@ data modify storage mcpaint:calc ui set from entity @s data.ui.colour_picker
 data modify storage mcpaint:calc ui_interact set from storage mcpaint:calc painter_command.button
 data modify storage mcpaint:calc ui_interact.changed set value 0b
 
+execute if data storage mcpaint:calc painter_command.colour_from_canvas run data modify storage mcpaint:calc ui_interact set value {changed:0b}
 execute if data storage mcpaint:calc painter_command.colour_from_canvas unless data storage mcpaint:calc painter_command{colour_from_canvas:-1} if data storage mcpaint:calc ui{selected_colour:"transparant"} run data modify storage mcpaint:calc ui_interact.button set value "fg"
 execute if data storage mcpaint:calc painter_command.colour_from_canvas unless data storage mcpaint:calc painter_command{colour_from_canvas:-1} if data storage mcpaint:calc ui{selected_colour:"transparant"} run data modify storage mcpaint:calc ui.fg_colour set from storage mcpaint:calc painter_command.colour_from_canvas
 execute if data storage mcpaint:calc painter_command.colour_from_canvas unless data storage mcpaint:calc painter_command{colour_from_canvas:-1} if data storage mcpaint:calc ui{selected_colour:"bg"} run data modify storage mcpaint:calc ui_interact.button set value "bg"

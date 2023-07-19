@@ -1,7 +1,9 @@
 execute if score screenspace_x mcpaint.calc matches 63..187 if score screenspace_y mcpaint.calc matches ..125 as @e[type=marker,tag=mcpaint.computer.marker,distance=..0.1,limit=1] run function mcpaint:block/computer/desktop/open
 
 execute if score screenspace_x mcpaint.calc matches 63..938 if score screenspace_y mcpaint.calc matches 188..312 unless predicate mcpaint:holding_writable_book run tellraw @s {"translate":"mcpaint.message.must_hold_writable_book"}
-execute if score screenspace_x mcpaint.calc matches 63..938 if score screenspace_y mcpaint.calc matches 188..312 if predicate mcpaint:holding_writable_book run data modify entity @e[type=marker,tag=mcpaint.computer.marker,distance=..0.1,limit=1] data.computer_page.filename set from entity @s SelectedItem.tag.pages[0]
+execute if score screenspace_x mcpaint.calc matches 63..938 if score screenspace_y mcpaint.calc matches 188..312 if predicate mcpaint:holding_writable_book run data modify storage mcpaint:calc math.string set from entity @s SelectedItem.tag.pages[0]
+execute if score screenspace_x mcpaint.calc matches 63..938 if score screenspace_y mcpaint.calc matches 188..312 if predicate mcpaint:holding_writable_book run function mcpaint:math/api/limit_string_length
+execute if score screenspace_x mcpaint.calc matches 63..938 if score screenspace_y mcpaint.calc matches 188..312 if predicate mcpaint:holding_writable_book run data modify entity @e[type=marker,tag=mcpaint.computer.marker,distance=..0.1,limit=1] data.computer_page.filename set from storage mcpaint:calc math.string
 execute if score screenspace_x mcpaint.calc matches 63..938 if score screenspace_y mcpaint.calc matches 188..312 if predicate mcpaint:holding_writable_book as @e[type=marker,tag=mcpaint.computer.marker,distance=..0.1,limit=1] run function mcpaint:block/computer/import/check_validity
 
 execute if score screenspace_x mcpaint.calc matches 188..813 if score screenspace_y mcpaint.calc matches 313..938 unless predicate mcpaint:holding_writable_book run tellraw @s {"translate":"mcpaint.message.must_hold_writable_book"}

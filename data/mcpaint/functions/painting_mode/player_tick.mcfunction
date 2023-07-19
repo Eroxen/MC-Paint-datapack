@@ -33,7 +33,7 @@ execute unless data entity @s SelectedItem positioned ^ ^ ^ if entity @e[type=it
 ### get intersected element ###
 execute unless data storage mcpaint:calc painter_tick.studio.data.popups[0] run function mcpaint:painting_mode/internal/get_element_no_popup
 execute if data storage mcpaint:calc painter_tick.studio.data.popups[0] run function mcpaint:painting_mode/internal/get_element_popup
-execute unless data storage mcpaint:calc painter_tick.intersect run function mcpaint:painting_mode/internal/hover/none
+execute unless data storage mcpaint:calc painter_tick.studio.data.popups[0] unless data storage mcpaint:calc painter_tick.intersect run function mcpaint:painting_mode/internal/hover/none
 execute unless data storage mcpaint:calc painter_tick.intersect run return 0
 
 

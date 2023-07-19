@@ -24,6 +24,8 @@ execute if data storage mcpaint:calc painter_tick.intersect.child.direction unle
 execute if data storage mcpaint:calc painter_tick.intersect.child.direction unless score #temp.new_value mcpaint.calc = #temp.current_value mcpaint.calc run function mcpaint:painting_mode/sound/generic_button
 
 execute if data storage mcpaint:calc painter_tick.intersect.child{button:"filename"} unless data entity @s SelectedItem{id:"minecraft:writable_book"} run tellraw @s {"translate":"mcpaint.message.must_hold_writable_book"}
-execute if data storage mcpaint:calc painter_tick.intersect.child{button:"filename"} if data entity @s SelectedItem{id:"minecraft:writable_book"} run data modify storage mcpaint:calc popup.filename set from entity @s SelectedItem.tag.pages[0]
+execute if data storage mcpaint:calc painter_tick.intersect.child{button:"filename"} if data entity @s SelectedItem{id:"minecraft:writable_book"} run data modify storage mcpaint:calc math.string set from entity @s SelectedItem.tag.pages[0]
+execute if data storage mcpaint:calc painter_tick.intersect.child{button:"filename"} if data entity @s SelectedItem{id:"minecraft:writable_book"} run function mcpaint:math/api/limit_string_length
+execute if data storage mcpaint:calc painter_tick.intersect.child{button:"filename"} if data entity @s SelectedItem{id:"minecraft:writable_book"} run data modify storage mcpaint:calc popup.filename set from storage mcpaint:calc math.string
 execute if data storage mcpaint:calc painter_tick.intersect.child{button:"filename"} if data entity @s SelectedItem{id:"minecraft:writable_book"} run data modify storage mcpaint:calc painter_command set value {command:"popup.new_file.update"}
 execute if data storage mcpaint:calc painter_tick.intersect.child{button:"filename"} if data entity @s SelectedItem{id:"minecraft:writable_book"} run function mcpaint:painting_mode/sound/generic_button
