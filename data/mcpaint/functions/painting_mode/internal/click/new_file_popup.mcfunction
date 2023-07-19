@@ -17,8 +17,10 @@ execute if data storage mcpaint:calc painter_tick.intersect.child{button:"block_
 execute if data storage mcpaint:calc painter_tick.intersect.child{button:"pixel_width"} if score #temp.new_value mcpaint.calc matches 65.. run scoreboard players set #temp.new_value mcpaint.calc 64
 execute if data storage mcpaint:calc painter_tick.intersect.child{button:"pixel_height"} if score #temp.new_value mcpaint.calc matches 65.. run scoreboard players set #temp.new_value mcpaint.calc 64
 execute if data storage mcpaint:calc painter_tick.intersect.child{button:"block_width"} store result storage mcpaint:calc popup.width_blocks int 1 run scoreboard players get #temp.new_value mcpaint.calc
+execute if data storage mcpaint:calc painter_tick.intersect.child{button:"block_width"} store result storage mcpaint:calc popup.width_px int 16 run scoreboard players get #temp.new_value mcpaint.calc
 execute if data storage mcpaint:calc painter_tick.intersect.child{button:"pixel_width"} store result storage mcpaint:calc popup.width_px int 1 run scoreboard players get #temp.new_value mcpaint.calc
 execute if data storage mcpaint:calc painter_tick.intersect.child{button:"block_height"} store result storage mcpaint:calc popup.height_blocks int 1 run scoreboard players get #temp.new_value mcpaint.calc
+execute if data storage mcpaint:calc painter_tick.intersect.child{button:"block_height"} store result storage mcpaint:calc popup.height_px int 16 run scoreboard players get #temp.new_value mcpaint.calc
 execute if data storage mcpaint:calc painter_tick.intersect.child{button:"pixel_height"} store result storage mcpaint:calc popup.height_px int 1 run scoreboard players get #temp.new_value mcpaint.calc
 execute if data storage mcpaint:calc painter_tick.intersect.child.direction unless score #temp.new_value mcpaint.calc = #temp.current_value mcpaint.calc run data modify storage mcpaint:calc painter_command set value {command:"popup.new_file.update"}
 execute if data storage mcpaint:calc painter_tick.intersect.child.direction unless score #temp.new_value mcpaint.calc = #temp.current_value mcpaint.calc run function mcpaint:painting_mode/sound/generic_button
