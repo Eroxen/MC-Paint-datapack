@@ -4,13 +4,13 @@ scoreboard objectives add mcpaint.calc dummy
 scoreboard objectives add mcpaint.extended_brush_stroke dummy
 scoreboard objectives add mcpaint.leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add mcpaint.rp_message_delay dummy
-scoreboard objectives add mcpaint.pro_brush_cooldown dummy
 scoreboard objectives add mcpaint.reload trigger
 scoreboard objectives add mcpaint.debug trigger
 scoreboard objectives add mcpaint.settings trigger
 scoreboard objectives add mcpaint.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add mcpaint.config dummy
 scoreboard objectives add mcpaint.datafixer_version dummy
+scoreboard objectives add mcpaint.attention_link dummy
 scoreboard objectives add mcpaint.client_settings.send_rp_message dummy
 
 scoreboard players set .version mcpaint.datafixer_version 7

@@ -9,7 +9,7 @@ data modify storage mcpaint:calc math.intersect_plane.plane.origin set from stor
 execute if data storage mcpaint:calc EntityData.data{facing:"north"} run data modify storage mcpaint:calc math.intersect_plane.plane.normal set value {axis:"z",sign:-1}
 execute if data storage mcpaint:calc EntityData.data{facing:"south"} run data modify storage mcpaint:calc math.intersect_plane.plane.normal set value {axis:"z",sign:1}
 execute if data storage mcpaint:calc EntityData.data{facing:"west"} run data modify storage mcpaint:calc math.intersect_plane.plane.normal set value {axis:"x",sign:-1}
-execute at @s anchored eyes positioned ^ ^ ^ run function mcpaint:math/intersect_plane
+execute at @s anchored eyes positioned ^ ^ ^ run function mcpaint:math/api/intersect_plane
 
 execute if score active_popup mcpaint.calc matches 0 if score distance mcpaint.calc matches 0.. if score screenspace_x mcpaint.calc matches -500..500 if score screenspace_y mcpaint.calc matches -500..500 run function mcpaint:block/computer/rclick_screen
 execute if score active_popup mcpaint.calc matches 1 if score distance mcpaint.calc matches 0.. if score screenspace_x mcpaint.calc matches -500..500 if score screenspace_y mcpaint.calc matches -500..500 run function mcpaint:block/computer/rclick_popup

@@ -1,4 +1,5 @@
 tag @s add mcpaint.painting_mode
+scoreboard players operation @s mcpaint.attention_link = .new mcpaint.attention_link
 data modify storage mcpaint:calc join_studio.player_finished set value 1b
 function mcpaint:painting_mode/players_changed
 

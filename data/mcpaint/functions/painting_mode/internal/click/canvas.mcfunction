@@ -1,7 +1,7 @@
-data modify storage mcpaint:calc canvas set from storage mcpaint:calc painter_ping_studio.responder.data.canvas
+data modify storage mcpaint:calc canvas set from storage mcpaint:calc painter_tick.studio.data.canvas
 function mcpaint:canvas/get_info
 
-data modify storage mcpaint:calc ui set from storage mcpaint:calc painter_ping_studio.responder.data.ui.canvas
+data modify storage mcpaint:calc ui set from storage mcpaint:calc painter_tick.studio.data.ui.canvas
 execute store result score ui_x_0 mcpaint.calc run data get storage mcpaint:calc ui.position[0] 1
 execute store result score ui_y_0 mcpaint.calc run data get storage mcpaint:calc ui.position[1] 1
 execute store result score ui_x_1 mcpaint.calc run data get storage mcpaint:calc ui.size[0] 1
@@ -30,7 +30,7 @@ execute if data storage mcpaint:calc painter_tick.selected_tool{name:"pen",subto
 execute if data storage mcpaint:calc painter_tick.selected_tool{name:"pen",subtool:{command:"set_pixels"}} run data modify storage mcpaint:calc painter_command.pixels set from storage mcpaint:calc painter_tick.selected_tool.subtool.pixels
 execute if data storage mcpaint:calc painter_tick.selected_tool{name:"pen"} store result storage mcpaint:calc painter_command.u int 1 run scoreboard players get canvas_u mcpaint.calc
 execute if data storage mcpaint:calc painter_tick.selected_tool{name:"pen"} store result storage mcpaint:calc painter_command.v int 1 run scoreboard players get canvas_v mcpaint.calc
-execute if data storage mcpaint:calc painter_tick.selected_tool{name:"pen"} run data modify storage mcpaint:calc painter_command.colour set from storage mcpaint:calc painter_ping_studio.responder.data.ui.colour_picker.ink_colour
+execute if data storage mcpaint:calc painter_tick.selected_tool{name:"pen"} run data modify storage mcpaint:calc painter_command.colour set from storage mcpaint:calc painter_tick.studio.data.ui.colour_picker.ink_colour
 
 execute if data storage mcpaint:calc painter_tick.selected_tool{name:"colour_picker"} run data modify storage mcpaint:calc painter_command set value {command:"get_colour_from_canvas",u:0,v:0}
 execute if data storage mcpaint:calc painter_tick.selected_tool{name:"colour_picker"} store result storage mcpaint:calc painter_command.u int 1 run scoreboard players get canvas_u mcpaint.calc

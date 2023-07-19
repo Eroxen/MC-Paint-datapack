@@ -14,3 +14,5 @@ execute if data entity @s SelectedItem{id:"minecraft:blue_dye"} run data modify 
 execute if data entity @s SelectedItem{id:"minecraft:purple_dye"} run data modify storage mcpaint:calc painter_command.held_dye set value 17623
 execute if data entity @s SelectedItem{id:"minecraft:magenta_dye"} run data modify storage mcpaint:calc painter_command.held_dye set value 24887
 execute if data entity @s SelectedItem{id:"minecraft:pink_dye"} run data modify storage mcpaint:calc painter_command.held_dye set value 31285
+
+advancement grant @s only mcpaint:guide/use_dye

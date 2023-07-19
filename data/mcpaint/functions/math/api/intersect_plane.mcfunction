@@ -1,4 +1,27 @@
-execute summon marker run function mcpaint:math/intersect_plane_marker
+#####################################################################
+# math/api/intersect_plane.mcfunction
+# written by Eroxen
+#
+# Called at the origin of the ray intersecting a plane.
+#
+# Storage input :
+# - mcpaint:calc :
+#   - math :
+#     - intersect_plane :
+#       - plane :
+#         - normal :
+#           - axis : "x" or "z"
+#           - sign : -1 or 1
+#         - offset: offsets the plane to intersect with
+#
+# Scoreboard output :
+# - mcpaint.calc :
+#   - screenspace_x : x coordinate of the intersection point
+#   - screenspace_y : y coordinate of the intersection point
+#   - distance : shortest distance to the plane
+#####################################################################
+
+execute summon marker run function mcpaint:math/internal/intersect_plane_marker
 
 execute store result score origin_x mcpaint.calc run data get storage mcpaint:calc math.intersect_plane.plane.origin[0] 1000
 execute store result score origin_y mcpaint.calc run data get storage mcpaint:calc math.intersect_plane.plane.origin[1] 1000

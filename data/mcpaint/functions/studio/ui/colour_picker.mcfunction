@@ -1,15 +1,6 @@
 data modify storage mcpaint:calc ui set from entity @s data.ui.colour_picker
-data modify storage mcpaint:calc ui_interact set value {changed:0b}
-execute store result score ui_u mcpaint.calc run data get storage mcpaint:calc painter_command.u 1
-execute store result score ui_v mcpaint.calc run data get storage mcpaint:calc painter_command.v 1
-
-execute if score ui_u mcpaint.calc matches 63..937 if score ui_v mcpaint.calc matches 843..969 run data modify storage mcpaint:calc ui_interact merge value {button:"red",slider:1b}
-execute if score ui_u mcpaint.calc matches 63..937 if score ui_v mcpaint.calc matches 656..781 run data modify storage mcpaint:calc ui_interact merge value {button:"green",slider:1b}
-execute if score ui_u mcpaint.calc matches 63..937 if score ui_v mcpaint.calc matches 469..594 run data modify storage mcpaint:calc ui_interact merge value {button:"blue",slider:1b}
-execute if score ui_u mcpaint.calc matches 250..438 if score ui_v mcpaint.calc matches 63..250 run data modify storage mcpaint:calc ui_interact.button set value "bg"
-execute if score ui_u mcpaint.calc matches 125..313 if score ui_v mcpaint.calc matches 187..375 run data modify storage mcpaint:calc ui_interact.button set value "fg"
-execute if score ui_u mcpaint.calc matches 125..250 if score ui_v mcpaint.calc matches 63..186 run data modify storage mcpaint:calc ui_interact.button set value "switch_fg_bg"
-execute if score ui_u mcpaint.calc matches 562..688 if score ui_v mcpaint.calc matches 63..375 run data modify storage mcpaint:calc ui_interact.button set value "transparant"
+data modify storage mcpaint:calc ui_interact set from storage mcpaint:calc painter_command.button
+data modify storage mcpaint:calc ui_interact.changed set value 0b
 
 execute if data storage mcpaint:calc painter_command.colour_from_canvas unless data storage mcpaint:calc painter_command{colour_from_canvas:-1} if data storage mcpaint:calc ui{selected_colour:"transparant"} run data modify storage mcpaint:calc ui_interact.button set value "fg"
 execute if data storage mcpaint:calc painter_command.colour_from_canvas unless data storage mcpaint:calc painter_command{colour_from_canvas:-1} if data storage mcpaint:calc ui{selected_colour:"transparant"} run data modify storage mcpaint:calc ui.fg_colour set from storage mcpaint:calc painter_command.colour_from_canvas
@@ -19,12 +10,7 @@ execute if data storage mcpaint:calc painter_command.colour_from_canvas unless d
 execute if data storage mcpaint:calc painter_command.colour_from_canvas unless data storage mcpaint:calc painter_command{colour_from_canvas:-1} if data storage mcpaint:calc ui{selected_colour:"fg"} run data modify storage mcpaint:calc ui.fg_colour set from storage mcpaint:calc painter_command.colour_from_canvas
 execute if data storage mcpaint:calc painter_command{colour_from_canvas:-1} run data modify storage mcpaint:calc ui_interact.button set value "transparant"
 
-execute if data storage mcpaint:calc ui_interact{slider:1b} run scoreboard players operation slider_value mcpaint.calc = ui_u mcpaint.calc
-execute if data storage mcpaint:calc ui_interact{slider:1b} run scoreboard players remove slider_value mcpaint.calc 63
-execute if data storage mcpaint:calc ui_interact{slider:1b} run scoreboard players set op mcpaint.calc 32
-execute if data storage mcpaint:calc ui_interact{slider:1b} run scoreboard players operation slider_value mcpaint.calc *= op mcpaint.calc
-execute if data storage mcpaint:calc ui_interact{slider:1b} run scoreboard players set op mcpaint.calc 875
-execute if data storage mcpaint:calc ui_interact{slider:1b} run scoreboard players operation slider_value mcpaint.calc /= op mcpaint.calc
+execute if data storage mcpaint:calc ui_interact{slider:1b} store result score slider_value mcpaint.calc run data get storage mcpaint:calc ui_interact.slider_value
 execute if data storage mcpaint:calc ui_interact{slider:1b} if score slider_value mcpaint.calc matches ..-1 run scoreboard players set slider_value mcpaint.calc 0
 execute if data storage mcpaint:calc ui_interact{slider:1b} if score slider_value mcpaint.calc matches 32.. run scoreboard players set slider_value mcpaint.calc 31
 
@@ -37,9 +23,7 @@ execute if data storage mcpaint:calc ui_interact{button:"switch_fg_bg"} run data
 execute if data storage mcpaint:calc ui_interact{button:"switch_fg_bg"} run data modify storage mcpaint:calc ui.bg_colour set from storage mcpaint:calc ui_interact.temp_colour
 
 execute if data storage mcpaint:calc ui_interact{button:"bg"} if data storage mcpaint:calc painter_command.held_dye run data modify storage mcpaint:calc ui.bg_colour set from storage mcpaint:calc painter_command.held_dye
-execute if data storage mcpaint:calc ui_interact{button:"bg"} if data storage mcpaint:calc painter_command.held_dye run data modify storage mcpaint:calc painter_command.used_dye set value 1b
 execute if data storage mcpaint:calc ui_interact{button:"fg"} if data storage mcpaint:calc painter_command.held_dye run data modify storage mcpaint:calc ui.fg_colour set from storage mcpaint:calc painter_command.held_dye
-execute if data storage mcpaint:calc ui_interact{button:"fg"} if data storage mcpaint:calc painter_command.held_dye run data modify storage mcpaint:calc painter_command.used_dye set value 1b
 
 execute if data storage mcpaint:calc ui_interact{button:"bg"} run data modify storage mcpaint:calc ui.selected_colour set value "bg"
 execute if data storage mcpaint:calc ui_interact{button:"fg"} run data modify storage mcpaint:calc ui.selected_colour set value "fg"

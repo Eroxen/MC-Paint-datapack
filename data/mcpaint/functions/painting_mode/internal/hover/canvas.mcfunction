@@ -1,0 +1,6 @@
+data modify storage mcpaint:calc painter_tick.selected_tool set from storage mcpaint:calc painter_tick.studio.data.ui.tools.selected_tool_data
+data modify storage mcpaint:calc painter_tick.selected_tool.subtool set from storage mcpaint:calc painter_tick.studio.data.ui.tools.selected_subtool_data
+
+execute if data storage mcpaint:calc painter_tick.selected_tool{supports_extended_stroke:1b} if data storage mcpaint:calc painter_tick{left_click:0b,right_click:1b} unless predicate mcpaint:holding_pro_brush run scoreboard players set @s mcpaint.extended_brush_stroke 4
+execute if data storage mcpaint:calc painter_tick.selected_tool{supports_extended_stroke:1b} if data storage mcpaint:calc painter_tick{left_click:0b,right_click:1b} if predicate mcpaint:holding_pro_brush run scoreboard players set @s mcpaint.pro_brush_cooldown 0
+execute if data storage mcpaint:calc painter_tick{left_click:0b,right_click:0b} if score @s mcpaint.extended_brush_stroke matches 1.. run scoreboard players set #temp.clicked mcpaint.calc 1

@@ -1,0 +1,4 @@
+execute if score ui_u mcpaint.calc matches ..250 if data storage mcpaint:calc painter_tick.studio.data.history.undo[0] run data modify storage mcpaint:calc painter_command set value {command:"undo"}
+execute if score ui_u mcpaint.calc matches ..250 if data storage mcpaint:calc painter_tick.studio.data.history.undo[0] run function mcpaint:painting_mode/sound/generic_button
+execute if score ui_u mcpaint.calc matches 251.. if data storage mcpaint:calc painter_tick.studio.data.history.redo[0] run data modify storage mcpaint:calc painter_command set value {command:"redo"}
+execute if score ui_u mcpaint.calc matches 251.. if data storage mcpaint:calc painter_tick.studio.data.history.redo[0] run function mcpaint:painting_mode/sound/generic_button
