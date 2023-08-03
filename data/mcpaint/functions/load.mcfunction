@@ -31,9 +31,47 @@ data modify storage mcpaint:calc version.rp_version_message set value '{"transla
 
 
 
-data modify storage mcpaint:calc custom_models set value {studio_1x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:1}},feedback_egg:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:2}},colour_picker_fg:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:3}},tools:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:4}},custom_painting_frame_1x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:5}},colour_picker_bg:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:6}},selection_arrows:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:7}},studio_1x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:8}},custom_painting_frame_1x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:9}},new_file_popup:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:10}},studio_2x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:11}},custom_painting_frame_2x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:12}},custom_painting_frame_2x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:13}},studio_2x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:14}},history_bg:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:15}},history_undo:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:16}},history_redo:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:17}},load_popup:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:18}},selected_subtool:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:19}},tool_colour_picker:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:20}},tool_pen:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:21}},colour_picker_transparent:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:22}},custom_painting_frame_3x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:23}},custom_painting_frame_3x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:24}},custom_painting_frame_4x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:25}},custom_painting_frame_4x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:26}},studio_3x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:27}},studio_3x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:28}},studio_4x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:29}},studio_4x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:30}},computer_desktop:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:31}},computer_files:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:32}},computer_popup_red:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:33}},computer_import:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:34}},computer_import_blinking:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:35}},loading:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:36}},computer_popup_single:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:37}},computer_popup_blue:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:38}}}
+data modify storage mcpaint:calc custom_models set value {\
+studio_1x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:1}},\
+feedback_egg:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:2}},\
+colour_picker_fg:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:3}},\
+tools:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:4}},\
+custom_painting_frame_1x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:5}},\
+colour_picker_bg:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:6}},\
+selection_arrows:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:7}},\
+studio_1x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:8}},\
+custom_painting_frame_1x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:9}},\
+new_file_popup:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:10}},\
+studio_2x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:11}},\
+custom_painting_frame_2x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:12}},\
+custom_painting_frame_2x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:13}},\
+studio_2x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:14}},\
+history_bg:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:15}},\
+history_undo:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:16}},\
+history_redo:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:17}},\
+load_popup:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:18}},\
+selected_subtool:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:19}},\
+tool_colour_picker:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:20}},\
+tool_pen:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:21}},\
+colour_picker_transparent:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:22}},\
+custom_painting_frame_3x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:23}},\
+custom_painting_frame_3x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:24}},\
+custom_painting_frame_4x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:25}},\
+custom_painting_frame_4x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:26}},\
+studio_3x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:27}},\
+studio_3x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:28}},\
+studio_4x1:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:29}},\
+studio_4x2:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:30}},\
+computer_desktop:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:31}},\
+computer_files:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:32}},\
+computer_popup_red:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:33}},\
+computer_import:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:34}},\
+computer_import_blinking:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:35}},\
+loading:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:36}},\
+computer_popup_single:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:37}},\
+computer_popup_blue:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:38}}}
 
-
+function mcpaint:colour/load
 
 
 data modify storage mcpaint:calc painting_sizes_data set value {}
