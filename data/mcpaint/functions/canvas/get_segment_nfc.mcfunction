@@ -1,2 +1,2 @@
-execute if score length mcpaint.calc matches 1 run function mcpaint:canvas/get_segment_nfc_1
-execute if score length mcpaint.calc matches 2.. run function mcpaint:canvas/get_segment_nfc_2
+function mcpaint:colour/api/to_uncoloured_segment
+data modify storage mcpaint:calc array_op.row append from storage mcpaint:calc colour.segment
