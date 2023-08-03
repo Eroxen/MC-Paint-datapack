@@ -1,0 +1,1 @@
+$data modify storage mcpaint:calc colour.hex set from storage mcpaint:calc colour.hex_lookup_table[$(i)]
