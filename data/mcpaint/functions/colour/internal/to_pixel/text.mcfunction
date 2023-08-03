@@ -1,1 +1,0 @@
-$data modify storage mcpaint:calc colour.pixel set value '{"text":"A","color":"$(hex)"}'
