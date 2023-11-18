@@ -1,0 +1,3 @@
+execute if score #canvas.compile_row.queue.state mcpaint.calc matches 1 run function mcpaint:canvas/internal/compile_row/queue/flush_white with storage mcpaint:calc internal.canvas.compile_row
+execute if score #canvas.compile_row.queue.state mcpaint.calc matches 2 run function mcpaint:canvas/internal/compile_row/queue/flush_colour with storage mcpaint:calc internal.canvas.compile_row
+execute if score #canvas.compile_row.queue.state mcpaint.calc matches 3 run function mcpaint:canvas/internal/compile_row/queue/flush_white with storage mcpaint:calc internal.canvas.compile_row
