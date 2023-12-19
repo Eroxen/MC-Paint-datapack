@@ -1,0 +1,1 @@
+$execute store success score #canvas.set_pixel.changed mcpaint.calc run data modify storage mcpaint:calc api.canvas.canvas.colour_array[$(u)][$(v)] set value $(colour)

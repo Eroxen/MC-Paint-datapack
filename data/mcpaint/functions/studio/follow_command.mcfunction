@@ -1,4 +1,4 @@
-data modify storage mcpaint:calc canvas set from entity @s data.canvas
+data modify storage mcpaint:calc api.canvas.canvas set from entity @s data.canvas
 
 execute if data storage mcpaint:calc painter_command{command:"set_pixels"} run function mcpaint:studio/command/set_pixels_and_add_history
 

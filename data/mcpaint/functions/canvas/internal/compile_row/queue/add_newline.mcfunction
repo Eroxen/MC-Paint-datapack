@@ -1,2 +1,2 @@
-data modify storage mcpaint:calc internal.canvas.compile_row.item set value "\\\\\\\\n"
+data modify storage mcpaint:calc internal.canvas.compile_row.item set value "\\\\\\\\\\\\\\\\n"
 function mcpaint:canvas/internal/compile_row/queue/append_item with storage mcpaint:calc internal.canvas.compile_row

@@ -17,20 +17,20 @@ data modify entity @e[type=marker,tag=mcpaint.studio.marker.new,distance=..0.1,l
 data modify entity @e[type=marker,tag=mcpaint.studio.marker.new,distance=..0.1,limit=1] Rotation set from storage mcpaint:calc spawn_studio.facing_rotation
 execute store result score canvas_width_blocks mcpaint.calc run data get entity @e[type=marker,tag=mcpaint.studio.marker.new,distance=..0.1,limit=1] data.width 1
 execute store result score canvas_height_blocks mcpaint.calc run data get entity @e[type=marker,tag=mcpaint.studio.marker.new,distance=..0.1,limit=1] data.height 1
-scoreboard players set canvas_width_px mcpaint.calc 16
-scoreboard players set canvas_height_px mcpaint.calc 16
-scoreboard players operation canvas_width_px mcpaint.calc *= canvas_width_blocks mcpaint.calc
-scoreboard players operation canvas_height_px mcpaint.calc *= canvas_height_blocks mcpaint.calc
-execute unless data storage mcpaint:calc spawn_studio.canvas run function mcpaint:canvas/create_empty_canvas
-execute if data storage mcpaint:calc spawn_studio.canvas run data modify storage mcpaint:calc canvas set from storage mcpaint:calc spawn_studio.canvas
-execute if data storage mcpaint:calc spawn_studio.canvas run function mcpaint:canvas/get_info
-data modify entity @e[type=marker,tag=mcpaint.studio.marker.new,distance=..0.1,limit=1] data.canvas set from storage mcpaint:calc canvas
+scoreboard players set #canvas.width_px mcpaint.calc 16
+scoreboard players set #canvas.height_px mcpaint.calc 16
+scoreboard players operation #canvas.width_px mcpaint.calc *= canvas_width_blocks mcpaint.calc
+scoreboard players operation #canvas.height_px mcpaint.calc *= canvas_height_blocks mcpaint.calc
+execute unless data storage mcpaint:calc spawn_studio.canvas run function mcpaint:canvas/api/create_empty
+execute if data storage mcpaint:calc spawn_studio.canvas run data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc spawn_studio.canvas
+execute if data storage mcpaint:calc spawn_studio.canvas run function mcpaint:canvas/api/get_info
+data modify entity @e[type=marker,tag=mcpaint.studio.marker.new,distance=..0.1,limit=1] data.canvas set from storage mcpaint:calc api.canvas.canvas
 
 execute if data storage mcpaint:calc spawn_studio{facing:"north"} run summon text_display ~ ~ ~ {Rotation:[180f,0f],Tags:["mcpaint.studio","mcpaint.studio.text_display","mcpaint.studio.text_display.new"],background:0,line_width:10000,view_range:0.5}
 execute if data storage mcpaint:calc spawn_studio{facing:"east"} run summon text_display ~ ~ ~ {Rotation:[270f,0f],Tags:["mcpaint.studio","mcpaint.studio.text_display","mcpaint.studio.text_display.new"],background:0,line_width:10000,view_range:0.5}
 execute if data storage mcpaint:calc spawn_studio{facing:"south"} run summon text_display ~ ~ ~ {Rotation:[0f,0f],Tags:["mcpaint.studio","mcpaint.studio.text_display","mcpaint.studio.text_display.new"],background:0,line_width:10000,view_range:0.5}
 execute if data storage mcpaint:calc spawn_studio{facing:"west"} run summon text_display ~ ~ ~ {Rotation:[90f,0f],Tags:["mcpaint.studio","mcpaint.studio.text_display","mcpaint.studio.text_display.new"],background:0,line_width:10000,view_range:0.5}
-data modify entity @e[type=text_display,tag=mcpaint.studio.text_display.new,distance=..0.1,limit=1] text set from storage mcpaint:calc canvas.resolved_text
+data modify entity @e[type=text_display,tag=mcpaint.studio.text_display.new,distance=..0.1,limit=1] text set from storage mcpaint:calc api.canvas.canvas.resolved_text
 data modify storage mcpaint:calc EntityData set value {scale:[1f,1f,1f],translation:[0f,0f,-0.4375f]}
 
 function mcpaint:custom_painting/scale_and_offset

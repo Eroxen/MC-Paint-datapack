@@ -1,0 +1,1 @@
+data modify storage eroxified2:api pack_signature set value {id:"mcpaint",version:[0,9,0],name:"MC Paint",required_eroxified2_version:[1,0,0]}

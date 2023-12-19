@@ -7,6 +7,10 @@
 # Storage input:
 # - mcpaint:calc api.canvas.compile_row: list of integers
 #
+# Scoreboard input:
+# - #canvas.compile_row.leading_comma mcpaint.calc: add a comma in front
+# - #canvas.compile_row.add_newline mcpaint.calc: add a newline in the back
+#
 # Storage output :
 # - mcpaint:calc api.canvas.compiled_row : text components
 #####################################################################
@@ -14,6 +18,5 @@
 data modify storage mcpaint:calc internal.canvas.compile_row set value {output:"",queue:""}
 data modify storage mcpaint:calc internal.canvas.compile_row.input set from storage mcpaint:calc api.canvas.compile_row
 
-scoreboard players set #canvas.compile_row.leading_comma mcpaint.calc 0
-scoreboard players set #canvas.compile_row.add_newline mcpaint.calc 1
 function mcpaint:canvas/internal/compile_row/start
+data modify storage mcpaint:calc api.canvas.compiled_row set from storage mcpaint:calc internal.canvas.compile_row.output

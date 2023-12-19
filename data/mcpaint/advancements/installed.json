@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:painting"
+    },
+    "title": "MC Paint",
+    "description": {
+      "text": "Usage",
+      "color": "gold",
+      "underlined": true,
+      "extra": [
+        {
+          "text": "\n• Create a ",
+          "color": "gray",
+          "underlined": false
+        },
+        {
+          "text": "Studio",
+          "color": "blue",
+          "underlined": false
+        },
+        {
+          "text": " by throwing an Egg onto a Painting.",
+          "color": "gray",
+          "underlined": false
+        },
+        {
+          "text": "\n• Right-click the ",
+          "color": "gray",
+          "underlined": false
+        },
+        {
+          "text": "Studio",
+          "color": "blue",
+          "underlined": false
+        },
+        {
+          "text": " to start painting.",
+          "color": "gray",
+          "underlined": false
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "eroxified2:core/installed_packs",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "sends_telemetry_event": false
+}

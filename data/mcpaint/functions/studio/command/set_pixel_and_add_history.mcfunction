@@ -1,4 +1,4 @@
-data modify storage mcpaint:calc set_pixel set from storage mcpaint:calc painter_command
+data modify storage mcpaint:calc api.canvas.set_pixel set from storage mcpaint:calc painter_command
 function mcpaint:studio/command/set_pixel
 execute if data storage mcpaint:calc set_pixel{changed:1b} run data modify storage mcpaint:calc historical_event set value {command:"set_pixel"}
 execute if data storage mcpaint:calc set_pixel{changed:1b} run data modify storage mcpaint:calc historical_event.colour set from storage mcpaint:calc set_pixel.colour
