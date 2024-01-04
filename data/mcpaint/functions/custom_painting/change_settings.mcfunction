@@ -33,8 +33,8 @@ execute if score changed mcpaint.calc matches 1 run data modify storage mcpaint:
 execute if score changed mcpaint.calc matches 1 run data modify storage mcpaint:calc custom_painting.settings set from entity @s data.settings
 execute if score changed mcpaint.calc matches 1 run data modify storage mcpaint:calc filepath set from entity @s data.filepath
 execute if score changed mcpaint.calc matches 1 run function mcpaint:database/open_filepath
-execute if score changed mcpaint.calc matches 1 run data modify storage mcpaint:calc canvas set from storage mcpaint:database search.work.canvas
-execute if score changed mcpaint.calc matches 1 run function mcpaint:canvas/get_info
+execute if score changed mcpaint.calc matches 1 run data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:database search.work.canvas
+execute if score changed mcpaint.calc matches 1 run function mcpaint:canvas/api/get_info
 execute if score changed mcpaint.calc matches 1 on vehicle if entity @s[type=item_display,tag=mcpaint.custom_painting.item_display] run data modify storage mcpaint:calc custom_painting.item_display set from entity @s {}
 execute if score changed mcpaint.calc matches 1 on vehicle on passengers if entity @s[type=text_display,tag=mcpaint.custom_painting.text_display] run data modify storage mcpaint:calc custom_painting.text_display set from entity @s {}
 execute if score changed mcpaint.calc matches 1 run function mcpaint:custom_painting/fix_settings

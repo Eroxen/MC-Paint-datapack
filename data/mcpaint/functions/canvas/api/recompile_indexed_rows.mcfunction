@@ -13,6 +13,10 @@
 # - mcpaint:calc api.canvas.canvas: canvas object
 #####################################################################
 
+execute store success score #canvas.recompile.resolved_rows_present mcpaint.calc if data storage mcpaint:calc api.canvas.canvas.resolved_rows.0
+execute if score #canvas.recompile.resolved_rows_present mcpaint.calc matches 0 run function mcpaint:canvas/api/compile_grid
+execute if score #canvas.recompile.resolved_rows_present mcpaint.calc matches 0 run return 0
+
 data modify storage mcpaint:calc internal.canvas.recompile_indexed_rows set value {}
 data modify storage mcpaint:calc internal.canvas.recompile_indexed_rows.list set from storage mcpaint:calc api.canvas.recompile_indices
 execute store result score #canvas.compile_grid.i mcpaint.calc run data get storage mcpaint:calc api.canvas.canvas.resolved_rows

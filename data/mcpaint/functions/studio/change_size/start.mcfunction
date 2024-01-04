@@ -1,3 +1,5 @@
+say cs_s
+
 execute store result score old_width mcpaint.calc run data get entity @s data.width 1
 execute store result score old_height mcpaint.calc run data get entity @s data.height 1
 

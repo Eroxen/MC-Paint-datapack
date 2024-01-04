@@ -15,7 +15,7 @@
                 "function": "minecraft:set_name",
                 "name": {
                   "translate": "item.mcpaint.computer",
-                  "italic": "false"
+                  "italic": false
                 }
               },
               {
@@ -24,7 +24,7 @@
                   {
                     "translate": "item.mcpaint.computer.lore",
                     "color": "gray",
-                    "italic": "false"
+                    "italic": false
                   }
                 ]
               }

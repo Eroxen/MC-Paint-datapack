@@ -1,8 +1,0 @@
-execute if score length mcpaint.calc matches 57 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPPI"}'
-execute if score length mcpaint.calc matches 58 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPPJ"}'
-execute if score length mcpaint.calc matches 59 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPPK"}'
-execute if score length mcpaint.calc matches 60 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPPL"}'
-execute if score length mcpaint.calc matches 61 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPPM"}'
-execute if score length mcpaint.calc matches 62 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPPN"}'
-execute if score length mcpaint.calc matches 63 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPPO"}'
-execute if score length mcpaint.calc matches 64 run data modify storage mcpaint:calc segment.colour set value '{"text":"PPPP"}'

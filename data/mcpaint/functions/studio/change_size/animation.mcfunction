@@ -46,14 +46,12 @@ data modify entity @s data.ui merge from storage mcpaint:calc studio_data.positi
 
 data modify entity @s data.canvas.width_blocks set from entity @s data.width
 data modify entity @s data.canvas.height_blocks set from entity @s data.height
-data modify storage mcpaint:calc canvas set from entity @s data.canvas
-function mcpaint:canvas/get_info
-function mcpaint:custom_painting/scale_and_offset
-data modify storage mcpaint:calc EntityData set value {transformation:{scale:[1f,1f,1f],translation:[0f,0f,-0.4375f]},start_interpolation:0,interpolation_duration:10}
-execute store result storage mcpaint:calc EntityData.transformation.scale[0] float 0.00009766 run scoreboard players get scale_x mcpaint.calc
-execute store result storage mcpaint:calc EntityData.transformation.scale[1] float 0.00009766 run scoreboard players get scale_y mcpaint.calc
-execute store result storage mcpaint:calc EntityData.transformation.translation[0] float -0.000009766 run scoreboard players get offset_x mcpaint.calc
-execute store result storage mcpaint:calc EntityData.transformation.translation[1] float -0.000009766 run scoreboard players get offset_y mcpaint.calc
+data modify storage mcpaint:calc api.canvas.canvas set from entity @s data.canvas
+
+data modify storage mcpaint:calc api.canvas.get_transformation set value {offset_z:-0.4375f}
+function mcpaint:canvas/api/get_transformation_painting
+data modify storage mcpaint:calc EntityData set value {start_interpolation:0,interpolation_duration:10}
+data modify storage mcpaint:calc EntityData.transformation set from storage mcpaint:calc api.canvas.get_transformation.transformation
 data modify entity @s data.change_size_animation.text_display set from storage mcpaint:calc EntityData
 
 function mcpaint:studio/ui/close

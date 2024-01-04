@@ -13,13 +13,15 @@
 #
 # Storage output :
 # - mcpaint:calc api.canvas.canvas: canvas object
+# - mcpaint:calc api.canvas.set_pixel:
+#   - previous_colour: (int) previous colour value
 #
 # Scoreboard output:
 # - #canvas.set_pixel.changed mcpaint.calc: (bool) whether or not the pixel changed (won't change if it already had specified colour)
 #####################################################################
 
 function mcpaint:canvas/api/get_info
-function mcpaint:canvas/internal/set_pixel/set with storage mcpaint:calc api.canvas.set_pixel
+function mcpaint:canvas/internal/set_pixel with storage mcpaint:calc api.canvas.set_pixel
 
 execute if score #canvas.set_pixel.changed mcpaint.calc matches 1 run data modify storage mcpaint:calc api.canvas.recompile_indices set value []
 execute if score #canvas.set_pixel.changed mcpaint.calc matches 1 run data modify storage mcpaint:calc api.canvas.recompile_indices append from storage mcpaint:calc api.canvas.set_pixel.u

@@ -1,0 +1,6 @@
+execute if score #database.page.can_previous mcpaint.calc matches 0 run data modify storage mcpaint:calc internal.database.inspect.previous_button set value '{"text":"←","color":"dark_gray"}'
+$execute if score #database.page.can_previous mcpaint.calc matches 1 run data modify storage mcpaint:calc internal.database.inspect.previous_button set value '{"text":"←","color":"light_purple","hoverEvent":{"action":"show_text","value":[{"text":"Previous page"}]},"clickEvent":{"action":"run_command","value":"/function mcpaint:database/api/inspect_author_page {UUID:$(UUID),page:$(previous)}"}}'
+
+
+execute if score #database.page.can_next mcpaint.calc matches 0 run data modify storage mcpaint:calc internal.database.inspect.next_button set value '{"text":"→","color":"dark_gray"}'
+$execute if score #database.page.can_next mcpaint.calc matches 1 run data modify storage mcpaint:calc internal.database.inspect.next_button set value '{"text":"→","color":"light_purple","hoverEvent":{"action":"show_text","value":[{"text":"Next page"}]},"clickEvent":{"action":"run_command","value":"/function mcpaint:database/api/inspect_author_page {UUID:$(UUID),page:$(next)}"}}'

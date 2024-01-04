@@ -1,2 +1,0 @@
-$data modify storage mcpaint:calc colour.to_segment.text set from storage mcpaint:calc colour.segment_opaque_table[$(length)]
-function mcpaint:colour/internal/to_segment/opaque_uncoloured_text with storage mcpaint:calc colour.to_segment

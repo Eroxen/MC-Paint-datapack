@@ -1,8 +1,0 @@
-execute if score length mcpaint.calc matches 17 run data modify storage mcpaint:calc segment.text set value "PA"
-execute if score length mcpaint.calc matches 18 run data modify storage mcpaint:calc segment.text set value "PB"
-execute if score length mcpaint.calc matches 19 run data modify storage mcpaint:calc segment.text set value "PC"
-execute if score length mcpaint.calc matches 20 run data modify storage mcpaint:calc segment.text set value "PD"
-execute if score length mcpaint.calc matches 21 run data modify storage mcpaint:calc segment.text set value "PE"
-execute if score length mcpaint.calc matches 22 run data modify storage mcpaint:calc segment.text set value "PF"
-execute if score length mcpaint.calc matches 23 run data modify storage mcpaint:calc segment.text set value "PG"
-execute if score length mcpaint.calc matches 24 run data modify storage mcpaint:calc segment.text set value "PH"

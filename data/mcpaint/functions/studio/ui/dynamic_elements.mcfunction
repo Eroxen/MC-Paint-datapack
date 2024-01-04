@@ -33,12 +33,16 @@ scoreboard players remove offset mcpaint.calc 500
 execute store result storage mcpaint:calc EntityData.translation[1] float 0.001 run scoreboard players get offset mcpaint.calc
 data modify entity @e[type=item_display,tag=mcpaint.studio.ui_element.colour_picker.blue,distance=..0.1,limit=1] transformation merge from storage mcpaint:calc EntityData
 
-execute store result score colour mcpaint.calc run data get entity @s data.ui.colour_picker.fg_colour
-function mcpaint:pixel/get_colour
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.colour_picker.fg_colour,distance=..0.1,limit=1] text set value '{"nbt":"pixel","storage":"mcpaint:calc","font":"mcpaint:ink","interpret":true}'
-execute store result score colour mcpaint.calc run data get entity @s data.ui.colour_picker.bg_colour
-function mcpaint:pixel/get_colour
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.colour_picker.bg_colour,distance=..0.1,limit=1] text set value '{"nbt":"pixel","storage":"mcpaint:calc","font":"mcpaint:ink","interpret":true}'
+
+scoreboard players set #canvas.compile_row.leading_comma mcpaint.calc 0
+scoreboard players set #canvas.compile_row.add_newline mcpaint.calc 0
+data modify storage mcpaint:calc api.canvas.compile_row set value [0]
+data modify storage mcpaint:calc api.canvas.compile_row[0] set from entity @s data.ui.colour_picker.fg_colour
+function mcpaint:canvas/api/compile_row
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.colour_picker.fg_colour,distance=..0.1,limit=1] text set value '{"nbt":"api.canvas.compiled_row","storage":"mcpaint:calc","font":"mcpaint:ink","interpret":true}'
+data modify storage mcpaint:calc api.canvas.compile_row[0] set from entity @s data.ui.colour_picker.bg_colour
+function mcpaint:canvas/api/compile_row
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.colour_picker.bg_colour,distance=..0.1,limit=1] text set value '{"nbt":"api.canvas.compiled_row","storage":"mcpaint:calc","font":"mcpaint:ink","interpret":true}'
 
 execute if data entity @s data.ui.colour_picker{selected_colour:"fg"} run data modify entity @e[type=item_display,tag=mcpaint.studio.ui_element.colour_picker,distance=..0.1,limit=1] item set from storage mcpaint:calc custom_models.colour_picker_fg
 execute if data entity @s data.ui.colour_picker{selected_colour:"bg"} run data modify entity @e[type=item_display,tag=mcpaint.studio.ui_element.colour_picker,distance=..0.1,limit=1] item set from storage mcpaint:calc custom_models.colour_picker_bg

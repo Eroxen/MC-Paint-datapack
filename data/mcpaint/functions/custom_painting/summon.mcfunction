@@ -48,8 +48,8 @@ function mcpaint:custom_painting/fix_settings
 
 data modify storage mcpaint:calc filepath set from storage mcpaint:calc custom_painting.filepath
 function mcpaint:database/open_filepath
-data modify storage mcpaint:calc canvas set from storage mcpaint:database search.work.canvas
-function mcpaint:canvas/get_info
+data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:database search.work.canvas
+function mcpaint:canvas/api/get_info
 
 
 
@@ -61,16 +61,16 @@ data modify storage mcpaint:calc custom_painting.marker.data.vertical_direction 
 
 
 ### text display ###
-data modify storage mcpaint:calc custom_painting.text_display.text set from storage mcpaint:calc canvas.resolved_text
+data modify storage mcpaint:calc custom_painting.text_display.text set from storage mcpaint:calc api.canvas.canvas.resolved_text
 
 data modify storage mcpaint:calc EntityData set value {width:1,height:1}
 scoreboard players set horizontal mcpaint.calc 0
 execute if data storage mcpaint:calc custom_painting{vertical_direction:"down"} run scoreboard players set horizontal mcpaint.calc 1
 execute if data storage mcpaint:calc custom_painting{vertical_direction:"up"} run scoreboard players set horizontal mcpaint.calc 1
-execute if score horizontal mcpaint.calc matches 0 store result storage mcpaint:calc EntityData.width int 1 run scoreboard players get canvas_width_blocks mcpaint.calc
-execute if score horizontal mcpaint.calc matches 0 store result storage mcpaint:calc EntityData.height int 1 run scoreboard players get canvas_height_blocks mcpaint.calc
-execute if score horizontal mcpaint.calc matches 1 if score canvas_width_blocks mcpaint.calc > canvas_height_blocks mcpaint.calc store result storage mcpaint:calc EntityData.width int 1 run scoreboard players get canvas_width_blocks mcpaint.calc
-execute if score horizontal mcpaint.calc matches 1 unless score canvas_width_blocks mcpaint.calc > canvas_height_blocks mcpaint.calc store result storage mcpaint:calc EntityData.width int 1 run scoreboard players get canvas_height_blocks mcpaint.calc
+execute if score horizontal mcpaint.calc matches 0 store result storage mcpaint:calc EntityData.width int 1 run scoreboard players get #canvas.width_blocks mcpaint.calc
+execute if score horizontal mcpaint.calc matches 0 store result storage mcpaint:calc EntityData.height int 1 run scoreboard players get #canvas.height_blocks mcpaint.calc
+execute if score horizontal mcpaint.calc matches 1 if score #canvas.width_blocks mcpaint.calc > #canvas.height_blocks mcpaint.calc store result storage mcpaint:calc EntityData.width int 1 run scoreboard players get #canvas.width_blocks mcpaint.calc
+execute if score horizontal mcpaint.calc matches 1 unless score #canvas.width_blocks mcpaint.calc > #canvas.height_blocks mcpaint.calc store result storage mcpaint:calc EntityData.width int 1 run scoreboard players get #canvas.height_blocks mcpaint.calc
 data modify storage mcpaint:calc custom_painting.text_display merge from storage mcpaint:calc EntityData
 
 

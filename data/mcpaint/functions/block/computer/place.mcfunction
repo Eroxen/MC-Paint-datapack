@@ -1,10 +1,7 @@
 function mcpaint:entity/get_horizontal_direction
 function mcpaint:entity/horizontal_direction_to_rotation
 
-execute if data storage mcpaint:calc {horizontal_direction:"north"} run setblock ~ ~ ~ command_block[facing=north]{auto:0b,Command:""}
-execute if data storage mcpaint:calc {horizontal_direction:"east"} run setblock ~ ~ ~ command_block[facing=east]{auto:0b,Command:""}
-execute if data storage mcpaint:calc {horizontal_direction:"south"} run setblock ~ ~ ~ command_block[facing=south]{auto:0b,Command:""}
-execute if data storage mcpaint:calc {horizontal_direction:"west"} run setblock ~ ~ ~ command_block[facing=west]{auto:0b,Command:""}
+setblock ~ ~ ~ barrier
 
 data modify storage mcpaint:calc EntityData set value {Tags:["mcpaint.computer.marker"],data:{}}
 data modify storage mcpaint:calc EntityData.Rotation set from storage mcpaint:calc Rotation
