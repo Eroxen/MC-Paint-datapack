@@ -25,7 +25,7 @@ function mcpaint:trigger/revoke_all
 
 ### version ###
 data modify storage mcpaint:calc version set value {}
-data modify storage mcpaint:calc version.message set value "MC Paint v0.8 by Eroxen"
+data modify storage mcpaint:calc version.message set value "MC Paint v0.8.1 by Eroxen"
 data modify storage mcpaint:calc version.rp_version_message set value '{"translate":"mcpaint.message.resource_pack_version","with":[{"translate":"mcpaint.message.resource_pack_version.0.8","with":[{"text":"download page","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"planetminecraft.com"}]},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/mc-paint-create-your-own-custom-paintings/"}},{"translate":"mcpaint.message.resource_pack_reload","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_reload.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.reload"}},{"translate":"mcpaint.message.resource_pack_dismiss","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_dismiss.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 20001"}}],"fallback":"§cYou have installed a version of the Resource Pack that does not mach with the Datapack version (0.8). You can download the correct version from the %1$s.","color":"green","bold":false}],"fallback":""}'
 ######
 
