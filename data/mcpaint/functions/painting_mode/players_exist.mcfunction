@@ -1,4 +1,0 @@
-tag @e[type=interaction,tag=mcpaint.painting_mode_hitbox,tag=mcpaint.painting_mode_hitbox.active] remove mcpaint.painting_mode_hitbox.active
-execute as @a[predicate=mcpaint:painting_mode] at @s rotated as @s anchored eyes positioned ^ ^ ^ run function mcpaint:painting_mode/player_tick
-execute if data storage mcpaint:calc {debug_mode:1b} as @e[type=armor_stand,tag=mcpaint.fake_player,predicate=mcpaint:painting_mode] at @s rotated as @s anchored eyes positioned ^ ^ ^ run function mcpaint:painting_mode/player_tick
-kill @e[type=interaction,tag=mcpaint.painting_mode_hitbox,tag=!mcpaint.painting_mode_hitbox.active]

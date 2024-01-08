@@ -1,8 +1,0 @@
-execute positioned ^ ^ ^0.5 positioned ~ ~-1 ~ run tp @e[type=interaction,tag=mcpaint.painting_mode_hitbox.big,distance=..1,limit=1,sort=nearest] ~ ~ ~
-execute positioned ^ ^ ^0.5 positioned ~ ~-1 ~ unless entity @e[type=interaction,tag=mcpaint.painting_mode_hitbox.big,distance=..0.01] run summon interaction ~ ~ ~ {Tags:["mcpaint.painting_mode_hitbox","mcpaint.painting_mode_hitbox.big"],width:2,height:2,response:0b}
-execute positioned ^ ^ ^0.5 positioned ~ ~-1 ~ run tag @e[type=interaction,tag=mcpaint.painting_mode_hitbox.big,tag=!mcpaint.painting_mode_hitbox.active,distance=..0.01,limit=1] add mcpaint.painting_mode_hitbox.active
-execute positioned ^ ^ ^0.5 positioned ~ ~-0.1 ~ run tp @e[type=interaction,tag=mcpaint.painting_mode_hitbox.small,distance=..1,limit=1,sort=nearest] ~ ~ ~
-execute positioned ^ ^ ^0.5 positioned ~ ~-0.1 ~ unless entity @e[type=interaction,tag=mcpaint.painting_mode_hitbox.big,distance=..0.01] run summon interaction ~ ~ ~ {Tags:["mcpaint.painting_mode_hitbox","mcpaint.painting_mode_hitbox.small"],width:0.2,height:0.2,response:0b}
-execute positioned ^ ^ ^0.5 positioned ~ ~-0.1 ~ run tag @e[type=interaction,tag=mcpaint.painting_mode_hitbox.small,tag=!mcpaint.painting_mode_hitbox.active,distance=..0.01,limit=1] add mcpaint.painting_mode_hitbox.active
-execute positioned ^ ^ ^0.5 positioned ~ ~-1 ~ as @e[type=interaction,tag=mcpaint.painting_mode_hitbox.big,tag=mcpaint.painting_mode_hitbox.active,distance=..0.01,limit=1] run function mcpaint:painting_mode/hitbox
-execute positioned ^ ^ ^0.5 positioned ~ ~-0.1 ~ as @e[type=interaction,tag=mcpaint.painting_mode_hitbox.small,tag=mcpaint.painting_mode_hitbox.active,distance=..0.01,limit=1] run function mcpaint:painting_mode/hitbox

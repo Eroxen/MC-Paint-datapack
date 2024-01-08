@@ -1,4 +1,0 @@
-execute if data entity @s data{facing:"north"} run summon text_display ~ ~ ~ {Rotation:[180f,0f],Tags:["mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.new"],background:0}
-execute if data entity @s data{facing:"east"} run summon text_display ~ ~ ~ {Rotation:[270f,0f],Tags:["mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.new"],background:0}
-execute if data entity @s data{facing:"south"} run summon text_display ~ ~ ~ {Rotation:[0f,0f],Tags:["mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.new"],background:0}
-execute if data entity @s data{facing:"west"} run summon text_display ~ ~ ~ {Rotation:[90f,0f],Tags:["mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.new"],background:0}

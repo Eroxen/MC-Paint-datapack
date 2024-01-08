@@ -1,1 +1,0 @@
-execute unless entity @e[type=marker,tag=mcpaint.studio.ui_controller,distance=..0.1,limit=1] run function mcpaint:studio/ui/spawn_controller

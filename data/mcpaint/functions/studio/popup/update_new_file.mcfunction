@@ -1,5 +1,0 @@
-data modify entity @e[type=text_display,tag=mcpaint.studio.popup_element.filename,distance=..0.1,limit=1] text set value '{"text":"","extra":[{"text":"p\\n","font":"mcpaint:ink"},{"nbt":"popup.filename","storage":"mcpaint:calc"}]}'
-data modify entity @e[type=text_display,tag=mcpaint.studio.popup_element.width_blocks,distance=..0.1,limit=1] text set value '{"nbt":"popup.width_blocks","storage":"mcpaint:calc"}'
-data modify entity @e[type=text_display,tag=mcpaint.studio.popup_element.height_blocks,distance=..0.1,limit=1] text set value '{"nbt":"popup.height_blocks","storage":"mcpaint:calc"}'
-data modify entity @e[type=text_display,tag=mcpaint.studio.popup_element.width_px,distance=..0.1,limit=1] text set value '{"nbt":"popup.width_px","storage":"mcpaint:calc"}'
-data modify entity @e[type=text_display,tag=mcpaint.studio.popup_element.height_px,distance=..0.1,limit=1] text set value '{"nbt":"popup.height_px","storage":"mcpaint:calc"}'

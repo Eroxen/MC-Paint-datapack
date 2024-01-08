@@ -1,5 +1,4 @@
 {
-  "parent": "mcpaint:trigger/root",
   "criteria": {
     "use": {
       "trigger": "minecraft:using_item",

@@ -1,0 +1,1 @@
+$function mcpaint:trigger_item_frame/data/trigger/$(trigger)

@@ -1,0 +1,13 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "offhand": {
+        "items": [
+          "minecraft:item_frame"
+        ]
+      }
+    }
+  }
+}

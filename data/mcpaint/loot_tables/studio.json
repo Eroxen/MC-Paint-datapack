@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [{
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:360000,EntityTag:{Silent:1b,Invisible:1b,Tags:[\"mcpaint.trigger_item_frame\"],Item:{Count:1b,id:\"minecraft:stone\",tag:{display:{Name:\"{\\\"translate\\\":\\\"item.mcpaint.illegal_item\\\"}\"},mcpaint:{trigger:\"studio\"}}}},mcpaint:{trigger_item_frame:1b}}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "translate": "item.mcpaint.studio",
+                  "italic": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

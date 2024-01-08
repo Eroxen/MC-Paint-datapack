@@ -1,1 +1,0 @@
-execute if data storage mcpaint:calc painter_ping_studio{response:0b} run function mcpaint:studio/process_ping
