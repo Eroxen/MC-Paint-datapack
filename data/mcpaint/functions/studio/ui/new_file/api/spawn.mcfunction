@@ -6,8 +6,9 @@
 # Opens the new file window.
 #####################################################################
 
-scoreboard players set #studio.ui_element.pos.u mcpaint.calc -250
-scoreboard players set #studio.ui_element.pos.v mcpaint.calc 0
+function mcpaint:studio/internal/ui/spawn_element/get_info_from_marker
+data modify storage mcpaint:calc internal.studio.anchored_pos set value {anchor:[0.5f,0.5f],offset:[-0.750f,-0.750f],min_v:0f}
+function mcpaint:studio/internal/ui/spawn_element/anchored_pos
 scoreboard players set #studio.ui_element.layer mcpaint.calc 1
 
 data modify storage mcpaint:calc internal.studio.ui.definition set value {name:"new_file",size:[1500,1500],origin:[750,1500]}

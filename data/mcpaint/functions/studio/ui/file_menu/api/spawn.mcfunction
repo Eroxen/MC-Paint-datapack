@@ -6,8 +6,8 @@
 # Opens the file menu window.
 #####################################################################
 
-scoreboard players set #studio.ui_element.pos.u mcpaint.calc -250
-scoreboard players set #studio.ui_element.pos.v mcpaint.calc 1125
+data modify storage mcpaint:calc internal.studio.anchored_pos set value {anchor:[0.5f,1f],offset:[-0.750f,0.125f]}
+function mcpaint:studio/internal/ui/spawn_element/anchored_pos
 scoreboard players set #studio.ui_element.layer mcpaint.calc 0
 
 data modify storage mcpaint:calc internal.studio.ui.definition set value {name:"file_menu",size:[1500,325],origin:[750,325]}

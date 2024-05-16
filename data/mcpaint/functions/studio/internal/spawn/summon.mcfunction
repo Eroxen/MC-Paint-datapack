@@ -1,7 +1,7 @@
 $summon marker ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.marker"],data:{width:$(width),height:$(height),canvas:$(canvas),colour:{foreground:21756,background:16263,selected_name:"foreground",selected:21756},unsaved_changes:0b,history:{undo:[],redo:[]}}}
 
-$summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.background"],item_display:"fixed",item:$(background_item)}
-$summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.border"],item_display:"fixed",item:$(border_item)}
+$summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.background"],item_display:"fixed",item:$(background_item),transformation:$(background_transform)}
+$summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.border"],item_display:"fixed",item:$(border_item),transformation:$(border_transform)}
 $summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.brush"],item_display:"fixed",transformation:[-0.3536f,-0.3536f,0.0000f,0.2000f,-0.0000f,0.0000f,0.5000f,-0.6125f,-0.3536f,0.3536f,-0.0000f,-0.3250f,0.0000f,0.0000f,0.0000f,1.0000f]}
 loot replace entity @e[type=item_display,tag=mcpaint.studio.item_display.brush,distance=..0.1,limit=1] contents loot mcpaint:item/brush
 

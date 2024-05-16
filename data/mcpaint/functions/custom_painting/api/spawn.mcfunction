@@ -20,15 +20,20 @@ playsound minecraft:entity.painting.place block @a[distance=..16] ~ ~ ~ 1 1
 data modify storage mcpaint:calc internal.custom_painting.spawn set value {vertical_direction:"level",facing:"north",rotation:[-180f,0f]}
 data modify storage mcpaint:calc internal.custom_painting.spawn merge from storage mcpaint:calc api.custom_painting.spawn
 data modify storage mcpaint:calc internal.custom_painting.spawn.canvas set from storage mcpaint:calc api.database.work.canvas
+data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc api.database.work.canvas
 
 data modify storage mcpaint:calc internal.custom_painting.spawn.y_rotation set from storage mcpaint:calc internal.custom_painting.spawn.rotation[0]
 data modify storage mcpaint:calc internal.custom_painting.spawn.x_rotation set from storage mcpaint:calc internal.custom_painting.spawn.rotation[1]
 
-function mcpaint:assets/api/studio/get_background_model
-data modify storage mcpaint:calc internal.custom_painting.spawn.background_item set from storage mcpaint:calc api.assets.item
-data modify storage mcpaint:calc internal.custom_painting.spawn.background_transform set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.25f],scale:[1f,1f,1f]}
+data modify storage mcpaint:calc api.assets.get_model set value {z_origin:0.25f,width:1,height:1,variant:"canvas"}
+data modify storage mcpaint:calc api.assets.get_model.width set from storage mcpaint:calc api.canvas.canvas.width_blocks
+data modify storage mcpaint:calc api.assets.get_model.height set from storage mcpaint:calc api.canvas.canvas.height_blocks
+function mcpaint:assets/api/get_painting_background
+data modify storage mcpaint:calc internal.custom_painting.spawn.background_item set from storage mcpaint:calc api.assets.model.item
+data modify storage mcpaint:calc internal.custom_painting.spawn.background_transform set from storage mcpaint:calc api.assets.model.transformation
 
-data modify storage mcpaint:calc api.canvas.get_transformation set value {offset_z:-0.1875f}
+data modify storage mcpaint:calc api.canvas.get_transformation set value {offset_z:0f}
+data modify storage mcpaint:calc api.canvas.get_transformation.offset_z set from storage mcpaint:calc api.assets.model.surface
 function mcpaint:canvas/api/get_transformation_painting
 data modify storage mcpaint:calc internal.custom_painting.spawn.canvas_transform set from storage mcpaint:calc api.canvas.get_transformation.transformation
 

@@ -13,8 +13,9 @@
 
 data modify storage mcpaint:calc internal.studio.spawn_ui_stack set from storage mcpaint:calc internal.studio.ui.data
 
-scoreboard players set #studio.ui_element.pos.u mcpaint.calc -125
-scoreboard players set #studio.ui_element.pos.v mcpaint.calc 0
+function mcpaint:studio/internal/ui/spawn_element/get_info_from_marker
+data modify storage mcpaint:calc internal.studio.anchored_pos set value {anchor:[0.5f,0.5f],offset:[-0.625f,-0.625f],min_v:0f}
+function mcpaint:studio/internal/ui/spawn_element/anchored_pos
 scoreboard players set #studio.ui_element.layer mcpaint.calc 1
 scoreboard players operation #studio.ui_element.layer mcpaint.calc += #studio.ui_element.max_layer mcpaint.calc
 

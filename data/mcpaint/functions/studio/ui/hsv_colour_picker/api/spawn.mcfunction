@@ -6,8 +6,8 @@
 # Opens the colour picker window.
 #####################################################################
 
-scoreboard players set #studio.ui_element.pos.u mcpaint.calc 1250
-scoreboard players set #studio.ui_element.pos.v mcpaint.calc -250
+data modify storage mcpaint:calc internal.studio.anchored_pos set value {anchor:[1f,0.5f],offset:[0.250f,-0.750f]}
+function mcpaint:studio/internal/ui/spawn_element/anchored_pos
 scoreboard players set #studio.ui_element.layer mcpaint.calc 0
 
 data modify storage mcpaint:calc internal.studio.ui.definition set value {name:"hsv_colour_picker",size:[1000,1500],origin:[500,1500]}

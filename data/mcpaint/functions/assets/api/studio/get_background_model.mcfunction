@@ -1,1 +1,0 @@
-data modify storage mcpaint:calc api.assets.item set value {id:"minecraft:orange_tulip",components:{"minecraft:custom_model_data":360100}}
