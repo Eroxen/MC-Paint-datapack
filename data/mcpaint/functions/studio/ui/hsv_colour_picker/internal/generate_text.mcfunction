@@ -1,0 +1,1 @@
+$data modify storage mcpaint:calc internal.studio.ui.data.text set value '{"text":"\\u1001\\u0001","font":"mcpaint:studio_ui","color":"white","extra":[{"text":"\\u1065\\u$(selected_slot)"},{"text":"\\u1065\\u0005","color":"$(foreground)"},{"text":"\\u1065\\u0006","color":"$(background)"},{"text":"\\u1045\\u01$(sv_square)\\u2020"}]}'

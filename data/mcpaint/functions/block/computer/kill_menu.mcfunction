@@ -1,1 +1,0 @@
-execute at @s rotated as @s positioned ^ ^ ^0.55 run kill @e[tag=mcpaint.computer.menu,distance=..0.1]

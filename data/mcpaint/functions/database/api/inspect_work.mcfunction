@@ -19,6 +19,7 @@ function mcpaint:canvas/api/get_info
 
 tellraw @s {"text":"================================","color":"light_purple"}
 
+tellraw @s {"nbt":"api.canvas.canvas.resolved_text","storage":"mcpaint:calc","interpret":true}
 tellraw @s {"text":"- name: ","extra":[{"nbt":"api.database.work.name","storage":"mcpaint:calc","color":"yellow"}]}
 tellraw @s {"text":"- size (blocks): ","extra":[{"score":{"name":"#canvas.width_blocks","objective":"mcpaint.calc"},"color":"red"},{"text":" x "},{"score":{"name":"#canvas.height_blocks","objective":"mcpaint.calc"},"color":"red"}]}
 tellraw @s {"text":"- size (pixels): ","extra":[{"score":{"name":"#canvas.width_px","objective":"mcpaint.calc"},"color":"red"},{"text":" x "},{"score":{"name":"#canvas.height_px","objective":"mcpaint.calc"},"color":"red"}]}

@@ -15,5 +15,5 @@
 # - #database.found mcpaint.calc: (bool) whether or not the requested data was found
 #####################################################################
 data remove storage mcpaint:calc api.database.work
-$data modify storage mcpaint:calc api.database.work set from storage mcpaint:database authors[{UUID:$(author)}].works[{name:"$(name)"}]
+$data modify storage mcpaint:calc api.database.work set from storage mcpaint:database authors[{sUUID:"$(author)"}].works[{name:"$(name)"}]
 execute store success score #database.found mcpaint.calc if data storage mcpaint:calc api.database.work

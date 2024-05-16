@@ -1,0 +1,14 @@
+$summon marker ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.marker"],data:{width:$(width),height:$(height),canvas:$(canvas),colour:{foreground:21756,background:16263,selected_name:"foreground",selected:21756},unsaved_changes:0b,history:{undo:[],redo:[]}}}
+
+$summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.background"],item_display:"fixed",item:$(background_item)}
+$summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.border"],item_display:"fixed",item:$(border_item)}
+$summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.brush"],item_display:"fixed",transformation:[-0.3536f,-0.3536f,0.0000f,0.2000f,-0.0000f,0.0000f,0.5000f,-0.6125f,-0.3536f,0.3536f,-0.0000f,-0.3250f,0.0000f,0.0000f,0.0000f,1.0000f]}
+loot replace entity @e[type=item_display,tag=mcpaint.studio.item_display.brush,distance=..0.1,limit=1] contents loot mcpaint:item/brush
+
+$summon text_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.text_display","mcpaint.studio.text_display.canvas"],transformation:$(canvas_transform),background:0,line_width:10000}
+data modify entity @e[type=text_display,tag=mcpaint.studio.text_display.canvas,distance=..0.1,limit=1] text set from storage mcpaint:calc internal.studio.spawn.canvas.resolved_text
+
+$execute rotated $(y_rotation) 0 run summon minecraft:interaction ^-0.375 ^-0.75 ^-0.375 {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.interaction","eroxified2.interaction"],width:0.25,height:1.25,response:1b}
+$execute rotated $(y_rotation) 0 run summon minecraft:interaction ^-0.125 ^-0.75 ^-0.375 {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.interaction","eroxified2.interaction"],width:0.25,height:1.25,response:1b}
+$execute rotated $(y_rotation) 0 run summon minecraft:interaction ^0.125 ^-0.75 ^-0.375 {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.interaction","eroxified2.interaction"],width:0.25,height:1.25,response:1b}
+$execute rotated $(y_rotation) 0 run summon minecraft:interaction ^0.375 ^-0.75 ^-0.375 {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.interaction","eroxified2.interaction"],width:0.25,height:1.25,response:1b}

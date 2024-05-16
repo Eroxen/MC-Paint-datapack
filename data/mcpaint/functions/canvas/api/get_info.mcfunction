@@ -13,6 +13,7 @@
 #   - #canvas.height_px: height (pixels)
 #   - #canvas.width_blocks: width (blocks)
 #   - #canvas.height_blocks: height (blocks)
+#   - #canvas.text_size: text size (bytes)
 #####################################################################
 
 execute unless data storage mcpaint:calc api.canvas.canvas.resolved_text run function mcpaint:canvas/api/compile_grid
@@ -26,3 +27,4 @@ execute store result score #canvas.width_px mcpaint.calc run data get storage mc
 execute store result score #canvas.height_px mcpaint.calc run data get storage mcpaint:calc api.canvas.canvas.height_px 1
 execute store result score #canvas.width_blocks mcpaint.calc run data get storage mcpaint:calc api.canvas.canvas.width_blocks 1
 execute store result score #canvas.height_blocks mcpaint.calc run data get storage mcpaint:calc api.canvas.canvas.height_blocks 1
+execute store result score #canvas.text_size mcpaint.calc run data get storage mcpaint:calc api.canvas.canvas.resolved_text_size 1

@@ -1,0 +1,70 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 360000,
+                "minecraft:attribute_modifiers": {
+                  "show_in_tooltip": false,
+                  "modifiers": [
+                    {
+                      "type": "minecraft:player.block_interaction_range",
+                      "amount": -100,
+                      "name": "mcpaint.prevent_block_interaction",
+                      "operation": "add_value",
+                      "slot": "mainhand",
+                      "uuid": [
+                        -161731875,
+                        -631213698,
+                        -15576022,
+                        543588033
+                      ]
+                    },
+                    {
+                      "type": "minecraft:player.entity_interaction_range",
+                      "amount": -100,
+                      "name": "mcpaint.prevent_entity_interaction",
+                      "operation": "add_value",
+                      "slot": "mainhand",
+                      "uuid": [
+                        -1154645118,
+                        -97753432,
+                        -882063741,
+                        1285353740
+                      ]
+                    }
+                  ]
+                },
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 100000
+                },
+                "minecraft:custom_data": {
+                  "mcpaint": {
+                    "brush": true
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "translate": "item.mcpaint.brush"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

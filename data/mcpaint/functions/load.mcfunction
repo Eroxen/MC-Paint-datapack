@@ -1,43 +1,28 @@
 scoreboard objectives add mcpaint.calc dummy
-scoreboard objectives add mcpaint.attention_link dummy
+scoreboard objectives add mcpaint.session dummy
+scoreboard objectives add mcpaint.using_brush dummy
+scoreboard objectives add mcpaint.ui.u1 dummy
+scoreboard objectives add mcpaint.ui.u2 dummy
+scoreboard objectives add mcpaint.ui.v1 dummy
+scoreboard objectives add mcpaint.ui.v2 dummy
+scoreboard objectives add mcpaint.ui.layer dummy
+scoreboard objectives add mcpaint.ui.hover dummy
 
 execute store result score maxCommandChainLength mcpaint.calc run gamerule maxCommandChainLength
 execute unless score maxCommandChainLength mcpaint.calc matches 1000000.. run gamerule maxCommandChainLength 1000000
 
+scoreboard players set #const.-1 mcpaint.calc -1
+scoreboard players set #const.2 mcpaint.calc 2
+scoreboard players set #const.32 mcpaint.calc 32
+scoreboard players set #const.32^2 mcpaint.calc 1024
+scoreboard players set #const.1000 mcpaint.calc 1000
+scoreboard players set #const.2000 mcpaint.calc 2000
+scoreboard players set #const.60 mcpaint.calc 60
+scoreboard players set #const.60000 mcpaint.calc 60000
+scoreboard players set #const.360000 mcpaint.calc 360000
+scoreboard players set #studio.ui.pixel_density mcpaint.calc 64
 
-
-data modify storage mcpaint:calc registry set value {custom_model:[]}
-
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:1,height:1,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360000}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:1,height:2,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360001}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:1,height:3,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360002}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:1,height:4,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360003}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:2,height:1,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360010}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:2,height:2,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360011}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:2,height:3,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360012}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:2,height:4,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360013}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:3,height:1,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360020}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:3,height:2,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360021}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:3,height:3,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360022}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:3,height:4,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360023}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:4,height:1,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360030}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:4,height:2,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360031}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:4,height:3,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360032}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"painting_background",variant:"canvas",width:4,height:4,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360033}}}
-
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:1,height:1,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360100}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:1,height:2,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360101}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:1,height:3,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360102}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:1,height:4,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360103}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:2,height:1,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360110}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:2,height:2,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360111}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:2,height:3,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360112}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:2,height:4,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360113}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:3,height:1,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360120}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:3,height:2,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360121}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:3,height:3,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360122}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:3,height:4,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360123}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:4,height:1,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360130}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:4,height:2,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360131}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:4,height:3,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360132}}}
-data modify storage mcpaint:calc registry.custom_model append value {id:"studio_frame",width:4,height:4,model:{Count:1b,id:"minecraft:orange_tulip",tag:{CustomModelData:360133}}}
+function mcpaint:assets/load
+function mcpaint:canvas/load
+function mcpaint:util/load
+schedule function mcpaint:clock_1s 1s replace

@@ -1,1 +1,0 @@
-execute if data storage eroxified2:api phead.place{namespaced_id:"mcpaint:computer"} run function mcpaint:block/computer/api/place

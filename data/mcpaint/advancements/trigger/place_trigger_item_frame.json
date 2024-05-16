@@ -1,28 +1,27 @@
 {
   "criteria": {
-    "interact": {
+    "requirement": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
         "location": [
           {
             "condition": "minecraft:match_tool",
             "predicate": {
-              "items": [
-                "minecraft:item_frame"
-              ],
-	      "nbt": "{mcpaint:{trigger_item_frame:1b}}"
+              "items": "minecraft:item_frame",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "mcpaint" : {
+                    "trigger_item_frame": true
+                  }
+                }
+              }
             }
           }
         ]
       }
     }
   },
-  "requirements": [
-    [
-      "interact"
-    ]
-  ],
   "rewards": {
-    "function": "mcpaint:trigger_item_frame/api/place"
+    "function": "mcpaint:item/trigger_item_frame/api/place"
   }
 }
