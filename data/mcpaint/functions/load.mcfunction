@@ -23,6 +23,7 @@ scoreboard players set #const.360000 mcpaint.calc 360000
 scoreboard players set #studio.ui.pixel_density mcpaint.calc 64
 
 function mcpaint:assets/load
+function mcpaint:custom_painting/load
 function mcpaint:canvas/load
 function mcpaint:util/load
 schedule function mcpaint:clock_1s 1s replace

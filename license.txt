@@ -1,8 +1,9 @@
 MC Paint is a Minecraft datapack that lets you create custom paintings.
 All Rights Reserved
 
-Copyright (c) 2023 Eroxen
+Copyright (c) 2024 Eroxen
 https://www.planetminecraft.com/member/eroxen/
+https://modrinth.com/user/Eroxen
 
 Do not distribute!
 
