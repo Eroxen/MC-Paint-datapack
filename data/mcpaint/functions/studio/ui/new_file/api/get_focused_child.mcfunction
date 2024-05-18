@@ -40,5 +40,5 @@ execute if score #studio.ui_element.u.px mcpaint.calc matches 22..30 if score #s
 execute if score #studio.ui_element.u.px mcpaint.calc matches 22..30 if score #studio.ui_element.v.px mcpaint.calc matches 26..32 run scoreboard players set #studio.ui_element.focused_child mcpaint.calc 18
 
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 1.. run scoreboard players set #studio.ui_element.focused_child.can_click mcpaint.calc 1
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 10.. if score #studio.session.is_sneaking mcpaint.calc matches 1 run scoreboard players set #studio.ui_element.focused_child.can_spam_click mcpaint.calc 1
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 10.. run scoreboard players set #studio.ui_element.focused_child.can_spam_click_when_sneaking mcpaint.calc 1
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 1.. run scoreboard players set #studio.ui_element.focused_child.has_description mcpaint.calc 1

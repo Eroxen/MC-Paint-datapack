@@ -1,4 +1,5 @@
-data modify storage mcpaint:calc internal.custom_painting set value {item_interactions:[]}
+data modify storage mcpaint:calc internal.custom_painting set value {item_interactions:[],\
+default_options:{background_variant:"canvas,glowing:0b,show_name:0b,show_lore:0b,locked:0b,billboard:0b}}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:shears"],\
@@ -38,3 +39,8 @@ data modify storage mcpaint:calc internal.custom_painting.item_interactions appe
 items:["minecraft:ender_eye"],\
 toggle_option:{option:"billboard",values:4},\
 sound:{name:"minecraft:entity.enderman.ambient",parameters:"1 1"}}
+
+data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
+items:["minecraft:paper"],\
+special:"copy_paste",\
+sound:{name:"minecraft:item.book.page_turn",parameters:"1 1"}}
