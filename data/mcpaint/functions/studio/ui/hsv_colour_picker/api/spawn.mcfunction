@@ -12,12 +12,14 @@ scoreboard players set #studio.ui_element.layer mcpaint.calc 0
 
 data modify storage mcpaint:calc internal.studio.ui.definition set value {name:"hsv_colour_picker",size:[1000,1500],origin:[500,1500]}
 function mcpaint:studio/internal/ui/spawn_element/init_values
+function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"dart_origin",relative:{translation:[0f,-0.5625f,0.01f]}}
 
 ### init data ###
 data modify storage mcpaint:calc internal.studio.ui.data merge value {selected_name:"foreground",foreground_colour:0,background_colour:0,hsv:[0f,0f,0f],text_macro:{foreground:"#000000",background:"#000000",sv_square:"00"}}
 data modify storage mcpaint:calc internal.studio.ui.data.foreground_colour set from storage mcpaint:calc internal.studio.data.colour.foreground
 data modify storage mcpaint:calc internal.studio.ui.data.background_colour set from storage mcpaint:calc internal.studio.data.colour.background
 data modify storage mcpaint:calc internal.studio.ui.data.selected_name set from storage mcpaint:calc internal.studio.data.colour.selected_name
+data modify storage mcpaint:calc internal.studio.ui.data.dart_origin set from storage mcpaint:calc internal.studio.ui.spawn.dart_origin
 
 ### fg & bg colour to text ###
 data modify storage mcpaint:calc api.util.colour.int set from storage mcpaint:calc internal.studio.ui.data.foreground_colour
@@ -34,9 +36,11 @@ function mcpaint:util/colour/api/int_to_hsv
 data modify storage mcpaint:calc internal.studio.ui.data.hsv set from storage mcpaint:calc api.util.colour.hsv
 
 ### sv square ###
-execute store result storage mcpaint:calc api.util.int int 1 run data get storage mcpaint:calc internal.studio.ui.data.hsv[0] 0.711111111111111
-function mcpaint:util/api/int_to_hexadecimal_len2
-data modify storage mcpaint:calc internal.studio.ui.data.text_macro.sv_square set from storage mcpaint:calc api.util.hex
+function mcpaint:studio/ui/hsv_colour_picker/internal/update_hsv_display
+data modify storage mcpaint:calc internal.studio.ui.spawn.dart_hue_transform set from storage mcpaint:calc internal.studio.ui.data.dart_origin
+data modify storage mcpaint:calc internal.studio.ui.spawn.dart_hue_transform.translation set from storage mcpaint:calc internal.studio.ui.data.dart_hue
+data modify storage mcpaint:calc internal.studio.ui.spawn.dart_sv_transform set from storage mcpaint:calc internal.studio.ui.data.dart_origin
+data modify storage mcpaint:calc internal.studio.ui.spawn.dart_sv_transform.translation set from storage mcpaint:calc internal.studio.ui.data.dart_sv
 
 ### selected slot ###
 data modify storage mcpaint:calc internal.studio.ui.data.text_macro.selected_slot set value "0002"

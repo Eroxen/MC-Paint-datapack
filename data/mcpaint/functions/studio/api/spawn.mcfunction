@@ -13,7 +13,7 @@
 #####################################################################
 
 playsound minecraft:block.wood.place block @a[distance=..16] ~ ~ ~ 1 1
-data modify storage mcpaint:calc internal.studio.spawn set value {width:3,height:2,facing:"north",y_rotation:-180f}
+data modify storage mcpaint:calc internal.studio.spawn set value {width:1,height:1,facing:"north",y_rotation:-180f}
 data modify storage mcpaint:calc internal.studio.spawn merge from storage mcpaint:calc api.studio.spawn
 execute unless data storage mcpaint:calc internal.studio.spawn.canvas run function mcpaint:studio/internal/spawn/init_canvas
 

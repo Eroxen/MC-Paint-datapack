@@ -8,6 +8,8 @@
 scoreboard players operation #reference mcpaint.session = @s mcpaint.session
 scoreboard players set #studio.session.response mcpaint.calc 0
 scoreboard players set #studio.session.show_title mcpaint.calc 0
+scoreboard players set #studio.session.brush.drop mcpaint.calc 0
+scoreboard players set #studio.session.brush.swapOffhand mcpaint.calc 0
 execute store success score #studio.session.is_sneaking mcpaint.calc if predicate {\
   "condition": "minecraft:entity_properties",\
   "entity": "this",\
@@ -17,6 +19,9 @@ execute store success score #studio.session.is_sneaking mcpaint.calc if predicat
     }\
   }\
 }
+
+execute unless items entity @s weapon.mainhand *[minecraft:custom_data~{mcpaint:{brush:1b}}] if items entity @s weapon.offhand *[minecraft:custom_data~{mcpaint:{brush:1b}}] run function mcpaint:studio/internal/session/brush/swap_offhand
+execute unless items entity @s weapon.* *[minecraft:custom_data~{mcpaint:{brush:1b}}] anchored eyes positioned ^ ^ ^0.1 as @e[type=item,distance=..1] if items entity @s contents *[minecraft:custom_data~{mcpaint:{brush:1b}}] run function mcpaint:studio/internal/session/brush/drop
 
 scoreboard players operation #studio.session.using_brush mcpaint.calc = @s mcpaint.using_brush
 data modify storage mcpaint:calc macro set value {plane_x_rotation:0f,plane_y_rotation:0f,offset:0f}

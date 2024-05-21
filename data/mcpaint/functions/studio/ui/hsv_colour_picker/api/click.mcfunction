@@ -24,6 +24,7 @@ execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 store r
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 run scoreboard players operation #studio.ui_element.temp mcpaint.calc = #studio.ui_element.v.px mcpaint.calc
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 run scoreboard players remove #studio.ui_element.temp mcpaint.calc 48
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 store result storage mcpaint:calc internal.studio.ui.data.hsv[2] float 0.04348 run scoreboard players get #studio.ui_element.temp mcpaint.calc
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 run function mcpaint:studio/ui/hsv_colour_picker/internal/update_hsv_display
 
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 1..2 run data modify storage mcpaint:calc api.util.colour.hsv set from storage mcpaint:calc internal.studio.ui.data.hsv
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 1..2 run function mcpaint:util/colour/api/hsv_to_int
@@ -73,4 +74,3 @@ data modify storage mcpaint:calc internal.studio.data.colour.background set from
 execute if data storage mcpaint:calc internal.studio.data.colour{selected_name:"foreground"} run data modify storage mcpaint:calc internal.studio.data.colour.selected set from storage mcpaint:calc internal.studio.data.colour.foreground
 execute if data storage mcpaint:calc internal.studio.data.colour{selected_name:"background"} run data modify storage mcpaint:calc internal.studio.data.colour.selected set from storage mcpaint:calc internal.studio.data.colour.background
 execute if data storage mcpaint:calc internal.studio.data.colour{selected_name:"transparent"} run data modify storage mcpaint:calc internal.studio.data.colour.selected set value -1
-data modify entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.colour set from storage mcpaint:calc internal.studio.data.colour

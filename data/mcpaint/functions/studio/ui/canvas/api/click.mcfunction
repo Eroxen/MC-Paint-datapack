@@ -6,8 +6,10 @@
 #####################################################################
 
 data modify storage mcpaint:calc internal.studio.ui.data set from entity @s data
-execute as @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] run data modify storage mcpaint:calc api.canvas.canvas set from entity @s data.canvas
+data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc internal.studio.data.canvas
 function mcpaint:canvas/api/get_info
+
+function mcpaint:studio/ui/canvas/internal/get_tool with storage mcpaint:calc internal.studio.data.tool
 
 scoreboard players operation #studio.ui_element.u.px mcpaint.calc = #studio.ui_element.u mcpaint.calc
 scoreboard players operation #studio.ui_element.v.px mcpaint.calc = #studio.ui_element.size.v mcpaint.calc
@@ -26,8 +28,6 @@ execute store result storage mcpaint:calc internal.studio.ui.data.last_click[0] 
 execute store result storage mcpaint:calc internal.studio.ui.data.last_click[1] int 1 run scoreboard players get #studio.ui_element.v.px mcpaint.calc
 
 #tellraw @a [{"score":{"name": "#studio.ui_element.u.px", "objective": "mcpaint.calc"}},{"text":" "},{"score":{"name": "#studio.ui_element.v.px","objective": "mcpaint.calc"}}]
-scoreboard players set #studio.session.canvas_changed mcpaint.calc 0
-function mcpaint:studio/ui/canvas/internal/tool/set_pixel
-execute if score #studio.session.canvas_changed mcpaint.calc matches 1 as @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] run function mcpaint:studio/api/update_canvas
+function mcpaint:studio/ui/canvas/internal/call_tool with storage mcpaint:calc internal.studio.tool
 
 data modify entity @s data set from storage mcpaint:calc internal.studio.ui.data

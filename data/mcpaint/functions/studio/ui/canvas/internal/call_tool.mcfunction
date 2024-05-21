@@ -1,0 +1,1 @@
+$function mcpaint:studio/tool/$(id)/api/click_canvas

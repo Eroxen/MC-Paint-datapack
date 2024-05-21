@@ -1,5 +1,5 @@
 data modify storage mcpaint:calc internal.studio.ui.spawn set value {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]}}
-data modify storage mcpaint:calc internal.studio.ui.spawn.rotation set from entity @s Rotation
+data modify storage mcpaint:calc internal.studio.ui.spawn.rotation set from storage mcpaint:calc internal.studio.rotation
 
 data modify storage mcpaint:calc internal.studio.ui.data set value {}
 data modify storage mcpaint:calc internal.studio.ui.data.definition set from storage mcpaint:calc internal.studio.ui.definition

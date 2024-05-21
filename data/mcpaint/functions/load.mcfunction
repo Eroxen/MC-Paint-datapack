@@ -13,6 +13,7 @@ execute unless score maxCommandChainLength mcpaint.calc matches 1000000.. run ga
 
 scoreboard players set #const.-1 mcpaint.calc -1
 scoreboard players set #const.2 mcpaint.calc 2
+scoreboard players set #const.20 mcpaint.calc 20
 scoreboard players set #const.32 mcpaint.calc 32
 scoreboard players set #const.32^2 mcpaint.calc 1024
 scoreboard players set #const.1000 mcpaint.calc 1000
@@ -23,6 +24,7 @@ scoreboard players set #const.360000 mcpaint.calc 360000
 scoreboard players set #studio.ui.pixel_density mcpaint.calc 64
 
 function mcpaint:assets/load
+function mcpaint:studio/load
 function mcpaint:custom_painting/load
 function mcpaint:canvas/load
 function mcpaint:util/load

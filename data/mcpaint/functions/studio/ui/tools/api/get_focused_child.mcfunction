@@ -12,4 +12,7 @@
 # - #studio.ui_element.v.px mcpaint.calc: v position from bottom border, in pixels
 #
 # Children:
+# 100i: tool with index i
 #####################################################################
+
+execute if score #studio.ui_element.u.px mcpaint.calc matches 3..20 run function mcpaint:studio/ui/tools/internal/testfor_tool_button

@@ -1,0 +1,3 @@
+data modify storage mcpaint:calc internal.studio.ui.data.tool_text_rows set from storage mcpaint:calc internal.studio.tools.window.tool_text_rows
+$data modify storage mcpaint:calc internal.studio.ui.data.tool_text_rows[$(tool)] set from storage mcpaint:calc internal.studio.tools.registry[$(tool)].icons[1]
+$data modify storage mcpaint:calc internal.studio.ui.data.toolname_text set from storage mcpaint:calc internal.studio.tools.registry[$(tool)].name

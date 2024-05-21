@@ -1,8 +1,5 @@
 data modify storage mcpaint:calc internal.studio.data.unsaved_changes set value 0b
-data modify entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.unsaved_changes set from storage mcpaint:calc internal.studio.data.unsaved_changes
 
-data modify storage mcpaint:calc internal.studio.data.filepath set from entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.filepath
-data modify storage mcpaint:calc internal.studio.data.canvas set from entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.canvas
 data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc internal.studio.data.canvas
 function mcpaint:database/api/save_canvas with storage mcpaint:calc internal.studio.data.filepath
 tellraw @p[predicate=mcpaint:same_session] {"translate":"mcpaint.message.saved","with":[{"storage":"mcpaint:calc","nbt":"internal.studio.data.filepath.name"}]}

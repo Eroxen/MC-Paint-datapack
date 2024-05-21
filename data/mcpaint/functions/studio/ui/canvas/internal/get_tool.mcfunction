@@ -1,0 +1,1 @@
+$data modify storage mcpaint:calc internal.studio.tool set from storage mcpaint:calc internal.studio.tools.registry[$(tool)]
