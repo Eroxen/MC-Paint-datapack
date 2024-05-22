@@ -1,0 +1,3 @@
+data modify storage mcpaint:calc internal.studio.compare_uuid set from entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.filepath.author
+execute store success score #studio.session.owned_by_another mcpaint.calc run data modify storage mcpaint:calc internal.studio.compare_uuid set from entity @s UUID
+execute if score #studio.session.owned_by_another mcpaint.calc matches 1 run function mcpaint:database/api/get_author_name with entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.filepath

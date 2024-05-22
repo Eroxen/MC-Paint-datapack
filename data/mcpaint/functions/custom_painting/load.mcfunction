@@ -1,5 +1,5 @@
 data modify storage mcpaint:calc internal.custom_painting set value {item_interactions:[],\
-default_options:{background_variant:"canvas,glowing:0b,show_name:0b,show_lore:0b,locked:0b,billboard:0b}}
+default_options:{background_variant:"canvas",glowing:0b,show_name:0b,show_lore:0b,locked:0b,billboard:0b}}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:shears"],\
@@ -10,6 +10,16 @@ data modify storage mcpaint:calc internal.custom_painting.item_interactions appe
 items:["minecraft:white_wool"],\
 merge_options:{background_variant:"canvas"},\
 sound:{name:"minecraft:block.wool.place",parameters:"1 1"}}
+
+data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
+items:["minecraft:deepslate"],\
+merge_options:{background_variant:"blackboard"},\
+sound:{name:"minecraft:block.grindstone.use",parameters:"1 1"}}
+
+data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
+items:["minecraft:observer"],\
+merge_options:{background_variant:"puter"},\
+sound:{name:"minecraft:block.note_block.bit",parameters:"1 1"}}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:glow_ink_sac"],\

@@ -27,6 +27,7 @@ data modify storage mcpaint:calc internal.assets.lookup.filter.variant set from 
 execute unless data storage mcpaint:calc api.assets.get_model{variant:"empty"} run function mcpaint:assets/internal/lookup with storage mcpaint:calc internal.assets.lookup
 
 data modify storage mcpaint:calc api.assets.model.item set from storage mcpaint:calc internal.assets.lookup.return.item
+data modify storage mcpaint:calc api.assets.model.surface set from storage mcpaint:calc internal.assets.lookup.return.surface
 execute unless data storage mcpaint:calc api.assets.model.item run data modify storage mcpaint:calc api.assets.model merge value {item:{id:"minecraft:orange_tulip"},transformation:{scale:[0f,0f,0f]},surface:0f}
 
 execute store result score #assets.z_origin mcpaint.calc run data get storage mcpaint:calc api.assets.get_model.z_origin 10000

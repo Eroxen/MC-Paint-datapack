@@ -34,3 +34,4 @@ execute if score #studio.ui_element.focused_child mcpaint.calc matches 1..2 run 
 
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 1..2 if data storage mcpaint:calc internal.studio.ui.data{selected_name:"transparent"} run scoreboard players set #studio.ui_element.focused_child.can_click mcpaint.calc 0
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 1..2 if data storage mcpaint:calc internal.studio.ui.data{selected_name:"transparent"} run scoreboard players set #studio.ui_element.focused_child.can_spam_click mcpaint.calc 0
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 1.. run scoreboard players set #studio.ui_element.focused_child.has_description mcpaint.calc 1

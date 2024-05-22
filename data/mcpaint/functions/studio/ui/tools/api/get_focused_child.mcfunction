@@ -13,6 +13,8 @@
 #
 # Children:
 # 100i: tool with index i
+# 200i: subtool with index i
 #####################################################################
 
 execute if score #studio.ui_element.u.px mcpaint.calc matches 3..20 run function mcpaint:studio/ui/tools/internal/testfor_tool_button
+execute if score #studio.ui_element.u.px mcpaint.calc matches 27..56 run function mcpaint:studio/ui/tools/internal/testfor_subtool_button

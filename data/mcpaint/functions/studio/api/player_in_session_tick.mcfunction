@@ -10,15 +10,7 @@ scoreboard players set #studio.session.response mcpaint.calc 0
 scoreboard players set #studio.session.show_title mcpaint.calc 0
 scoreboard players set #studio.session.brush.drop mcpaint.calc 0
 scoreboard players set #studio.session.brush.swapOffhand mcpaint.calc 0
-execute store success score #studio.session.is_sneaking mcpaint.calc if predicate {\
-  "condition": "minecraft:entity_properties",\
-  "entity": "this",\
-  "predicate": {\
-    "flags": {\
-      "is_sneaking": true\
-    }\
-  }\
-}
+execute store success score #studio.session.is_sneaking mcpaint.calc if predicate mcpaint:is_sneaking
 
 execute unless items entity @s weapon.mainhand *[minecraft:custom_data~{mcpaint:{brush:1b}}] if items entity @s weapon.offhand *[minecraft:custom_data~{mcpaint:{brush:1b}}] run function mcpaint:studio/internal/session/brush/swap_offhand
 execute unless items entity @s weapon.* *[minecraft:custom_data~{mcpaint:{brush:1b}}] anchored eyes positioned ^ ^ ^0.1 as @e[type=item,distance=..1] if items entity @s contents *[minecraft:custom_data~{mcpaint:{brush:1b}}] run function mcpaint:studio/internal/session/brush/drop
