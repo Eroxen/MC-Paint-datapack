@@ -1,4 +1,5 @@
 scoreboard players set #studio.session.response mcpaint.calc 1
+execute if score #studio.session.holding_brush mcpaint.calc matches 0 run return 0
 
 data modify storage mcpaint:calc internal.studio.rotation set from entity @s Rotation
 data modify storage mcpaint:calc macro.plane_x_rotation set from storage mcpaint:calc internal.studio.rotation[0]

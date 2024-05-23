@@ -1,4 +1,4 @@
-data modify storage mcpaint:calc internal.studio set value {tools:{registry:[],default:{tool:0,subtool:0}}}
+data modify storage mcpaint:calc internal.studio set value {tools:{registry:[],default:{index:{tool:0,subtool:0}},properties:{}}}
 
 scoreboard players set #studio.tools.max_subtool_rows mcpaint.calc 0
 scoreboard players set #studio.tools.n_registered mcpaint.calc 0
@@ -30,6 +30,9 @@ execute store result storage mcpaint:calc internal.studio.tools.window.toolname_
 data modify storage mcpaint:calc internal.studio.tools.window.tool_text_rows set value []
 scoreboard players set #studio.tools.register_phase mcpaint.calc 2
 function #mcpaint:register_studio_tools
+
+data modify storage mcpaint:calc internal.studio.tools.default.properties set from storage mcpaint:calc internal.studio.tools.registry[0].properties
+data modify storage mcpaint:calc internal.studio.tools.default.properties merge from storage mcpaint:calc internal.studio.tools.registry[0].subtools[0].properties
 
 ### generate text rows ###
 data modify storage mcpaint:calc internal.studio.tools.window.text_rows set value ['{"text":"\\u1001\\u0400\\u1062","font":"mcpaint:studio_ui","extra":[{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.tool_text_rows[0]","interpret":true},{"text":"\\n"}]}']

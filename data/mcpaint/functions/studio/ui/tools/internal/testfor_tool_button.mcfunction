@@ -14,6 +14,6 @@ execute if score #studio.ui_element.temp mcpaint.calc >= #studio.tools.n_registe
 scoreboard players set #studio.ui_element.focused_child mcpaint.calc 1000
 scoreboard players operation #studio.ui_element.focused_child mcpaint.calc += #studio.ui_element.temp mcpaint.calc
 
-execute store result score #studio.ui_element.selected mcpaint.calc run data get entity @s data.tool.tool 1
+execute store result score #studio.ui_element.selected mcpaint.calc run data get entity @s data.tool.index.tool 1
 execute unless score #studio.ui_element.temp mcpaint.calc = #studio.ui_element.selected mcpaint.calc run scoreboard players set #studio.ui_element.focused_child.can_click mcpaint.calc 1
 scoreboard players set #studio.ui_element.focused_child.has_description mcpaint.calc 1

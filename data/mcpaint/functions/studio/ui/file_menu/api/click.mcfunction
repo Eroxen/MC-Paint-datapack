@@ -20,7 +20,7 @@ execute if score #studio.ui_element.focused_child mcpaint.calc matches 1 if scor
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 1 if score #studio.ui_element.has_filepath mcpaint.calc matches 1 run return run function mcpaint:studio/internal/event/save
 
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 run return run function mcpaint:studio/ui/save_as/api/spawn
-
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 3 run return run function mcpaint:studio/ui/files/api/spawn
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 4 run return run function mcpaint:studio/ui/new_file/api/spawn
 
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 5 run return run function mcpaint:studio/ui/file_menu/internal/export

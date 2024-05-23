@@ -3,6 +3,10 @@ data modify storage mcpaint:calc internal.studio.event.parameters.colour set fro
 execute store result storage mcpaint:calc internal.studio.event.parameters.u int 1 run scoreboard players get #studio.ui_element.v.px mcpaint.calc
 execute store result storage mcpaint:calc internal.studio.event.parameters.v int 1 run scoreboard players get #studio.ui_element.u.px mcpaint.calc
 
-function mcpaint:studio/internal/event/set_pixel
-scoreboard players operation #studio.session.canvas_changed mcpaint.calc = #canvas.set_pixel.changed mcpaint.calc
-execute if score #canvas.set_pixel.changed mcpaint.calc matches 1 run function mcpaint:studio/internal/event/add_history
+execute unless data storage mcpaint:calc internal.studio.tool.active_subtool.pattern run function mcpaint:studio/internal/event/set_pixel
+
+execute if data storage mcpaint:calc internal.studio.tool.active_subtool.pattern run data modify storage mcpaint:calc internal.studio.event.event set value "set_pixels"
+execute if data storage mcpaint:calc internal.studio.tool.active_subtool.pattern run data modify storage mcpaint:calc internal.studio.event.parameters.pixels set from storage mcpaint:calc internal.studio.tool.active_subtool.pattern
+execute if data storage mcpaint:calc internal.studio.tool.active_subtool.pattern run function mcpaint:studio/internal/event/set_pixels
+
+execute if score #studio.session.canvas_changed mcpaint.calc matches 1 run function mcpaint:studio/internal/event/add_history

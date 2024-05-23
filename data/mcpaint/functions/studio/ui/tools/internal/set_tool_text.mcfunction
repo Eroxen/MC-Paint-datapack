@@ -10,3 +10,6 @@ $data modify storage mcpaint:calc internal.studio.ui.data.subtool_icons[$(subtoo
 data modify storage mcpaint:calc internal.studio.ui.data.subtool_rows set from storage mcpaint:calc internal.studio.tool.subtool_rows
 data modify storage mcpaint:calc internal.studio.ui.data.subtools_per_row set from storage mcpaint:calc internal.studio.tool.subtools_per_row
 execute store result storage mcpaint:calc internal.studio.ui.data.n_subtools int 1 run data get storage mcpaint:calc internal.studio.tool.subtools
+
+data modify storage mcpaint:calc internal.studio.ui.data.tool.properties set from storage mcpaint:calc internal.studio.tool.properties
+$data modify storage mcpaint:calc internal.studio.ui.data.tool.properties merge from storage mcpaint:calc internal.studio.tool.subtools[$(subtool)].properties
