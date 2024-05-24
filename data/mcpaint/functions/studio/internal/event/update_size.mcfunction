@@ -4,7 +4,7 @@ data modify entity @e[type=text_display,tag=mcpaint.studio.text_display.canvas,d
 
 function mcpaint:canvas/api/get_info
 execute store result score #studio.old_width mcpaint.calc run data get storage mcpaint:calc internal.studio.data.width 1
-execute store result score #studio.old_height mcpaint.calc run data get storage mcpaint:calc internal.studio.data.width 1
+execute store result score #studio.old_height mcpaint.calc run data get storage mcpaint:calc internal.studio.data.height 1
 execute if score #canvas.width_blocks mcpaint.calc = #studio.old_width mcpaint.calc if score #canvas.height_blocks mcpaint.calc = #studio.old_height mcpaint.calc run return 0
 
 ### different size than before ###

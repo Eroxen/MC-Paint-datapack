@@ -13,6 +13,7 @@ execute unless score maxCommandChainLength mcpaint.calc matches 1000000.. run ga
 
 scoreboard players set #const.-1 mcpaint.calc -1
 scoreboard players set #const.2 mcpaint.calc 2
+scoreboard players set #const.6 mcpaint.calc 6
 scoreboard players set #const.10 mcpaint.calc 10
 scoreboard players set #const.20 mcpaint.calc 20
 scoreboard players set #const.30 mcpaint.calc 30
