@@ -1,0 +1,1 @@
+$execute facing ~$(x) ~$(y) ~$(z) run function mcpaint:item/egg/internal/search/rotated
