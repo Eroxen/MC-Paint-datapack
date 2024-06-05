@@ -2,7 +2,7 @@
   "parent": "mcpaint:guide/root",
   "display": {
     "icon": {
-      "item": "minecraft:egg"
+      "id": "minecraft:egg"
     },
     "title": {
       "translate": "mcpaint.advancements.apply_egg.title"
@@ -16,14 +16,9 @@
     "hidden": false
   },
   "criteria": {
-    "impossible": {
+    "requirement": {
       "trigger": "minecraft:impossible",
       "conditions": {}
     }
-  },
-  "requirements": [
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

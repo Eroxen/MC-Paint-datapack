@@ -3,3 +3,4 @@ data modify storage mcpaint:calc api.custom_painting.spawn.facing_axis set from 
 data modify storage mcpaint:calc api.custom_painting.spawn.rotation set from storage mcpaint:calc api.trigger_item_frame.trigger.rotation
 
 function mcpaint:custom_painting/api/spawn
+data modify storage mcpaint:calc api.trigger_item_frame.grant_advancement set value "mcpaint:guide/place_custom_painting"

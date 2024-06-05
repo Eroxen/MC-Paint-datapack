@@ -20,8 +20,15 @@ data modify storage mcpaint:calc api.assets.get_model set value {z_origin:0.5f,w
 data modify storage mcpaint:calc api.assets.get_model.width set from storage mcpaint:calc internal.studio.data.width
 data modify storage mcpaint:calc api.assets.get_model.height set from storage mcpaint:calc internal.studio.data.height
 function mcpaint:assets/api/get_painting_background
+execute store result storage mcpaint:calc api.assets.model.width float 1 run scoreboard players get #studio.width mcpaint.calc
+execute store result storage mcpaint:calc api.assets.model.height float 1 run scoreboard players get #studio.height mcpaint.calc
 data modify entity @e[type=item_display,tag=mcpaint.studio.item_display.background,distance=..0.1,limit=1] {} merge from storage mcpaint:calc api.assets.model
 function mcpaint:assets/api/get_studio_border
+execute store result storage mcpaint:calc api.assets.model.width float 1 run scoreboard players get #studio.width mcpaint.calc
+execute store result storage mcpaint:calc api.assets.model.height float 1 run scoreboard players get #studio.height mcpaint.calc
 data modify entity @e[type=item_display,tag=mcpaint.studio.item_display.border,distance=..0.1,limit=1] {} merge from storage mcpaint:calc api.assets.model
+
+execute store result entity @e[type=text_display,tag=mcpaint.studio.text_display.canvas,distance=..0.1,limit=1] width float 1 run scoreboard players get #studio.width mcpaint.calc
+execute store result entity @e[type=text_display,tag=mcpaint.studio.text_display.canvas,distance=..0.1,limit=1] height float 1 run scoreboard players get #studio.height mcpaint.calc
 
 function mcpaint:studio/internal/ui/open_default

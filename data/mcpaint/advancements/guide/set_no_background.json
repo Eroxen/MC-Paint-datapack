@@ -2,7 +2,7 @@
   "parent": "mcpaint:guide/place_custom_painting",
   "display": {
     "icon": {
-      "item": "minecraft:shears"
+      "id": "minecraft:shears"
     },
     "title": {
       "translate": "mcpaint.advancements.set_no_background.title"
@@ -16,14 +16,9 @@
     "hidden": false
   },
   "criteria": {
-    "impossible": {
+    "requirement": {
       "trigger": "minecraft:impossible",
       "conditions": {}
     }
-  },
-  "requirements": [
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

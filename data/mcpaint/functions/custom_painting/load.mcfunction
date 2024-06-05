@@ -4,7 +4,8 @@ default_options:{background_variant:"canvas",glowing:0b,show_name:0b,show_lore:0
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:shears"],\
 merge_options:{background_variant:"empty"},\
-sound:{name:"minecraft:entity.sheep.shear",parameters:"1 1"}}
+sound:{name:"minecraft:entity.sheep.shear",parameters:"1 1"},\
+grant_advancement:"mcpaint:guide/set_no_background"}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:white_wool"],\
@@ -24,7 +25,8 @@ sound:{name:"minecraft:block.note_block.bit",parameters:"1 1"}}
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:glow_ink_sac"],\
 merge_options:{glowing:1b},\
-sound:{name:"minecraft:item.glow_ink_sac.use",parameters:"1 1"}}
+sound:{name:"minecraft:item.glow_ink_sac.use",parameters:"1 1"},\
+grant_advancement:"mcpaint:guide/set_glowing"}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:ink_sac"],\

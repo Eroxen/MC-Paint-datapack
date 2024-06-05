@@ -1,6 +1,6 @@
 tag @s remove mcpaint.custom_painting.item_display.new
 
-execute on passengers if entity @s[type=text_display] run data modify entity @s text set from storage mcpaint:calc internal.custom_painting.spawn.canvas.resolved_text
+execute on passengers if entity @s[type=text_display] run data modify entity @s text set from storage mcpaint:calc api.canvas.canvas.resolved_text
 
 data modify storage mcpaint:calc internal.custom_painting.data set value {}
 data modify storage mcpaint:calc internal.custom_painting.data merge from storage mcpaint:calc api.custom_painting.spawn.merge_data

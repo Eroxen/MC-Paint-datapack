@@ -1,8 +1,11 @@
 {
-  "parent": "mcpaint:guide/apply_egg",
+  "parent": "mcpaint:guide/save_work",
   "display": {
     "icon": {
-      "item": "minecraft:item_frame"
+      "id": "minecraft:item_frame",
+      "components": {
+        "minecraft:custom_model_data": 360001
+      }
     },
     "title": {
       "translate": "mcpaint.advancements.place_custom_painting.title"
@@ -16,14 +19,9 @@
     "hidden": false
   },
   "criteria": {
-    "impossible": {
+    "requirement": {
       "trigger": "minecraft:impossible",
       "conditions": {}
     }
-  },
-  "requirements": [
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

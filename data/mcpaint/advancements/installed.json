@@ -1,7 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:painting"
+      "id": "minecraft:poisonous_potato",
+      "components": {
+        "minecraft:custom_model_data": 360000
+      }
     },
     "title": "MC Paint",
     "description": {

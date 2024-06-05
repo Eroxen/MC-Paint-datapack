@@ -1,3 +1,9 @@
+### version ###
+data modify storage mcpaint:calc internal.credit set value {}
+data modify storage mcpaint:calc internal.credit.datapack_version set value "v0.9"
+data modify storage mcpaint:calc internal.credit.rp_version_message set value '{"translate":"mcpaint.format.rp_version","with":[{"translate":"mcpaint.format.rp_version.0.9","with":[{"text":"download page","color":"green","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"modrinth.com"}]},"clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/mc-paint/version/latest"}},{"translate":"mcpaint.message.resource_pack_reload","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_reload.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.reload"}},{"translate":"mcpaint.message.resource_pack_dismiss","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_dismiss.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 20000"}}],"fallback":"§cYou have installed a version of the Resource Pack that does not mach with the Datapack version (0.9). You can download the correct version from the %1$s.","color":"green","bold":false}],"fallback":""}'
+######
+
 scoreboard objectives add mcpaint.calc dummy
 scoreboard objectives add mcpaint.session dummy
 scoreboard objectives add mcpaint.using_brush dummy
@@ -7,6 +13,8 @@ scoreboard objectives add mcpaint.ui.v1 dummy
 scoreboard objectives add mcpaint.ui.v2 dummy
 scoreboard objectives add mcpaint.ui.layer dummy
 scoreboard objectives add mcpaint.ui.hover dummy
+scoreboard objectives add mcpaint.reload trigger
+scoreboard objectives add mcpaint.settings trigger
 
 execute store result score maxCommandChainLength mcpaint.calc run gamerule maxCommandChainLength
 execute unless score maxCommandChainLength mcpaint.calc matches 1000000.. run gamerule maxCommandChainLength 1000000
@@ -31,4 +39,5 @@ function mcpaint:studio/load
 function mcpaint:custom_painting/load
 function mcpaint:canvas/load
 function mcpaint:util/load
+function mcpaint:settings/load
 schedule function mcpaint:clock_1s 1s replace

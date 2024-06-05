@@ -1,8 +1,8 @@
 {
-  "parent": "mcpaint:guide/craft_computer",
+  "parent": "mcpaint:guide/load_work",
   "display": {
     "icon": {
-      "item": "minecraft:flint_and_steel"
+      "id": "minecraft:flint_and_steel"
     },
     "title": {
       "translate": "mcpaint.advancements.delete_work.title"
@@ -16,14 +16,9 @@
     "hidden": false
   },
   "criteria": {
-    "impossible": {
+    "requirement": {
       "trigger": "minecraft:impossible",
       "conditions": {}
     }
-  },
-  "requirements": [
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

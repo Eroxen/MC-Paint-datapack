@@ -1,0 +1,1 @@
+$data modify storage mcpaint:calc api.settings.client set from storage mcpaint:calc internal.settings.clients."$(UUID)"

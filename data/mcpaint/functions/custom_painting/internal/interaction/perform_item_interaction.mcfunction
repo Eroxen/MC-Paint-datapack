@@ -12,6 +12,8 @@ execute if score #custom_painting.changed mcpaint.calc matches 0 run return fail
 
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction.sound run function mcpaint:custom_painting/internal/interaction/play_sound with storage mcpaint:calc internal.custom_painting.item_interaction.sound
 
+execute if data storage mcpaint:calc internal.custom_painting.item_interaction.grant_advancement run scoreboard players set #custom_painting.interaction.grant_advancement mcpaint.calc 1
+
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction.merge_options.background_variant run function mcpaint:custom_painting/internal/update/background
 
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction.merge_options{glowing:1b} on passengers if entity @s[type=text_display] run data modify entity @s brightness set value {sky:15,block:15}

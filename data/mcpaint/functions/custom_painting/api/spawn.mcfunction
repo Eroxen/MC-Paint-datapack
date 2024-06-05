@@ -16,12 +16,16 @@ data modify storage mcpaint:calc internal.custom_painting.user set from storage 
 data modify storage mcpaint:calc internal.database.filepath set from storage mcpaint:calc api.custom_painting.spawn.filepath
 function mcpaint:database/api/get_work with storage mcpaint:calc internal.database.filepath
 execute if score #database.found mcpaint.calc matches 0 run return run loot spawn ~ ~ ~ loot mcpaint:item/vanilla_painting
+data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc api.database.work.canvas
+function mcpaint:canvas/api/get_info
 
 playsound minecraft:entity.painting.place block @a[distance=..16] ~ ~ ~ 1 1
-data modify storage mcpaint:calc internal.custom_painting.spawn set value {vertical_direction:"level",facing:"north",rotation:[-180f,0f]}
+data modify storage mcpaint:calc internal.custom_painting.spawn set value {vertical_direction:"level",facing:"north",rotation:[-180f,0f],width:1f,height:1f}
 data modify storage mcpaint:calc internal.custom_painting.spawn merge from storage mcpaint:calc api.custom_painting.spawn
-data modify storage mcpaint:calc internal.custom_painting.spawn.canvas set from storage mcpaint:calc api.database.work.canvas
-data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc api.database.work.canvas
+
+execute if data storage mcpaint:calc api.custom_painting.spawn{facing_axis:"y"} run scoreboard players operation #canvas.width_blocks mcpaint.calc > #canvas.height_blocks mcpaint.calc
+execute store result storage mcpaint:calc internal.custom_painting.spawn.width float 1 run scoreboard players get #canvas.width_blocks mcpaint.calc
+execute unless data storage mcpaint:calc api.custom_painting.spawn{facing_axis:"y"} store result storage mcpaint:calc internal.custom_painting.spawn.height float 1 run scoreboard players get #canvas.height_blocks mcpaint.calc
 
 data modify storage mcpaint:calc internal.custom_painting.spawn.y_rotation set from storage mcpaint:calc internal.custom_painting.spawn.rotation[0]
 data modify storage mcpaint:calc internal.custom_painting.spawn.x_rotation set from storage mcpaint:calc internal.custom_painting.spawn.rotation[1]

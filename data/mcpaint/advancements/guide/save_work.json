@@ -2,13 +2,13 @@
   "parent": "mcpaint:guide/apply_egg",
   "display": {
     "icon": {
-      "item": "minecraft:blue_dye"
+      "id": "minecraft:ender_chest"
     },
     "title": {
-      "translate": "mcpaint.advancements.use_dye.title"
+      "translate": "mcpaint.advancements.save_work.title"
     },
     "description": {
-      "translate": "mcpaint.advancements.use_dye.description"
+      "translate": "mcpaint.advancements.save_work.description"
     },
     "frame": "task",
     "show_toast": true,
@@ -16,14 +16,9 @@
     "hidden": false
   },
   "criteria": {
-    "impossible": {
+    "requirement": {
       "trigger": "minecraft:impossible",
       "conditions": {}
     }
-  },
-  "requirements": [
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

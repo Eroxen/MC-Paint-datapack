@@ -2,7 +2,7 @@
   "parent": "mcpaint:guide/place_custom_painting",
   "display": {
     "icon": {
-      "item": "minecraft:glow_ink_sac"
+      "id": "minecraft:glow_ink_sac"
     },
     "title": {
       "translate": "mcpaint.advancements.set_glowing.title"
@@ -16,14 +16,9 @@
     "hidden": false
   },
   "criteria": {
-    "impossible": {
+    "requirement": {
       "trigger": "minecraft:impossible",
       "conditions": {}
     }
-  },
-  "requirements": [
-    [
-      "impossible"
-    ]
-  ]
+  }
 }

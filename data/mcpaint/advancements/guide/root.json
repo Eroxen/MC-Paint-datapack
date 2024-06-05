@@ -1,7 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:painting"
+      "id": "minecraft:poisonous_potato",
+      "components": {
+        "minecraft:custom_model_data": 360000
+      }
     },
     "title": {
       "translate": "mcpaint.advancements.root.title"
@@ -13,23 +16,18 @@
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false,
-    "background": "minecraft:textures/block/light_gray_wool.png"
+    "background": "minecraft:textures/block/white_wool.png"
   },
   "criteria": {
-    "item": {
+    "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:painting"]
+            "id": "minecraft:painting"
           }
         ]
       }
     }
-  },
-  "requirements": [
-    [
-      "item"
-    ]
-  ]
+  }
 }

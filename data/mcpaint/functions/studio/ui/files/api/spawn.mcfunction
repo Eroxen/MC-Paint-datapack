@@ -13,7 +13,7 @@ scoreboard players set #studio.ui_element.layer mcpaint.calc 1
 data modify storage mcpaint:calc internal.studio.ui.definition set value {name:"files",size:[1500,1500],origin:[750,1500]}
 function mcpaint:studio/internal/ui/spawn_element/init_values
 function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"page_index_transform",relative:{translation:[-0.34375f,-1.42f,0.001f]}}
-function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"filenames_transform",relative:{translation:[-0.05f,-1.26f,0.002f]}}
+function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"filenames_transform",relative:{translation:[0.544f,-1.26f,0.002f]}}
 function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"selected_transform",relative:{translation:[-0.01f,-1.26f,0.001f]}}
 function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"canvas_origin",relative:{translation:[-0.5f,-0.296875f,0.001f]}}
 
