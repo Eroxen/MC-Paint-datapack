@@ -11,7 +11,7 @@ data remove storage mcpaint:calc internal.custom_painting.used_item
 execute on target if items entity @s weapon.mainhand * run data modify storage mcpaint:calc internal.custom_painting.used_item set from entity @s SelectedItem
 execute if data storage mcpaint:calc internal.custom_painting.used_item run scoreboard players set #custom_painting.interaction.used_item mcpaint.calc 1
 
-execute if score #custom_painting.interaction.used_item mcpaint.calc matches 0 as @e[type=item_display,tag=mcpaint.custom_painting.has_text_message,distance=..0.3,limit=1] run function mcpaint:custom_painting/internal/interaction/get_text_message
+execute if score #custom_painting.interaction.used_item mcpaint.calc matches 0 as @e[type=item_display,tag=mcpaint.custom_painting.has_text_message,distance=..0.1,limit=1] run function mcpaint:custom_painting/internal/interaction/get_text_message
 
 execute if score #custom_painting.interaction.used_item mcpaint.calc matches 1 run function mcpaint:custom_painting/internal/interaction/get_item_interaction with storage mcpaint:calc internal.custom_painting.used_item
 execute if score #custom_painting.interaction.used_item mcpaint.calc matches 1 if data storage mcpaint:calc internal.custom_painting.item_interaction as @e[type=item_display,tag=mcpaint.custom_painting.item_display,distance=..0.3] at @s run function mcpaint:custom_painting/internal/interaction/perform_item_interaction

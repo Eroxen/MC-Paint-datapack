@@ -30,7 +30,7 @@ execute unless data storage mcpaint:calc api.custom_painting.spawn{facing_axis:"
 data modify storage mcpaint:calc internal.custom_painting.spawn.y_rotation set from storage mcpaint:calc internal.custom_painting.spawn.rotation[0]
 data modify storage mcpaint:calc internal.custom_painting.spawn.x_rotation set from storage mcpaint:calc internal.custom_painting.spawn.rotation[1]
 
-data modify storage mcpaint:calc api.assets.get_model set value {z_origin:0.25f,width:1,height:1,variant:"canvas"}
+data modify storage mcpaint:calc api.assets.get_model set value {z_origin:0.01f,width:1,height:1,variant:"canvas"}
 data modify storage mcpaint:calc api.assets.get_model.variant set from storage mcpaint:calc api.custom_painting.spawn.options.background_variant
 data modify storage mcpaint:calc api.assets.get_model.width set from storage mcpaint:calc api.canvas.canvas.width_blocks
 data modify storage mcpaint:calc api.assets.get_model.height set from storage mcpaint:calc api.canvas.canvas.height_blocks

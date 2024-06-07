@@ -1,4 +1,4 @@
-$summon marker ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.marker"],data:{width:$(width),height:$(height),canvas:$(canvas),colour:{foreground:21756,background:16263,selected_name:"foreground",selected:21756},unsaved_changes:0b,history:{undo:[],redo:[]}}}
+$summon marker ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.marker"],data:{width:$(width),height:$(height),canvas:$(canvas),colour:{foreground:21756,background:16263,selected_name:"foreground",selected:21756},unsaved_changes:0b,history:{undo:[],redo:[]},display_settings:$(display_settings)}}
 data modify entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.tool set from storage mcpaint:calc internal.studio.tools.default
 
 $summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.background"],item_display:"fixed",item:$(background_item),transformation:$(background_transform),width:$(width)f,height:$(height)f,view_range:0.66f}
@@ -7,7 +7,7 @@ $summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity",
 loot replace entity @e[type=item_display,tag=mcpaint.studio.item_display.brush,distance=..0.1,limit=1] contents loot mcpaint:item/brush
 
 $summon text_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.text_display","mcpaint.studio.text_display.canvas","mcpaint.entity.text_display.reload"],transformation:$(canvas_transform),background:0,line_width:10000,width:$(width)f,height:$(height)f,view_range:0.4f}
-data modify entity @e[type=text_display,tag=mcpaint.studio.text_display.canvas,distance=..0.1,limit=1] text set from storage mcpaint:calc internal.studio.spawn.canvas.resolved_text
+execute as @e[type=text_display,tag=mcpaint.studio.text_display.canvas,distance=..0.1,limit=1] run function mcpaint:canvas/api/apply_to_text_display with storage mcpaint:calc internal.studio.spawn.display_settings
 
 $execute rotated $(y_rotation) 0 run summon minecraft:interaction ^-0.375 ^-0.75 ^-0.375 {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.interaction","eroxified2.interaction"],width:0.25,height:1.25,response:1b}
 $execute rotated $(y_rotation) 0 run summon minecraft:interaction ^-0.125 ^-0.75 ^-0.375 {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.interaction","eroxified2.interaction"],width:0.25,height:1.25,response:1b}

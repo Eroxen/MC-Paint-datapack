@@ -13,7 +13,8 @@ playsound minecraft:entity.painting.break block @a[distance=..16] ~ ~ ~ 1 1
 execute on passengers run kill @s
 kill @s
 
-function mcpaint:database/api/get_work with storage mcpaint:calc internal.custom_painting.data.filepath
+data modify storage mcpaint:calc internal.database.filepath set from storage mcpaint:calc internal.custom_painting.data.filepath
+function mcpaint:database/api/get_work with storage mcpaint:calc internal.database.filepath
 execute if score #database.found mcpaint.calc matches 0 run return run loot spawn ~ ~ ~ loot mcpaint:item/vanilla_painting
 data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc api.database.work.canvas
 

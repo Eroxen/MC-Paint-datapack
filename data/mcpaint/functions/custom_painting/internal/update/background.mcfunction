@@ -1,4 +1,4 @@
-data modify storage mcpaint:calc api.assets.get_model set value {z_origin:0.25f,width:1,height:1,variant:"canvas"}
+data modify storage mcpaint:calc api.assets.get_model set value {z_origin:0.01f,width:1,height:1,variant:"canvas"}
 data modify storage mcpaint:calc api.assets.get_model.width set from storage mcpaint:calc internal.custom_painting.data.width
 data modify storage mcpaint:calc api.assets.get_model.height set from storage mcpaint:calc internal.custom_painting.data.height
 data modify storage mcpaint:calc api.assets.get_model.variant set from storage mcpaint:calc internal.custom_painting.data.options.background_variant

@@ -1,5 +1,5 @@
 data modify storage mcpaint:calc internal.custom_painting set value {item_interactions:[],\
-default_options:{background_variant:"canvas",glowing:0b,show_name:0b,show_lore:0b,locked:0b,billboard:0b}}
+default_options:{background_variant:"canvas",glowing:0b,axis_shading:1b,show_name:0b,show_lore:0b,locked:0b,billboard:0b}}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:shears"],\
@@ -32,6 +32,11 @@ data modify storage mcpaint:calc internal.custom_painting.item_interactions appe
 items:["minecraft:ink_sac"],\
 merge_options:{glowing:0b},\
 sound:{name:"minecraft:item.ink_sac.use",parameters:"1 1"}}
+
+data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
+items:["minecraft:tinted_glass"],\
+toggle_option:{option:"axis_shading",values:2},\
+sound:{name:"minecraft:block.copper_bulb.turn_on",parameters:"1 1"}}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:name_tag"],\
