@@ -1,4 +1,4 @@
-execute if score @s mcpaint.reload matches 3..100 run return run scoreboard players remove @s mcpaint.reload 1
+execute if score @s mcpaint.reload matches 3.. run return run scoreboard players remove @s mcpaint.reload 1
 execute if score @s mcpaint.reload matches 2 run return run function mcpaint:util/reload_text_displays/internal/reset
 
 execute unless predicate mcpaint:permission/reload_text_displays run return run function mcpaint:util/reload_text_displays/internal/reset_permission

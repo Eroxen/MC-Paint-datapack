@@ -1,1 +1,1 @@
-data modify storage mcpaint:calc internal.settings.client_default set value {send_rp_message:1b}
+data modify storage mcpaint:calc internal.settings.client_default set value {send_rp_message:1b,protect_studio:1b}

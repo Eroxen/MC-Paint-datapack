@@ -2,6 +2,7 @@ data modify storage mcpaint:calc internal.studio set value {tools:{registry:[],d
 
 scoreboard players set #studio.tools.max_subtool_rows mcpaint.calc 0
 scoreboard players set #studio.tools.n_registered mcpaint.calc 0
+scoreboard players set #studio.ui.pixel_density mcpaint.calc 64
 
 ### count tools & subtool rows ###
 scoreboard players set #studio.tools.register_phase mcpaint.calc 1

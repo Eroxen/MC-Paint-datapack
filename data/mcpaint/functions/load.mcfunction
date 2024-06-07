@@ -1,7 +1,7 @@
 ### version ###
 data modify storage mcpaint:calc internal.credit set value {}
-data modify storage mcpaint:calc internal.credit.datapack_version set value "v0.9"
-data modify storage mcpaint:calc internal.credit.rp_version_message set value '{"translate":"mcpaint.format.rp_version","with":[{"translate":"mcpaint.format.rp_version.0.9","with":[{"text":"download page","color":"green","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"modrinth.com"}]},"clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/mc-paint/version/latest"}},{"translate":"mcpaint.message.resource_pack_reload","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_reload.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.reload"}},{"translate":"mcpaint.message.resource_pack_dismiss","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_dismiss.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 20000"}}],"fallback":"§cYou have installed a version of the Resource Pack that does not mach with the Datapack version (0.9). You can download the correct version from the %1$s.","color":"green","bold":false}],"fallback":""}'
+data modify storage mcpaint:calc internal.credit.datapack_version set value "v1.0"
+data modify storage mcpaint:calc internal.credit.rp_version_message set value '{"translate":"mcpaint.format.rp_version","with":[{"translate":"mcpaint.format.rp_version.1.0","with":[{"text":"download page","color":"green","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"modrinth.com"}]},"clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/mc-paint/version/latest"}},{"translate":"mcpaint.message.resource_pack_reload","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_reload.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.reload"}},{"translate":"mcpaint.message.resource_pack_dismiss","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.message.resource_pack_dismiss.info"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 20000"}}],"fallback":"§cYou have installed a version of the Resource Pack that does not mach with the Datapack version (1.0). You can download the correct version from the %1$s.","color":"green","bold":false}],"fallback":""}'
 ######
 
 scoreboard objectives add mcpaint.calc dummy
@@ -32,7 +32,6 @@ scoreboard players set #const.2000 mcpaint.calc 2000
 scoreboard players set #const.60 mcpaint.calc 60
 scoreboard players set #const.60000 mcpaint.calc 60000
 scoreboard players set #const.360000 mcpaint.calc 360000
-scoreboard players set #studio.ui.pixel_density mcpaint.calc 64
 
 function mcpaint:assets/load
 function mcpaint:studio/load

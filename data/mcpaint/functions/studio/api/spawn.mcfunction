@@ -21,9 +21,10 @@ execute if data storage mcpaint:calc internal.studio.spawn{facing:"east"} run da
 execute if data storage mcpaint:calc internal.studio.spawn{facing:"south"} run data modify storage mcpaint:calc internal.studio.spawn.y_rotation set value 0f
 execute if data storage mcpaint:calc internal.studio.spawn{facing:"west"} run data modify storage mcpaint:calc internal.studio.spawn.y_rotation set value 90f
 
-data modify storage mcpaint:calc api.assets.get_model set value {z_origin:0.5f,width:1,height:1,variant:"canvas"}
+data modify storage mcpaint:calc api.assets.get_model set value {z_origin:0.5f,width:1,height:1,variant:"canvas",enforce_surface:0.0625f}
 data modify storage mcpaint:calc api.assets.get_model.width set from storage mcpaint:calc internal.studio.spawn.width
 data modify storage mcpaint:calc api.assets.get_model.height set from storage mcpaint:calc internal.studio.spawn.height
+data modify storage mcpaint:calc api.assets.get_model.variant set from storage mcpaint:calc internal.studio.spawn.display_settings.background_variant
 function mcpaint:assets/api/get_painting_background
 data modify storage mcpaint:calc internal.studio.spawn.background_item set from storage mcpaint:calc api.assets.model.item
 data modify storage mcpaint:calc internal.studio.spawn.background_transform set from storage mcpaint:calc api.assets.model.transformation

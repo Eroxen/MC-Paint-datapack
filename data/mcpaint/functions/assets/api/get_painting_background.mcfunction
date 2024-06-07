@@ -10,6 +10,7 @@
 #   - (height): (int) block height
 #   - (variant): (string) skin variant, default "canvas"
 #   - (z_origin): (float) surface height of the display entity 
+#   - (enforce_surface): (float) surface height of the front of the model
 #
 # Storage output :
 # - mcpaint:calc api.assets.model:
@@ -32,6 +33,7 @@ execute unless data storage mcpaint:calc api.assets.model.item run data modify s
 
 execute store result score #assets.z_origin mcpaint.calc run data get storage mcpaint:calc api.assets.get_model.z_origin 10000
 execute store result score #assets.z mcpaint.calc run data get storage mcpaint:calc api.assets.model.surface 10000
+execute if data storage mcpaint:calc api.assets.get_model.enforce_surface run function mcpaint:assets/internal/enforce_surface
 scoreboard players operation #assets.z mcpaint.calc -= #assets.z_origin mcpaint.calc
 execute store result storage mcpaint:calc api.assets.model.surface float 0.0001 run scoreboard players get #assets.z mcpaint.calc
 execute store result score #assets.z mcpaint.calc run data get storage mcpaint:calc api.assets.model.transformation.translation[2] 10000
