@@ -9,4 +9,5 @@ tellraw @s {"text":"→ Support me on Ko-fi","color":"gold","underlined":true,"h
 tellraw @s {"text":"→ Modrinth","color":"green","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"modrinth.com"}]},"clickEvent":{"action":"open_url","value":"https://modrinth.com/datapack/mc-paint"}}
 tellraw @s {"text":"→ Planet Minecraft","color":"aqua","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"planetminecraft.com"}]},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/mc-paint-create-your-own-custom-paintings/"}}
 tellraw @s {"text":"→ Discord","color":"blue","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"discord.gg"}]},"clickEvent":{"action":"open_url","value":"https://discord.gg/p6jh5j2fY3"}}
+tellraw @s {"text":"→ Credits","color":"light_purple","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"text":"/trigger mcpaint.credits"}]},"clickEvent":{"action":"run_command","value":"/trigger mcpaint.credits"}}
 tellraw @s {"text":"　　　　　　　　　　　　　　　　　　　　　","color":"yellow","strikethrough": true}

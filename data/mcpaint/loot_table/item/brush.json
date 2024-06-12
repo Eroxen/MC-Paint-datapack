@@ -17,28 +17,16 @@
                     {
                       "type": "minecraft:player.block_interaction_range",
                       "amount": -100,
-                      "name": "mcpaint.prevent_block_interaction",
+                      "id": "mcpaint:prevent_block_interaction",
                       "operation": "add_value",
-                      "slot": "mainhand",
-                      "uuid": [
-                        -161731875,
-                        -631213698,
-                        -15576022,
-                        543588033
-                      ]
+                      "slot": "mainhand"
                     },
                     {
                       "type": "minecraft:player.entity_interaction_range",
                       "amount": -100,
-                      "name": "mcpaint.prevent_entity_interaction",
+                      "id": "mcpaint:prevent_entity_interaction",
                       "operation": "add_value",
-                      "slot": "mainhand",
-                      "uuid": [
-                        -1154645118,
-                        -97753432,
-                        -882063741,
-                        1285353740
-                      ]
+                      "slot": "mainhand"
                     }
                   ]
                 },

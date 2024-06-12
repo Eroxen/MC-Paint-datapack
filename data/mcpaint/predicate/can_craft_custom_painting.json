@@ -29,7 +29,7 @@
         "predicate": {
           "type_specific": {
             "type": "minecraft:player",
-            "gamemode": "creative"
+            "gamemode": ["creative"]
           }
         }
       }
