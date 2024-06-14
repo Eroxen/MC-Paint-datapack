@@ -19,7 +19,7 @@ execute if score #canvas.recompile.resolved_rows_present mcpaint.calc matches 0 
 
 data modify storage mcpaint:calc internal.canvas.recompile_indexed_rows set value {}
 data modify storage mcpaint:calc internal.canvas.recompile_indexed_rows.list set from storage mcpaint:calc api.canvas.recompile_indices
-execute store result score #canvas.compile_grid.i mcpaint.calc run data get storage mcpaint:calc api.canvas.canvas.resolved_rows
+execute store result score #canvas.compile_grid.i mcpaint.calc run data get storage mcpaint:calc api.canvas.canvas.height_px 1
 scoreboard players remove #canvas.compile_grid.i mcpaint.calc 1
 execute if data storage mcpaint:calc internal.canvas.recompile_indexed_rows.list[0] run function mcpaint:canvas/internal/recompile/loop
 
