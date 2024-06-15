@@ -25,7 +25,7 @@ execute if score #studio.ui_element.focused_child mcpaint.calc matches 3 run ret
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 4 run return run function mcpaint:studio/ui/new_file/api/spawn
 
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 5 run return run function mcpaint:studio/ui/file_menu/internal/export
-#execute if score #studio.ui_element.focused_child mcpaint.calc matches 6 run return run tellraw @p[predicate=mcpaint:same_session] {"translate":"mcpaint.error.not_implemented","color":"yellow"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 6 as @p[predicate=mcpaint:same_session] unless predicate mcpaint:permission/import_base64 run return run tellraw @s {"translate":"mcpaint.error.no_permission","color":"red"}
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 6 run return run function mcpaint:studio/ui/import_code/api/spawn
 
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 11 run return run function mcpaint:studio/internal/event/undo

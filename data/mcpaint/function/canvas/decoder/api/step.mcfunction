@@ -10,7 +10,6 @@
 
 scoreboard players set #canvas.b64.error mcpaint.calc 0
 
-execute if data storage mcpaint:calc internal.canvas.decoder{finished:1b} run say finished already
 execute if data storage mcpaint:calc internal.canvas.decoder{finished:1b} run return 0
 
 execute if data storage mcpaint:calc internal.canvas.decoder{phase:"b64"} run return run function mcpaint:canvas/decoder/internal/step_b64

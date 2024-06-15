@@ -6,6 +6,7 @@
 #####################################################################
 
 scoreboard players operation #reference mcpaint.session = @s mcpaint.session
+execute unless predicate mcpaint:permission/use_studio run return run function mcpaint:studio/internal/session/stop_as_player
 scoreboard players set #studio.session.response mcpaint.calc 0
 scoreboard players set #studio.session.show_title mcpaint.calc 0
 scoreboard players set #studio.session.brush.drop mcpaint.calc 0
