@@ -8,5 +8,7 @@ execute if score @s mcpaint.settings matches 10001 run data modify storage mcpai
 execute if score @s mcpaint.settings matches 10002 run data modify storage mcpaint:calc api.settings.client.protect_studio set value 0b
 execute if score @s mcpaint.settings matches 10003 run data modify storage mcpaint:calc api.settings.client.protect_studio set value 1b
 
+execute if score @s mcpaint.settings matches 10004 run data modify storage mcpaint:calc api.settings.client set value {}
+
 function mcpaint:settings/api/set_client
 function mcpaint:settings/internal/client/open_menu

@@ -10,6 +10,7 @@ execute if data storage mcpaint:calc api.settings.client{protect_studio:0b} run 
 
 tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n"}
 tellraw @s {"text":"　　　　　　　　　　　　　　　　　　　　　","color":"yellow","strikethrough": true}
+tellraw @s {"translate":"mcpaint.settings.reset_default","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger mcpaint.settings set 10004"}}
 tellraw @s {"translate":"mcpaint.settings.client.header","color":"yellow"}
 tellraw @s {"text":"","extra":[{"storage":"mcpaint:calc","nbt":"internal.settings.client_menu.send_rp_message","interpret": true},{"text":" "},{"translate":"mcpaint.settings.client.send_rp_message.title"},{"text":" "},{"text":"?","color":"gray","hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.settings.client.send_rp_message.info"}]}}]}
 tellraw @s {"text":"","extra":[{"storage":"mcpaint:calc","nbt":"internal.settings.client_menu.protect_studio","interpret": true},{"text":" "},{"translate":"mcpaint.settings.client.protect_studio.title"},{"text":" "},{"text":"?","color":"gray","hoverEvent":{"action":"show_text","contents":[{"translate":"mcpaint.settings.client.protect_studio.info"}]}}]}
