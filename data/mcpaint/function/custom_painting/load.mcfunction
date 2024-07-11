@@ -1,5 +1,24 @@
 data modify storage mcpaint:calc internal.custom_painting set value {item_interactions:[],\
-default_options:{background_variant:"canvas",glowing:0b,axis_shading:1b,show_name:0b,show_lore:0b,locked:0b,billboard:0b}}
+default_options:{background_variant:"canvas",glowing:0b,axis_shading:1b,show_name:0b,show_lore:0b,locked:0b,billboard:0b,transparency:0b,roll:0b}}
+
+data modify storage mcpaint:calc internal.custom_painting.rolls set value [\
+{left_rotation:[0f,0f,0f,1f],roll:0f},\
+{left_rotation:[0f,0f,-0.195f,0.981f],roll:22.5f},\
+{left_rotation:[0f,0f,-0.383f,0.924f],roll:45f},\
+{left_rotation:[0f,0f,-0.556f,0.831f],roll:67.5f},\
+{left_rotation:[0f,0f,-0.707f,0.707f],roll:90f},\
+{left_rotation:[0f,0f,-0.831f,0.556f],roll:112.5f},\
+{left_rotation:[0f,0f,-0.924f,0.383f],roll:135f},\
+{left_rotation:[0f,0f,-0.981f,0.195f],roll:157.5f},\
+{left_rotation:[0f,0f,1f,0f],roll:180f},\
+{left_rotation:[0f,0f,0.981f,0.195f],roll:202.5f},\
+{left_rotation:[0f,0f,0.924f,0.383f],roll:225f},\
+{left_rotation:[0f,0f,0.831f,0.556f],roll:247.5f},\
+{left_rotation:[0f,0f,0.707f,0.707f],roll:270f},\
+{left_rotation:[0f,0f,0.556f,0.831f],roll:292.5f},\
+{left_rotation:[0f,0f,0.383f,0.924f],roll:315f},\
+{left_rotation:[0f,0f,0.195f,0.981f],roll:337.5f}\
+]
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:shears"],\
@@ -44,7 +63,8 @@ toggle_option:{option:"show_name",values:2}}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:writable_book"],\
-toggle_option:{option:"show_lore",values:2}}
+toggle_option:{option:"show_lore",values:2},\
+grant_advancement:"mcpaint:guide/custom_painting_lore"}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:tripwire_hook"],\
@@ -56,6 +76,17 @@ data modify storage mcpaint:calc internal.custom_painting.item_interactions appe
 items:["minecraft:ender_eye"],\
 toggle_option:{option:"billboard",values:4},\
 sound:{name:"minecraft:entity.enderman.ambient",parameters:"1 1"}}
+
+data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
+items:["minecraft:compass"],\
+toggle_option:{option:"roll",values:16},\
+sound:{name:"minecraft:entity.item_frame.rotate_item",parameters:"1 1"},\
+grant_advancement:"mcpaint:guide/roll_custom_painting"}
+
+data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
+items:["minecraft:ice"],\
+toggle_option:{option:"transparency",values:8},\
+sound:{name:"minecraft:block.glass.place",parameters:"0.5 2"}}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:paper"],\

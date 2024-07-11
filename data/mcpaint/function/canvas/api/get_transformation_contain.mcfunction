@@ -12,6 +12,7 @@
 #   - offset_x: (float) x offset from the centre of the display entity to the centre of the canvas
 #   - offset_y: (float) y offset from the centre of the display entity to the centre of the canvas
 #   - offset_z: (float) z offset, does not depend on canvas
+#   - (roll): (float) roll of the text display in degrees
 #
 # Storage output:
 # - mcpaint:calc api.canvas.get_transformation:
@@ -52,6 +53,8 @@ scoreboard players operation #temp mcpaint.calc *= #canvas.height_blocks mcpaint
 scoreboard players operation #temp mcpaint.calc *= #canvas.get_transformation.scale mcpaint.calc
 scoreboard players operation #temp mcpaint.calc /= #canvas.get_transformation.max_blocks mcpaint.calc
 scoreboard players operation #canvas.get_transformation.offset.y mcpaint.calc -= #temp mcpaint.calc
+
+execute if data storage mcpaint:calc api.canvas.get_transformation.roll run function mcpaint:canvas/internal/transformation/roll
 
 execute store result storage mcpaint:calc api.canvas.get_transformation.transformation.translation[0] float 0.0000024415 run scoreboard players get #canvas.get_transformation.offset.x mcpaint.calc
 execute store result storage mcpaint:calc api.canvas.get_transformation.transformation.translation[1] float 0.0000024415 run scoreboard players get #canvas.get_transformation.offset.y mcpaint.calc

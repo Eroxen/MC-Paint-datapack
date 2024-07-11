@@ -1,4 +1,6 @@
-data modify storage mcpaint:calc internal.custom_painting.data set from entity @s item.components.minecraft:custom_data.mcpaint.custom_painting
+data modify storage mcpaint:calc internal.custom_painting.data set value {}
+data modify storage mcpaint:calc internal.custom_painting.data.options set from storage mcpaint:calc internal.custom_painting.default_options
+data modify storage mcpaint:calc internal.custom_painting.data merge from entity @s item.components.minecraft:custom_data.mcpaint.custom_painting
 
 scoreboard players set #custom_painting.interaction.modifying mcpaint.calc 1
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction{special:"copy_paste"} if score #custom_painting.interaction.is_sneaking mcpaint.calc matches 1 run scoreboard players set #custom_painting.interaction.modifying mcpaint.calc 0

@@ -1,1 +1,0 @@
-function mcpaint:database/api/create_backup

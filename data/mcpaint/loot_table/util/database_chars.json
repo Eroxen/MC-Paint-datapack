@@ -14,8 +14,7 @@
           "components": {
             "minecraft:writable_book_content": {
               "pages": [
-                "
-"
+                "\n"
               ]
             }
           }

@@ -1,4 +1,4 @@
-tellraw @a[distance=..32] {"translate":"mcpaint.message.egg_banter.3"}
+execute as @a[distance=..32] run function mcpaint:item/egg/internal/banter {text:"{\"translate\":\"mcpaint.message.egg_banter.3\"}"}
 
 scoreboard players set #width mcpaint.calc 1
 scoreboard players set #height mcpaint.calc 1

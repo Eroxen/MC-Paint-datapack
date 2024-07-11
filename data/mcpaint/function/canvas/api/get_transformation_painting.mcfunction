@@ -9,6 +9,7 @@
 # - mcpaint:calc api.canvas.canvas: canvas object
 # - mcpaint:calc api.canvas.get_transformation:
 #   - offset_z: (float) z offset
+#   - (roll): (float) roll of the text display in degrees
 #
 # Storage output:
 # - mcpaint:calc api.canvas.get_transformation:

@@ -10,9 +10,9 @@ execute if data entity @s {facing:3b} run data modify storage mcpaint:calc inter
 execute if entity @s[tag=mcpaint.painting.transforming] run return fail
 tag @s add mcpaint.painting.transforming
 
-data modify storage eroxified2:api entity.schedule set value {id:"mcpaint:painting_transform_dialog_1",delay:20,command:'tellraw @a[distance=..32] {"translate":"mcpaint.message.egg_banter.1"}'}
+data modify storage eroxified2:api entity.schedule set value {id:"mcpaint:painting_transform_dialog_1",delay:20,command:'execute as @a[distance=..32] run function mcpaint:item/egg/internal/banter {text:"{\\"translate\\":\\"mcpaint.message.egg_banter.1\\"}"}'}
 function eroxified2:entity/api/schedule
-data modify storage eroxified2:api entity.schedule set value {id:"mcpaint:painting_transform_dialog_2",delay:55,command:'tellraw @a[distance=..32] {"translate":"mcpaint.message.egg_banter.2"}'}
+data modify storage eroxified2:api entity.schedule set value {id:"mcpaint:painting_transform_dialog_2",delay:55,command:'execute as @a[distance=..32] run function mcpaint:item/egg/internal/banter {text:"{\\"translate\\":\\"mcpaint.message.egg_banter.2\\"}"}'}
 function eroxified2:entity/api/schedule
 data modify storage eroxified2:api entity.schedule set value {id:"mcpaint:painting_transform",delay:90,command:"function mcpaint:item/egg/internal/painting/transform"}
 function eroxified2:entity/api/schedule

@@ -1,0 +1,3 @@
+tellraw @s ["",{"text":"[MC Paint]","color":"light_purple"},{"text":" "},{"translate":"mcpaint.error.uninstall_warning","color":"red","fallback":"Are you sure you want to uninstall MC Paint from your world? This will delete all placed blocks and permanently delete all files. This cannot be undone!"}]
+
+tellraw @s {"clickEvent":{"action":"run_command","value":"/function mcpaint:util/uninstall/confirm"},"hoverEvent":{"action":"show_text","value":[{"translate":"mcpaint.message.click_to_confirm","fallback":"Click to confirm"}]},"translate":"mcpaint.ui.button.uninstall","fallback":"[Uninstall]","color":"aqua","underlined":true}
