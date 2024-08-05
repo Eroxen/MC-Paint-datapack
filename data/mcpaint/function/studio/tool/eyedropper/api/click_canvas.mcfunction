@@ -5,6 +5,8 @@ function mcpaint:canvas/api/get_pixel
 
 execute store success score #studio.ui_element.temp mcpaint.calc run data modify storage mcpaint:calc internal.studio.data.colour.selected set from storage mcpaint:calc api.canvas.get_pixel.colour
 execute if score #studio.ui_element.temp mcpaint.calc matches 0 run return 0
+playsound minecraft:block.pointed_dripstone.drip_water_into_cauldron block @p[predicate=mcpaint:same_session] ~ ~ ~ 100 1
+playsound minecraft:block.pointed_dripstone.drip_water_into_cauldron block @p[predicate=mcpaint:same_session] ~ ~ ~ 100 1
 
 execute if data storage mcpaint:calc internal.studio.data.colour{selected_name:"transparent"} run data modify storage mcpaint:calc internal.studio.data.colour.selected_name set value "foreground"
 execute if data storage mcpaint:calc internal.studio.data.colour{selected:-1} run data modify storage mcpaint:calc internal.studio.data.colour.selected_name set value "transparent"

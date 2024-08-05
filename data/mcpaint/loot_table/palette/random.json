@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mcpaint:palette/celeste"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mcpaint:palette/malachite"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mcpaint:palette/mauve"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mcpaint:palette/oranje"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mcpaint:palette/pumpkin"
+        }
+      ]
+    }
+  ]
+}
+  

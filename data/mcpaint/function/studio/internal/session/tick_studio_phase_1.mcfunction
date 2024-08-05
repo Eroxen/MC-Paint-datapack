@@ -1,4 +1,8 @@
 scoreboard players set #studio.session.response mcpaint.calc 1
+
+execute if score #studio.session.holding_brush mcpaint.calc matches 1 unless entity @s[tag=mcpaint.studio.session.brush_held] at @s run function mcpaint:studio/internal/session/brush/start_holding
+execute if score #studio.session.holding_brush mcpaint.calc matches 0 if entity @s[tag=mcpaint.studio.session.brush_held] at @s run function mcpaint:studio/internal/session/brush/stop_holding
+
 execute if score #studio.session.holding_brush mcpaint.calc matches 0 run return 0
 
 data modify storage mcpaint:calc internal.studio.rotation set from entity @s Rotation

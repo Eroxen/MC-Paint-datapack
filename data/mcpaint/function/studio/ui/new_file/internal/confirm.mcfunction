@@ -1,3 +1,5 @@
+data modify storage mcpaint:calc internal.studio.ui.data set from entity @s data
+
 data modify storage mcpaint:calc api.database.filename set from storage mcpaint:calc internal.studio.ui.data.filepath.name
 function mcpaint:database/api/validate_filename
 execute if score #database.valid mcpaint.calc matches 0 run return run tellraw @p[predicate=mcpaint:same_session] {"storage":"mcpaint:calc","nbt":"api.database.error_message","color":"red","interpret":true}

@@ -1,5 +1,6 @@
 scoreboard players operation @s mcpaint.session = .new mcpaint.session
 tag @s add mcpaint.studio.in_session
+tag @s add mcpaint.studio.session.brush_held
 
 data modify storage mcpaint:calc internal.studio.rotation set from entity @s Rotation
 data modify storage mcpaint:calc internal.studio.data set from entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data
