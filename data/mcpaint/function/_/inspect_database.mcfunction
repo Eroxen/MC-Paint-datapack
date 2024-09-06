@@ -1,0 +1,1 @@
+function mcpaint:database/api/inspect

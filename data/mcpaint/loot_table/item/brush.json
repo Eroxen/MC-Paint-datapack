@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 360000,
+                "minecraft:attribute_modifiers": {
+                  "show_in_tooltip": false,
+                  "modifiers": [
+                    {
+                      "type": "minecraft:player.block_interaction_range",
+                      "amount": -100,
+                      "id": "mcpaint:prevent_block_interaction",
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:player.entity_interaction_range",
+                      "amount": -100,
+                      "id": "mcpaint:prevent_entity_interaction",
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ]
+                },
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 100000
+                },
+                "minecraft:custom_data": {
+                  "mcpaint": {
+                    "brush": true
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "translate": "item.mcpaint.brush"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

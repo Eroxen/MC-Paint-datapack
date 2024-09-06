@@ -1,0 +1,1 @@
+$data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.process,distance=..0.1,limit=1] text set value '{"text":"\\u1001\\u0306\\n\\u2003","color":"white","font":"mcpaint:studio_ui","extra":[{"storage":"mcpaint:calc","nbt":"internal.studio.progress_bar_levels[$(level)]","interpret":true}]}'

@@ -1,0 +1,19 @@
+$summon text_display ~ ~ ~ {Rotation:$(rotation),Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.text_display","mcpaint.studio.ui_element","mcpaint.studio.ui_element.parent","mcpaint.studio.ui_element.new_file"],background:0,line_width:10000,transformation:$(transformation),text_opacity:-30b,alignment:"left",text:'{"text":"\\u1001\\u0302","color":"white","font":"mcpaint:studio_ui"}',Passengers:[\
+{id:"minecraft:marker",Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.child","mcpaint.studio.ui_element.new_file"]},\
+{id:"minecraft:text_display",Rotation:$(rotation),Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.child","mcpaint.studio.ui_element.new_file.child","mcpaint.studio.ui_element.new_file.filename"],background:0,line_width:10000,transformation:$(filename_transform)},\
+{id:"minecraft:text_display",Rotation:$(rotation),Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.child","mcpaint.studio.ui_element.new_file.child","mcpaint.studio.ui_element.new_file.width_blocks"],background:0,line_width:10000,transformation:$(width_blocks_transform)},\
+{id:"minecraft:text_display",Rotation:$(rotation),Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.child","mcpaint.studio.ui_element.new_file.child","mcpaint.studio.ui_element.new_file.width_px"],background:0,line_width:10000,transformation:$(width_px_transform)},\
+{id:"minecraft:text_display",Rotation:$(rotation),Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.child","mcpaint.studio.ui_element.new_file.child","mcpaint.studio.ui_element.new_file.height_blocks"],background:0,line_width:10000,transformation:$(height_blocks_transform)},\
+{id:"minecraft:text_display",Rotation:$(rotation),Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.child","mcpaint.studio.ui_element.new_file.child","mcpaint.studio.ui_element.new_file.height_px"],background:0,line_width:10000,transformation:$(height_px_transform)}\
+]}
+
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.filename,distance=..0.1,limit=1] text set from storage mcpaint:calc internal.studio.ui.data.filename_text
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.width_blocks,distance=..0.1,limit=1] text set value '{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.width_blocks","color":"white"}'
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.width_px,distance=..0.1,limit=1] text set value '{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.width_px","color":"white"}'
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.height_blocks,distance=..0.1,limit=1] text set value '{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.height_blocks","color":"white"}'
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.height_px,distance=..0.1,limit=1] text set value '{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.height_px","color":"white"}'
+
+data merge entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file,distance=..0.1,limit=1] {transformation:{scale:[0.625f,0.625f,0.625f]},start_interpolation:0,interpolation_duration:5}
+execute as @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.child,distance=..0.1] run data merge entity @s {transformation:{scale:[0.4f,0.4f,0.4f]},start_interpolation:0,interpolation_duration:5}
+
+execute as @e[type=text_display,tag=mcpaint.studio.ui_element.new_file,distance=..0.1,limit=1] run function mcpaint:studio/internal/ui/spawn_element/apply_values

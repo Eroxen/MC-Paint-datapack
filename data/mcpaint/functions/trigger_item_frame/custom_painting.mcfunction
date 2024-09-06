@@ -1,8 +1,0 @@
-scoreboard players set override mcpaint.calc 0
-execute positioned ^ ^ ^-1 if block ~ ~ ~ minecraft:observer[facing=north] if data storage mcpaint:calc trigger_item_frame{facing:"north"} align xyz positioned ~0.5 ~0.5 ~0.5 run function mcpaint:trigger_item_frame/custom_painting_craft_computer
-execute positioned ^ ^ ^-1 if block ~ ~ ~ minecraft:observer[facing=east] if data storage mcpaint:calc trigger_item_frame{facing:"east"} align xyz positioned ~0.5 ~0.5 ~0.5 run function mcpaint:trigger_item_frame/custom_painting_craft_computer
-execute positioned ^ ^ ^-1 if block ~ ~ ~ minecraft:observer[facing=south] if data storage mcpaint:calc trigger_item_frame{facing:"south"} align xyz positioned ~0.5 ~0.5 ~0.5 run function mcpaint:trigger_item_frame/custom_painting_craft_computer
-execute positioned ^ ^ ^-1 if block ~ ~ ~ minecraft:observer[facing=west] if data storage mcpaint:calc trigger_item_frame{facing:"west"} align xyz positioned ~0.5 ~0.5 ~0.5 run function mcpaint:trigger_item_frame/custom_painting_craft_computer
-execute positioned ^ ^ ^-1 if block ~ ~ ~ minecraft:observer[facing=up] if data storage mcpaint:calc trigger_item_frame{facing:"up"} align xyz positioned ~0.5 ~0.5 ~0.5 run function mcpaint:trigger_item_frame/custom_painting_craft_computer
-execute positioned ^ ^ ^-1 if block ~ ~ ~ minecraft:observer[facing=down] if data storage mcpaint:calc trigger_item_frame{facing:"down"} align xyz positioned ~0.5 ~0.5 ~0.5 run function mcpaint:trigger_item_frame/custom_painting_craft_computer
-execute if score override mcpaint.calc matches 0 run function mcpaint:trigger_item_frame/custom_painting_place

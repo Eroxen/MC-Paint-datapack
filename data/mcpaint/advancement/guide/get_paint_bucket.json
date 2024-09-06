@@ -1,0 +1,42 @@
+{
+  "parent": "mcpaint:guide/apply_egg",
+  "display": {
+    "icon": {
+      "id": "minecraft:lingering_potion",
+      "components": {
+        "custom_model_data": 360000,
+        "potion_contents": {
+          "custom_color": 15834424
+        }
+      }
+    },
+    "title": {
+      "translate": "mcpaint.advancements.get_paint_bucket.title"
+    },
+    "description": {
+      "translate": "mcpaint.advancements.get_paint_bucket.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "mcpaint": {
+                  "paint_bucket": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

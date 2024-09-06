@@ -1,0 +1,1 @@
+$data modify storage mcpaint:calc internal.studio.ui.data.text set value '{"text":"\\u1001\\u0200\\u1093$(save)$(save_as)$(load)$(new_file)\\u2023$(undo)$(redo)\\u2004","font":"mcpaint:studio_ui","color":"white"}'

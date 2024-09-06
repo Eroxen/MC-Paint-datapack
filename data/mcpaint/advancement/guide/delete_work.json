@@ -1,0 +1,24 @@
+{
+  "parent": "mcpaint:guide/load_work",
+  "display": {
+    "icon": {
+      "id": "minecraft:flint_and_steel"
+    },
+    "title": {
+      "translate": "mcpaint.advancements.delete_work.title"
+    },
+    "description": {
+      "translate": "mcpaint.advancements.delete_work.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

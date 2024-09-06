@@ -1,0 +1,1 @@
+$function mcpaint:studio/ui/$(name)/api/event/history_changed

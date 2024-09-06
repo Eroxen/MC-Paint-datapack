@@ -1,0 +1,27 @@
+{
+  "parent": "mcpaint:guide/save_work",
+  "display": {
+    "icon": {
+      "id": "minecraft:item_frame",
+      "components": {
+        "minecraft:custom_model_data": 360001
+      }
+    },
+    "title": {
+      "translate": "mcpaint.advancements.place_custom_painting.title"
+    },
+    "description": {
+      "translate": "mcpaint.advancements.place_custom_painting.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

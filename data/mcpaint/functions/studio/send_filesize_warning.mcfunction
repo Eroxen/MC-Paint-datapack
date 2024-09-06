@@ -1,2 +1,0 @@
-data modify storage mcpaint:calc message set value '{"translate":"mcpaint.message.filesize_warning","with":[{"score":{"name":"bytes","objective":"mcpaint.calc"}}]}'
-function mcpaint:studio/send_message_to_painter

@@ -1,0 +1,1 @@
+$data modify storage mcpaint:calc internal.canvas.compile_row.item set from storage mcpaint:database lookup.cjk[$(index)]

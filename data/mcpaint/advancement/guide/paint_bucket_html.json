@@ -1,0 +1,24 @@
+{
+  "parent": "mcpaint:guide/get_paint_bucket",
+  "display": {
+    "icon": {
+      "id": "minecraft:writable_book"
+    },
+    "title": {
+      "translate": "mcpaint.advancements.paint_bucket_html.title"
+    },
+    "description": {
+      "translate": "mcpaint.advancements.paint_bucket_html.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

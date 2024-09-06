@@ -1,0 +1,1 @@
+$execute positioned 0.0 0.0 0.0 positioned ~$(x) ~$(y) ~$(z) positioned ~$(nx) ~$(ny) ~$(nz) run function $(function)

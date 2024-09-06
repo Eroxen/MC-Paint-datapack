@@ -1,0 +1,1 @@
+$data modify storage mcpaint:calc internal.canvas.compile_row.queue set value "$(queue)$(item)"

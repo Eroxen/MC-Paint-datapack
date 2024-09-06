@@ -1,0 +1,1 @@
+tag @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] add mcpaint.studio.ignore_current_click

@@ -1,5 +1,0 @@
-execute on attacker unless predicate mcpaint:can_break_studio run return 0
-execute positioned ~ ~1 ~ align x align y align z positioned ~0.5 ~0.5 ~0.5 on attacker store result entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.attacker_in_survival_or_adventure byte 1 if predicate mcpaint:survival_or_adventure
-
-execute positioned ~ ~1 ~ align x align y align z positioned ~0.5 ~0.5 ~0.5 as @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] run function mcpaint:studio/get_left_clicked
-execute positioned ~ ~1 ~ align x align y align z positioned ~0.5 ~0.5 ~0.5 if data entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data{unsaved_changes:1b} on attacker run tellraw @s {"translate":"mcpaint.message.break_studio_unsaved_changes","extra":[{"nbt":"data.damage.progress_message","entity":"@e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1]","interpret":true}]}

@@ -1,2 +1,0 @@
-scoreboard players operation #reference mcpaint.attention_link = @s mcpaint.attention_link
-execute unless entity @p[tag=mcpaint.painting_mode,distance=..16,predicate=mcpaint:attention_link] run function mcpaint:studio/api/lose_painter

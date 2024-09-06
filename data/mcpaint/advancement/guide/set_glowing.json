@@ -1,0 +1,24 @@
+{
+  "parent": "mcpaint:guide/place_custom_painting",
+  "display": {
+    "icon": {
+      "id": "minecraft:glow_ink_sac"
+    },
+    "title": {
+      "translate": "mcpaint.advancements.set_glowing.title"
+    },
+    "description": {
+      "translate": "mcpaint.advancements.set_glowing.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

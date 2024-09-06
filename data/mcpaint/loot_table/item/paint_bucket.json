@@ -1,0 +1,66 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 360000,
+                "minecraft:attribute_modifiers": {
+                  "show_in_tooltip": false,
+                  "modifiers": [
+                    {
+                      "type": "minecraft:player.entity_interaction_range",
+                      "amount": -100,
+                      "id": "mcpaint:prevent_entity_interaction/mainhand",
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:player.entity_interaction_range",
+                      "amount": -100,
+                      "id": "mcpaint:prevent_entity_interaction/offhand",
+                      "operation": "add_value",
+                      "slot": "offhand"
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "mcpaint": {
+                    "paint_bucket": true
+                  },
+                  "eroxified2": {
+                    "item": {
+                      "throwable": {
+                        "detect": true,
+                        "stopsound": true,
+                        "run_command": "function mcpaint:item/paint_bucket/api/used"
+                      }
+                    }
+                  }
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 14770761
+                },
+                "minecraft:max_stack_size": 16,
+                "hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "translate": "item.mcpaint.paint_bucket"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

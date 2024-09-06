@@ -1,0 +1,6 @@
+data modify storage mcpaint:calc internal.custom_painting.data.text_message set value []
+execute if data storage mcpaint:calc internal.custom_painting.data.options{show_name:1b} run data modify storage mcpaint:calc internal.custom_painting.data.text_message append value '{"translate":"mcpaint.format.work_by_author","color":"yellow","with":[{"storage":"mcpaint:calc","nbt":"internal.custom_painting.data.filepath.name"},{"storage":"mcpaint:calc","nbt":"internal.custom_painting.data.author_name"}]}'
+execute if data storage mcpaint:calc internal.custom_painting.data.options{show_lore:1b} run data modify storage mcpaint:calc internal.custom_painting.data.text_message append value '{"storage":"mcpaint:calc","nbt":"internal.custom_painting.data.lore","color":"gray","italic":true}'
+
+execute unless data storage mcpaint:calc internal.custom_painting.data.text_message[0] run tag @s remove mcpaint.custom_painting.has_text_message
+execute if data storage mcpaint:calc internal.custom_painting.data.text_message[0] run tag @s add mcpaint.custom_painting.has_text_message

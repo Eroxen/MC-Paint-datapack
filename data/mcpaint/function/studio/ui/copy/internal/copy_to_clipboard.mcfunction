@@ -1,0 +1,1 @@
+$tellraw @s {"translate":"mcpaint.ui.button.copy_to_clipboard.chat","clickEvent":{"action":"copy_to_clipboard","value":"$(clipboard_text)"},"color":"aqua","underlined":true}

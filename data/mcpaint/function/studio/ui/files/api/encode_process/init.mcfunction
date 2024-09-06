@@ -1,0 +1,2 @@
+scoreboard players operation #studio.ui_element.total_steps mcpaint.calc = #canvas.encoder.total_steps mcpaint.calc
+data modify storage mcpaint:calc internal.studio.ui.data.process set from storage mcpaint:calc internal.canvas.encoder
