@@ -1,1 +1,1 @@
-$loot spawn ~ ~ ~ loot {pools:[{rolls:1,entries:[{type:"minecraft:item",name:"$(id)",functions:[{function:"minecraft:set_components",components:$(components)}]}]}]}
+$loot spawn ~ ~ ~ loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"mcpaint:item/custom_painting",functions:[{function:"minecraft:set_components",components:$(components)}]}]}]}

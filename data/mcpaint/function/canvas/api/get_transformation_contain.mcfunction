@@ -44,8 +44,7 @@ scoreboard players operation #canvas.get_transformation.offset.x mcpaint.calc *=
 execute store result score #temp mcpaint.calc run data get storage mcpaint:calc api.canvas.get_transformation.offset_x 409584
 scoreboard players operation #canvas.get_transformation.offset.x mcpaint.calc += #temp mcpaint.calc
 
-scoreboard players set #canvas.get_transformation.offset.y mcpaint.calc -1
-scoreboard players operation #canvas.get_transformation.offset.y mcpaint.calc *= #canvas.get_transformation.scale.y mcpaint.calc
+scoreboard players set #canvas.get_transformation.offset.y mcpaint.calc 0
 execute store result score #temp mcpaint.calc run data get storage mcpaint:calc api.canvas.get_transformation.offset_y 409584
 scoreboard players operation #canvas.get_transformation.offset.y mcpaint.calc += #temp mcpaint.calc
 scoreboard players set #temp mcpaint.calc 5

@@ -1,0 +1,21 @@
+#####################################################################
+# custom_painting/api/give.mcfunction
+# written by Eroxen
+#
+# Insetts a custom painting in the "contents" slot
+#
+# Macro arguments:
+# - name: painting name
+# - author: author's UUID
+#####################################################################
+
+$data modify storage mcpaint:calc internal.database.filepath set value {name:"$(name)",author:$(author)}
+function mcpaint:database/api/get_work with storage mcpaint:calc internal.database.filepath
+execute if score #database.found mcpaint.calc matches 0 run return fail
+data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc api.database.work.canvas
+
+data modify storage mcpaint:calc internal.custom_painting.data set value {}
+data modify storage mcpaint:calc internal.custom_painting.data.options set from storage mcpaint:calc internal.custom_painting.default_options
+data modify storage mcpaint:calc internal.custom_painting.item set value {}
+function mcpaint:custom_painting/internal/item/generate_components
+function mcpaint:custom_painting/internal/item/insert_loot_contents with storage mcpaint:calc internal.custom_painting.item

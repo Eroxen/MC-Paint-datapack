@@ -1,0 +1,60 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:item_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "translate": "item.mcpaint.custom_painting"
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "mcpaint:custom_painting",
+                "minecraft:entity_data": {
+                  "id": "minecraft:item_frame",
+                  "Silent": true,
+                  "Invisible": true,
+                  "Tags": [
+                    "mcpaint.trigger_item_frame"
+                  ],
+                  "Item": {
+                    "count": 1,
+                    "id": "minecraft:stone",
+                    "components": {
+                      "minecraft:custom_data": {
+                        "mcpaint": {
+                          "trigger": "custom_painting"
+                        }
+                      },
+                      "minecraft:custom_name": "{\"translate\": \"item.mcpaint.illegal_item\"}"
+                    }
+                  }
+                },
+                "minecraft:custom_data": "{
+                  mcpaint: {
+                    trigger_item_frame: true,
+                    custom_painting: true
+                  },
+                  eroxified2: {
+                    datafixer: {
+                      version: 1
+                    }
+                  }
+                }",
+                "minecraft:tooltip_style": "mcpaint:default"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

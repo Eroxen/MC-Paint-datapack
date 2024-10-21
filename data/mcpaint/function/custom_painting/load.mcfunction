@@ -1,5 +1,5 @@
 data modify storage mcpaint:calc internal.custom_painting set value {item_interactions:[],\
-default_options:{background_variant:"canvas",glowing:0b,axis_shading:1b,show_name:0b,show_lore:0b,locked:0b,billboard:0b,transparency:0b,roll:0b}}
+default_options:{background_variant:"canvas",glowing:0b,axis_shading:1b,show_name:0b,show_lore:0b,locked:0b,billboard:0b,transparency:0b,roll:0b,view_range:1b}}
 
 data modify storage mcpaint:calc internal.custom_painting.rolls set value [\
 {left_rotation:[0f,0f,0f,1f],roll:0f},\
@@ -87,6 +87,11 @@ data modify storage mcpaint:calc internal.custom_painting.item_interactions appe
 items:["minecraft:ice"],\
 toggle_option:{option:"transparency",values:8},\
 sound:{name:"minecraft:block.glass.place",parameters:"0.5 2"}}
+
+data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
+items:["minecraft:spyglass"],\
+toggle_option:{option:"view_range",values:4},\
+sound:{name:"minecraft:item.spyglass.use",parameters:"1 1"}}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:paper"],\

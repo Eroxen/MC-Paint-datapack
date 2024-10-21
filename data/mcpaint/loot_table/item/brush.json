@@ -10,19 +10,19 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 360000,
+                "minecraft:item_model": "mcpaint:brush",
                 "minecraft:attribute_modifiers": {
                   "show_in_tooltip": false,
                   "modifiers": [
                     {
-                      "type": "minecraft:player.block_interaction_range",
+                      "type": "minecraft:block_interaction_range",
                       "amount": -100,
                       "id": "mcpaint:prevent_block_interaction",
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
-                      "type": "minecraft:player.entity_interaction_range",
+                      "type": "minecraft:entity_interaction_range",
                       "amount": -100,
                       "id": "mcpaint:prevent_entity_interaction",
                       "operation": "add_value",
@@ -30,17 +30,23 @@
                     }
                   ]
                 },
-                "minecraft:food": {
-                  "nutrition": 0,
-                  "saturation": 0,
-                  "can_always_eat": true,
-                  "eat_seconds": 100000
+                "!minecraft:food": {},
+                "minecraft:consumable": {
+                  "consume_seconds": 10000000,
+                  "animation": "none",
+                  "has_consume_particles": false
                 },
-                "minecraft:custom_data": {
-                  "mcpaint": {
-                    "brush": true
+                "minecraft:custom_data": "{
+                  mcpaint: {
+                    brush: true
+                  },
+                  eroxified2: {
+                    datafixer: {
+                      version: 1
+                    }
                   }
-                }
+                }",
+                "minecraft:tooltip_style": "mcpaint:default"
               }
             },
             {

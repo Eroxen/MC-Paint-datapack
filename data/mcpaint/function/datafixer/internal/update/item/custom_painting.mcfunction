@@ -1,0 +1,1 @@
+function mcpaint:custom_painting/api/insert_contents with storage mcpaint:calc internal.datafixer.old_item.components.minecraft:entity_data.Item.components.minecraft:custom_data.mcpaint.custom_painting.filepath

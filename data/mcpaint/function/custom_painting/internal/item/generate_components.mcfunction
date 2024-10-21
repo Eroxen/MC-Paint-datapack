@@ -18,16 +18,7 @@ data modify storage mcpaint:calc internal.custom_painting.item.components set va
         "minecraft:custom_name": "{\"translate\": \"item.mcpaint.illegal_item\"}"\
     }\
     }\
-},\
-"minecraft:custom_data": {\
-    "mcpaint": {\
-    "trigger_item_frame": true\
-    }\
-},\
-"minecraft:item_name": '{\
-    "translate": "item.mcpaint.custom_painting"\
-}',\
-"minecraft:custom_model_data": 360001\
+}\
 }
 data modify storage mcpaint:calc internal.custom_painting.item.components.minecraft:entity_data.Item.components.minecraft:custom_data.mcpaint.custom_painting set value {}
 data modify storage mcpaint:calc internal.custom_painting.item.components.minecraft:entity_data.Item.components.minecraft:custom_data.mcpaint.custom_painting.filepath set from storage mcpaint:calc internal.database.filepath

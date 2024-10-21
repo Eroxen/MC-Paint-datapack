@@ -3,6 +3,8 @@ scoreboard players operation #studio.v mcpaint.calc = math.ray.hit.v eroxified2.
 scoreboard players add #studio.u mcpaint.calc 500
 scoreboard players add #studio.v mcpaint.calc 500
 
+# tellraw @a ["",{"score": {"name": "#studio.u", "objective": "mcpaint.calc"}},{"text":", "},{"score": {"name": "#studio.v", "objective": "mcpaint.calc"}}]
+
 
 ### get hovered element ###
 scoreboard players set #studio.ui_element.focused_child mcpaint.calc -1

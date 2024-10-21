@@ -10,19 +10,19 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 360000,
+                "minecraft:item_model": "mcpaint:paint_bucket",
                 "minecraft:attribute_modifiers": {
                   "show_in_tooltip": false,
                   "modifiers": [
                     {
-                      "type": "minecraft:player.entity_interaction_range",
+                      "type": "minecraft:entity_interaction_range",
                       "amount": -100,
                       "id": "mcpaint:prevent_entity_interaction/mainhand",
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
-                      "type": "minecraft:player.entity_interaction_range",
+                      "type": "minecraft:entity_interaction_range",
                       "amount": -100,
                       "id": "mcpaint:prevent_entity_interaction/offhand",
                       "operation": "add_value",
@@ -30,32 +30,30 @@
                     }
                   ]
                 },
-                "minecraft:custom_data": {
-                  "mcpaint": {
-                    "paint_bucket": true
+                "minecraft:custom_data": "{
+                  mcpaint: {
+                    paint_bucket: true
                   },
-                  "eroxified2": {
-                    "item": {
-                      "throwable": {
-                        "detect": true,
-                        "stopsound": true,
-                        "run_command": "function mcpaint:item/paint_bucket/api/used"
+                  eroxified2: {
+                    item: {
+                      throwable: {
+                        detect: true,
+                        stopsound: true,
+                        run_command: \"function mcpaint:item/paint_bucket/api/used\"
                       }
+                    },
+                    datafixer: {
+                      version: 1
                     }
                   }
-                },
+                }",
                 "minecraft:potion_contents": {
-                  "custom_color": 14770761
+                  "custom_color": 14770761,
+                  "custom_name": "mcpaint.paint_bucket"
                 },
                 "minecraft:max_stack_size": 16,
-                "hide_additional_tooltip": {}
-              }
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": {
-                "translate": "item.mcpaint.paint_bucket"
+                "hide_additional_tooltip": {},
+                "minecraft:tooltip_style": "mcpaint:default"
               }
             }
           ]

@@ -18,6 +18,6 @@ function mcpaint:database/api/get_work with storage mcpaint:calc internal.databa
 execute if score #database.found mcpaint.calc matches 0 run return run loot spawn ~ ~ ~ loot mcpaint:item/vanilla_painting
 data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc api.database.work.canvas
 
-data modify storage mcpaint:calc internal.custom_painting.item set value {id:"minecraft:item_frame"}
+data modify storage mcpaint:calc internal.custom_painting.item set value {}
 function mcpaint:custom_painting/internal/item/generate_components
 function mcpaint:custom_painting/internal/item/spawn_loot with storage mcpaint:calc internal.custom_painting.item

@@ -8,5 +8,6 @@ function mcpaint:custom_painting/internal/toggle/show_name
 function mcpaint:custom_painting/internal/toggle/billboard
 function mcpaint:custom_painting/internal/toggle/transparency
 function mcpaint:custom_painting/internal/toggle/roll with storage mcpaint:calc internal.custom_painting.data.options
+function mcpaint:custom_painting/internal/toggle/view_range with storage mcpaint:calc internal.custom_painting.data.options
 
 execute if data storage mcpaint:calc internal.custom_painting.data.options{locked:1b} run function mcpaint:custom_painting/internal/toggle/locked
