@@ -14,7 +14,7 @@ data modify storage mcpaint:calc internal.studio.ui.definition set value {name:"
 function mcpaint:studio/internal/ui/spawn_element/init_values
 function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"description_transform",relative:{translation:[0f,-0.5f,0.001f]}}
 function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"filename_transform",relative:{translation:[0f,-1.1f,0.001f]}}
-function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"canvas_origin",relative:{translation:[0.453125f,-0.6875f,0.001f]}}
+function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"canvas_origin",relative:{translation:[0.453125f,-0.703125f,0.001f]}}
 
 data modify storage mcpaint:calc internal.studio.ui.data merge value {filepath:{},can_ok:0b}
 data modify storage mcpaint:calc internal.studio.ui.data.filepath.author set from entity @p[predicate=mcpaint:same_session] UUID

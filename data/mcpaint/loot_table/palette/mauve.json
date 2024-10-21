@@ -11,7 +11,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
-                  "custom_color": 8547053
+                  "custom_color": 8547053,
+                  "custom_name": "mcpaint.paint_bucket"
                 }
               }
             }
@@ -30,7 +31,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
-                  "custom_color": 13138431
+                  "custom_color": 13138431,
+                  "custom_name": "mcpaint.paint_bucket"
                 }
               }
             }
@@ -49,7 +51,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
-                  "custom_color": 16758783
+                  "custom_color": 16758783,
+                  "custom_name": "mcpaint.paint_bucket"
                 }
               }
             }
@@ -68,7 +71,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
-                  "custom_color": 3929339
+                  "custom_color": 3929339,
+                  "custom_name": "mcpaint.paint_bucket"
                 }
               }
             }
@@ -87,7 +91,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
-                  "custom_color": 13303690
+                  "custom_color": 13303690,
+                  "custom_name": "mcpaint.paint_bucket"
                 }
               }
             }

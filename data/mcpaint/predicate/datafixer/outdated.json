@@ -1,0 +1,24 @@
+{
+  "condition": "inverted",
+  "term": {
+    "condition": "value_check",
+    "range": {
+      "min": {
+        "score": "eroxified2.datafixer_version",
+        "target": {
+          "name": "mcpaint",
+          "type": "fixed"
+        },
+        "type": "score"
+      }
+    },
+    "value": {
+      "score": "eroxified2.datafixer_version",
+      "target": {
+        "target": "this",
+        "type": "context"
+      },
+      "type": "score"
+    }
+  }
+}

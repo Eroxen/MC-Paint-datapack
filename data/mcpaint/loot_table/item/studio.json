@@ -17,7 +17,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 360000,
+                "minecraft:item_model": "mcpaint:studio",
                 "minecraft:entity_data": {
                   "id": "minecraft:item_frame",
                   "Silent": true,
@@ -38,11 +38,18 @@
                     }
                   }
                 },
-                "minecraft:custom_data": {
-                  "mcpaint": {
-                    "trigger_item_frame": true
+                "minecraft:custom_data": "{
+                  mcpaint: {
+                    trigger_item_frame: true,
+                    studio: true
+                  },
+                  eroxified2: {
+                    datafixer: {
+                      version: 1
+                    }
                   }
-                }
+                }",
+                "minecraft:tooltip_style": "mcpaint:default"
               }
             }
           ]

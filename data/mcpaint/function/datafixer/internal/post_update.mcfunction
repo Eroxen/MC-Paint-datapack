@@ -1,0 +1,1 @@
+scoreboard players operation @s eroxified2.datafixer_version = mcpaint eroxified2.datafixer_version

@@ -21,6 +21,6 @@ data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc
 data modify storage mcpaint:calc internal.custom_painting.data set value {}
 data modify storage mcpaint:calc internal.custom_painting.data.options set from storage mcpaint:calc internal.custom_painting.default_options
 data modify storage mcpaint:calc internal.custom_painting.data.options merge from storage mcpaint:calc api.custom_painting.give.options
-data modify storage mcpaint:calc internal.custom_painting.item set value {id:"minecraft:item_frame"}
+data modify storage mcpaint:calc internal.custom_painting.item set value {}
 function mcpaint:custom_painting/internal/item/generate_components
 function mcpaint:custom_painting/internal/item/give_loot with storage mcpaint:calc internal.custom_painting.item

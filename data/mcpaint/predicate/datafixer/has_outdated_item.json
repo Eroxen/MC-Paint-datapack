@@ -1,0 +1,1337 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.0": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.0": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.1": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.1": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.2": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.2": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.3": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.3": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.4": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.4": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.5": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.5": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.6": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.6": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.7": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.7": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.8": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.8": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.9": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.9": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.10": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.10": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.11": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.11": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.12": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.12": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.13": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.13": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.14": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.14": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.15": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.15": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.16": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.16": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.17": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.17": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.18": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.18": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.19": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.19": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.20": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.20": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.21": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.21": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.22": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.22": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.23": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.23": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.24": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.24": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.25": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.25": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "inventory.26": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "inventory.26": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "hotbar.0": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "hotbar.0": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "hotbar.1": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "hotbar.1": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "hotbar.2": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "hotbar.2": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "hotbar.3": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "hotbar.3": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "hotbar.4": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "hotbar.4": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "hotbar.5": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "hotbar.5": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "hotbar.6": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "hotbar.6": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "hotbar.7": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "hotbar.7": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "hotbar.8": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "hotbar.8": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.offhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mcpaint": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "weapon.offhand": {
+                  "predicates": {
+                    "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
