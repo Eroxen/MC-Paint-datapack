@@ -1,5 +1,6 @@
 $summon marker ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.marker"],data:{name:"MCPaint Studio",width:$(width),height:$(height),canvas:$(canvas),colour:{foreground:21756,background:16263,selected_name:"foreground",selected:21756},unsaved_changes:0b,history:{undo:[],redo:[]},display_settings:$(display_settings)}}
 data modify entity @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] data.tool set from storage mcpaint:calc internal.studio.tools.default
+execute as @e[type=marker,tag=mcpaint.studio.marker,distance=..0.1,limit=1] run function mcpaint:datafixer/api/new
 
 $summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.background"],item_display:"fixed",item:$(background_item),transformation:$(background_transform),width:$(width)f,height:$(height)f,view_range:0.66f}
 $summon item_display ~ ~ ~ {Rotation:[$(y_rotation)f,0f],Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.item_display","mcpaint.studio.item_display.border"],item_display:"fixed",item:$(border_item),transformation:$(border_transform),width:$(width)f,height:$(height)f,view_range:0.66f}

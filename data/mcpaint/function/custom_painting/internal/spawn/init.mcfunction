@@ -10,3 +10,5 @@ data modify storage mcpaint:calc internal.custom_painting.data.height set from s
 function mcpaint:custom_painting/internal/update/reapply_all_options
 
 data modify entity @s item.components.minecraft:custom_data.mcpaint.custom_painting set from storage mcpaint:calc internal.custom_painting.data
+
+function mcpaint:datafixer/api/new
