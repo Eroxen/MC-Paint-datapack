@@ -20,16 +20,17 @@
 #####################################################################
 
 data modify storage mcpaint:calc api.assets.model set value {surface:0.0625f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0.5f],scale:[1f,1f,1f]}}
-data modify storage mcpaint:calc internal.assets.lookup set value {filter:{id:"painting_background",variant:"canvas",width:1,height:1},z_origin:0f}
-data modify storage mcpaint:calc internal.assets.lookup.z_origin set from storage mcpaint:calc api.assets.get_model.z_origin
-data modify storage mcpaint:calc internal.assets.lookup.filter.width set from storage mcpaint:calc api.assets.get_model.width
-data modify storage mcpaint:calc internal.assets.lookup.filter.height set from storage mcpaint:calc api.assets.get_model.height
-data modify storage mcpaint:calc internal.assets.lookup.filter.variant set from storage mcpaint:calc api.assets.get_model.variant
+data modify storage mcpaint:calc internal.assets.lookup set value {variant:"canvas",z_origin:0f}
+data modify storage mcpaint:calc internal.assets.lookup.variant set from storage mcpaint:calc api.assets.get_model.variant
 execute unless data storage mcpaint:calc api.assets.get_model{variant:"empty"} run function mcpaint:assets/internal/lookup with storage mcpaint:calc internal.assets.lookup
 
-data modify storage mcpaint:calc api.assets.model.item set from storage mcpaint:calc internal.assets.lookup.return.item
+data modify storage mcpaint:calc api.assets.model.item set value {id:"minecraft:poisonous_potato",count:1,components:{"minecraft:custom_model_data":{floats:[1f,1f]}}}
+data modify storage mcpaint:calc api.assets.model.item.components.minecraft:item_model set from storage mcpaint:calc internal.assets.lookup.return.item_model
+execute store result storage mcpaint:calc api.assets.model.item.components.minecraft:custom_model_data.floats[0] float 1 run data get storage mcpaint:calc api.assets.get_model.width
+execute store result storage mcpaint:calc api.assets.model.item.components.minecraft:custom_model_data.floats[1] float 1 run data get storage mcpaint:calc api.assets.get_model.height
 data modify storage mcpaint:calc api.assets.model.surface set from storage mcpaint:calc internal.assets.lookup.return.surface
-execute unless data storage mcpaint:calc api.assets.model.item run data modify storage mcpaint:calc api.assets.model merge value {item:{id:"minecraft:orange_tulip"},transformation:{scale:[0f,0f,0f]},surface:0f}
+
+execute unless data storage mcpaint:calc internal.assets.lookup.return.item_model run data modify storage mcpaint:calc api.assets.model merge value {transformation:{scale:[0f,0f,0f]},surface:0f}
 
 execute store result score #assets.z_origin mcpaint.calc run data get storage mcpaint:calc api.assets.get_model.z_origin 10000
 execute store result score #assets.z mcpaint.calc run data get storage mcpaint:calc api.assets.model.surface 10000

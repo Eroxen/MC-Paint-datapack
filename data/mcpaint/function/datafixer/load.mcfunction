@@ -1,1 +1,1 @@
-scoreboard players set mcpaint eroxified2.datafixer_version 1
+scoreboard players set mcpaint eroxified2.datafixer_version 2
