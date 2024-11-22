@@ -16,3 +16,4 @@ $execute unless data storage mcpaint:database authors[{sUUID:"$(author)"}] run f
 $execute store success score #database.found mcpaint.calc if data storage mcpaint:database authors[{sUUID:"$(author)"}].works[{name:"$(name)"}]
 $execute if score #database.found mcpaint.calc matches 0 run data modify storage mcpaint:database authors[{sUUID:"$(author)"}].works append value {name:"$(name)"}
 $data modify storage mcpaint:database authors[{UUID:$(author)}].works[{name:"$(name)"}].canvas set from storage mcpaint:calc api.canvas.canvas
+$data remove storage mcpaint:database authors[{UUID:$(author)}].works[{name:"$(name)"}].cached_data

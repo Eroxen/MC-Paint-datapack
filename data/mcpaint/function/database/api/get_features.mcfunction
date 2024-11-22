@@ -9,6 +9,7 @@
 # - name: (str) name of the work
 #
 # Storage output :
+# - mcpaint:calc api.database.work: work
 # - mcpaint:calc api.database.features:
 #   - author: author's player name
 #   - title: work name

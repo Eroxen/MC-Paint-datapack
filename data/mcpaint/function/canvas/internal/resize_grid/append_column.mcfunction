@@ -1,0 +1,2 @@
+data modify storage mcpaint:calc internal.canvas.resize_grid.out append value []
+$data modify storage mcpaint:calc internal.canvas.resize_grid.out[-1] append from storage mcpaint:calc internal.canvas.resize_grid.in[][$(i)]
