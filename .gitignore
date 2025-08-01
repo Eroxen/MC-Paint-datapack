@@ -1,0 +1,9 @@
+*.DS_Store
+*.ipynb
+.ipynb_checkpoints/
+.vscode/
+.beet_cache
+build/
+plugins/player_head_font_cache/
+player_head_font_cache/
+**/__pycache__/
