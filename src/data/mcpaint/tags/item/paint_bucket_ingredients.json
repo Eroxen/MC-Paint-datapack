@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        { "required": false, "id": "#mcpaint:dyes" },
+        { "required": false, "id": "minecraft:bucket" }
+    ]
+}

@@ -1,0 +1,1 @@
+$data modify storage mcpaint:calc api.canvas.get_pixel.colour set from storage mcpaint:calc api.canvas.canvas.colour_array[$(u)][$(v)]

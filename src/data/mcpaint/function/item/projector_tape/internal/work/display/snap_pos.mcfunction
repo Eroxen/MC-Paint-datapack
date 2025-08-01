@@ -1,0 +1,1 @@
+$execute as $(uuid) at @s run function mcpaint:item/projector_tape/internal/work/display/internal/snap_pos

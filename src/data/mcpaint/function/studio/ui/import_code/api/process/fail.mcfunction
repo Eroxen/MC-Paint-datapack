@@ -1,0 +1,2 @@
+function mcpaint:studio/internal/ui/close
+function mcpaint:studio/ui/error_message/api/spawn {on_ok:"function mcpaint:studio/internal/ui/close",message:'{"storage":"mcpaint:calc","nbt":"internal.canvas.error_message","color":"black","interpret":true}',bottom_line:-0.7f}

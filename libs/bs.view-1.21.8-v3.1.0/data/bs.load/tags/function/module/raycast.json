@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "#bs.load:module/hitbox",
+    "bs.raycast:__load__"
+  ]
+}

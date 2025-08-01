@@ -1,0 +1,1 @@
+$data modify storage mcpaint:calc internal.database.inspect.work.name set from storage mcpaint:calc api.database.page.items[$(i)]

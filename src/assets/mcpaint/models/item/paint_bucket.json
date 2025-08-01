@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mcpaint:item/paint_bucket_overlay",
+        "layer1": "mcpaint:item/paint_bucket"
+    }
+}

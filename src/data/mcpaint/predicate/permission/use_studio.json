@@ -1,0 +1,4 @@
+{
+  "condition": "minecraft:reference",
+  "name": "mcpaint:permission/template/allow_unless_adventure"
+}

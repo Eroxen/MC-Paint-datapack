@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "egg",
+              "functions": [
+                {
+                  "function": "set_custom_data",
+                  "tag": "{\"collision_shape\":[[0.0d,8.0d,0.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,8.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "location_check",
+                  "predicate": {
+                    "block": {
+                      "state": {
+                        "type": "top"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "egg",
+              "functions": [
+                {
+                  "function": "set_custom_data",
+                  "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,8.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,8.0d,16.0d]]}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "location_check",
+                  "predicate": {
+                    "block": {
+                      "state": {
+                        "type": "bottom"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "egg",
+              "functions": [
+                {
+                  "function": "set_custom_data",
+                  "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

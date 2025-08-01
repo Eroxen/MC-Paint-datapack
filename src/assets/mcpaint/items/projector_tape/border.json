@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "side",
+        "model": {
+          "type": "minecraft:model",
+          "model": "mcpaint:item/projector_tape/border_side"
+        }
+      },
+      {
+        "when": "up",
+        "model": {
+          "type": "minecraft:model",
+          "model": "mcpaint:item/projector_tape/border_up"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "empty"
+    }
+  }
+}

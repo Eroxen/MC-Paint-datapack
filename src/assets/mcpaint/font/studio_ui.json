@@ -1,0 +1,220 @@
+{
+    "providers": [
+        {
+          "type": "space",
+          "advances": {
+            "\u1001": -1,
+            "\u1062": -62,
+            "\u1065": -65,
+            "\u1045": -45,
+            "\u1093": -93,
+            "\u2003": 3,
+            "\u2004": 4,
+            "\u2005": 5,
+            "\u2020": 20,
+            "\u2023": 23,
+            "\u2026": 26,
+            "\u2256": 256
+          }
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/hsv_colour_picker/background.png",
+            "height": 128,
+            "ascent": -3,
+            "chars": [
+                "\u0001\u0002\u0003\u0004",
+                "\u0005\u0006\u0000\u0000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/hsv_colour_picker/dart.png",
+            "height": 8,
+            "ascent": 1,
+            "chars": [
+                "\u0007"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/hsv_colour_picker/sv_square.png",
+            "height": 24,
+            "ascent": -27,
+            "chars": [
+                "\u0100\u0101\u0102\u0103\u0104\u0105\u0106\u0107\u0108\u0109\u010a\u010b\u010c\u010d\u010e\u010f",
+                "\u0110\u0111\u0112\u0113\u0114\u0115\u0116\u0117\u0118\u0119\u011a\u011b\u011c\u011d\u011e\u011f",
+                "\u0120\u0121\u0122\u0123\u0124\u0125\u0126\u0127\u0128\u0129\u012a\u012b\u012c\u012d\u012e\u012f",
+                "\u0130\u0131\u0132\u0133\u0134\u0135\u0136\u0137\u0138\u0139\u013a\u013b\u013c\u013d\u013e\u013f",
+                "\u0140\u0141\u0142\u0143\u0144\u0145\u0146\u0147\u0148\u0149\u014a\u014b\u014c\u014d\u014e\u014f",
+                "\u0150\u0151\u0152\u0153\u0154\u0155\u0156\u0157\u0158\u0159\u015a\u015b\u015c\u015d\u015e\u015f",
+                "\u0160\u0161\u0162\u0163\u0164\u0165\u0166\u0167\u0168\u0169\u016a\u016b\u016c\u016d\u016e\u016f",
+                "\u0170\u0171\u0172\u0173\u0174\u0175\u0176\u0177\u0178\u0179\u017a\u017b\u017c\u017d\u017e\u017f",
+                "\u0180\u0181\u0182\u0183\u0184\u0185\u0186\u0187\u0188\u0189\u018a\u018b\u018c\u018d\u018e\u018f",
+                "\u0190\u0191\u0192\u0193\u0194\u0195\u0196\u0197\u0198\u0199\u019a\u019b\u019c\u019d\u019e\u019f",
+                "\u01a0\u01a1\u01a2\u01a3\u01a4\u01a5\u01a6\u01a7\u01a8\u01a9\u01aa\u01ab\u01ac\u01ad\u01ae\u01af",
+                "\u01b0\u01b1\u01b2\u01b3\u01b4\u01b5\u01b6\u01b7\u01b8\u01b9\u01ba\u01bb\u01bc\u01bd\u01be\u01bf",
+                "\u01c0\u01c1\u01c2\u01c3\u01c4\u01c5\u01c6\u01c7\u01c8\u01c9\u01ca\u01cb\u01cc\u01cd\u01ce\u01cf",
+                "\u01d0\u01d1\u01d2\u01d3\u01d4\u01d5\u01d6\u01d7\u01d8\u01d9\u01da\u01db\u01dc\u01dd\u01de\u01df",
+                "\u01e0\u01e1\u01e2\u01e3\u01e4\u01e5\u01e6\u01e7\u01e8\u01e9\u01ea\u01eb\u01ec\u01ed\u01ee\u01ef",
+                "\u01f0\u01f1\u01f2\u01f3\u01f4\u01f5\u01f6\u01f7\u01f8\u01f9\u01fa\u01fb\u01fc\u01fd\u01fe\u01ff"
+              ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/file_menu/background.png",
+            "height": 128,
+            "ascent": 0,
+            "chars": [
+                "\u0200"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/file_menu/icons.png",
+            "height": 16,
+            "ascent": -9,
+            "chars": [
+                "\u0201\u0202\u0203\u0204\u0000\u0000\u0207\u0208",
+                "\u0211\u0212\u0213\u0214\u0000\u0000\u0217\u0218"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/save_as.png",
+            "height": 128,
+            "ascent": -3,
+            "chars": [
+                "\u0300"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/file_already_exists.png",
+            "height": 128,
+            "ascent": -3,
+            "chars": [
+                "\u0301"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/new_file.png",
+            "height": 128,
+            "ascent": -3,
+            "chars": [
+                "\u0302"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/tools/background.png",
+            "height": 32,
+            "ascent": 16,
+            "chars": [
+                "\u0400\u0000",
+                "\u0401\u0000",
+                "\u0402\u0000",
+                "\u0000\u0000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/tools/background.png",
+            "height": 32,
+            "ascent": 16,
+            "chars": [
+                "\u0000\u0000\u0000\u0000",
+                "\u0000\u0000\u0000\u0000",
+                "\u0000\u0000\u0000\u0000",
+                "\u0403\u0405\u0404\u0000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/tools/pen.png",
+            "height": 32,
+            "ascent": 5,
+            "chars": [
+                "\u0410\u0411"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/tools/eyedropper.png",
+            "height": 32,
+            "ascent": 5,
+            "chars": [
+                "\u0420\u0421"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/tools/pen_subtools.png",
+            "height": 16,
+            "ascent": 9,
+            "chars": [
+                "\u0500\u0501\u0502\u0503",
+                "\u0504\u0505\u0506\u0507",
+                "\u0508\u0509\u050a\u050b",
+                "\u050c\u050d\u050e\u050f"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/files.png",
+            "height": 128,
+            "ascent": -3,
+            "chars": [
+                "\u0303"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/import_code/not_ok.png",
+            "height": 128,
+            "ascent": -3,
+            "chars": [
+                "\u0304"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/import_code/ok.png",
+            "height": 128,
+            "ascent": -3,
+            "chars": [
+                "\u0305"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/process/background.png",
+            "height": 24,
+            "ascent": -13,
+            "chars": [
+                "\u0306"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/process/bar.png",
+            "height": 8,
+            "ascent": -14,
+            "chars": [
+                "\u3000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                "\u3001\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                "\u3002\u3003\u3004\u3005\u3006\u3007\u3008\u0000"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/studio_ui/copy.png",
+            "height": 64,
+            "ascent": -3,
+            "chars": [
+                "\u0307"
+            ]
+        }
+    ]
+}

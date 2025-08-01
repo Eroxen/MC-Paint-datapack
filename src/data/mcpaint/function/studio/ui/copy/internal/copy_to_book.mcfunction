@@ -1,0 +1,1 @@
+$item modify entity @s weapon.offhand [{"function":"minecraft:set_writable_book_pages","pages":$(book_pages),"mode":"replace_all"}]

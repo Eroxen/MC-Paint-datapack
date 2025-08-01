@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:cow",
+    "minecraft:mooshroom"
+  ]
+}

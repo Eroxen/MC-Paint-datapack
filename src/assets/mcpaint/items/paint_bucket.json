@@ -1,0 +1,12 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "mcpaint:item/paint_bucket",
+        "tints": [
+            {
+              "type": "minecraft:potion",
+              "default": -1
+            }
+        ]
+    }
+}

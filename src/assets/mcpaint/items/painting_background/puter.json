@@ -1,0 +1,166 @@
+{
+    "model": {
+        "type": "minecraft:range_dispatch",
+        "entries": [
+            {
+                "model": {
+                    "type": "minecraft:range_dispatch",
+                    "entries": [
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/1x1"
+                            },
+                            "threshold": 1.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/1x2"
+                            },
+                            "threshold": 2.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/1x3"
+                            },
+                            "threshold": 3.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/1x4"
+                            },
+                            "threshold": 4.0
+                        }
+                    ],
+                    "property": "minecraft:custom_model_data",
+                    "scale": 1.0,
+                    "index": 1
+                },
+                "threshold": 1.0
+            },
+            {
+                "model": {
+                    "type": "minecraft:range_dispatch",
+                    "entries": [
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/2x1"
+                            },
+                            "threshold": 1.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/2x2"
+                            },
+                            "threshold": 2.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/2x3"
+                            },
+                            "threshold": 3.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/2x4"
+                            },
+                            "threshold": 4.0
+                        }
+                    ],
+                    "property": "minecraft:custom_model_data",
+                    "scale": 1.0,
+                    "index": 1
+                },
+                "threshold": 2.0
+            },
+            {
+                "model": {
+                    "type": "minecraft:range_dispatch",
+                    "entries": [
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/3x1"
+                            },
+                            "threshold": 1.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/3x2"
+                            },
+                            "threshold": 2.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/3x3"
+                            },
+                            "threshold": 3.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/3x4"
+                            },
+                            "threshold": 4.0
+                        }
+                    ],
+                    "property": "minecraft:custom_model_data",
+                    "scale": 1.0,
+                    "index": 1
+                },
+                "threshold": 3.0
+            },
+            {
+                "model": {
+                    "type": "minecraft:range_dispatch",
+                    "entries": [
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/4x1"
+                            },
+                            "threshold": 1.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/4x2"
+                            },
+                            "threshold": 2.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/4x3"
+                            },
+                            "threshold": 3.0
+                        },
+                        {
+                            "model": {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:background/puter/4x4"
+                            },
+                            "threshold": 4.0
+                        }
+                    ],
+                    "property": "minecraft:custom_model_data",
+                    "scale": 1.0,
+                    "index": 1
+                },
+                "threshold": 4.0
+            }
+        ],
+        "property": "minecraft:custom_model_data",
+        "scale": 1.0,
+        "index": 0
+    }
+}

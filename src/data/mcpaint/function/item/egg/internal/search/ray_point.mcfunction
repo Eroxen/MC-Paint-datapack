@@ -1,0 +1,2 @@
+execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=painting,dx=0,dy=0,dz=0,sort=nearest] positioned ~0.5 ~0.5 ~0.5 if entity @s[dx=0,dy=0,dz=0] at @s rotated as @s run function mcpaint:item/egg/internal/search/hit_as_painting
+execute if score #egg.found mcpaint.calc matches 1 run function mcpaint:item/egg/internal/search/hit_as_egg with storage mcpaint:calc internal.egg.spawn

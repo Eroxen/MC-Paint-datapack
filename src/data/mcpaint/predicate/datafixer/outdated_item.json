@@ -1,0 +1,36 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "contents": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "mcpaint": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "slots": {
+            "contents": {
+              "predicates": {
+                "minecraft:custom_data": "{eroxified2:{datafixer:{version:1}}}"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

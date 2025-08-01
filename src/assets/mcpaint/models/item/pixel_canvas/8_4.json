@@ -1,0 +1,1 @@
+{"parent": "mcpaint:item/pixel_canvas/parent", "elements": [{"from": [8, 11, 7.45], "to": [9, 12, 8.55], "faces": {"north": {"uv": [9, 5, 8, 4], "texture": "#0", "tintindex": 0}, "south": {"uv": [8, 5, 9, 4], "texture": "#0", "tintindex": 0}}}]}

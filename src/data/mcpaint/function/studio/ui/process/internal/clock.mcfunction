@@ -1,0 +1,2 @@
+execute as @e[type=marker,tag=mcpaint.studio.ui_element.process] at @s run function mcpaint:studio/ui/process/internal/tick
+execute if entity @e[type=marker,tag=mcpaint.studio.ui_element.process] run schedule function mcpaint:studio/ui/process/internal/clock 1t replace

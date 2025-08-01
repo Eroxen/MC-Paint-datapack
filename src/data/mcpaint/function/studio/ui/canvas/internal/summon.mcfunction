@@ -1,0 +1,3 @@
+$summon text_display ~ ~ ~ {Rotation:$(rotation),Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.text_display","mcpaint.studio.ui_element","mcpaint.studio.ui_element.parent","mcpaint.studio.ui_element.canvas"],transformation:$(transformation),Passengers:[{id:"minecraft:marker",Tags:["mcpaint.entity","mcpaint.studio","mcpaint.studio.ui_element","mcpaint.studio.ui_element.child"]}]}
+
+execute as @e[type=text_display,tag=mcpaint.studio.ui_element.canvas,distance=..0.1,limit=1] run function mcpaint:studio/internal/ui/spawn_element/apply_values

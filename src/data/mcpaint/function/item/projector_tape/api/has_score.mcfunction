@@ -1,0 +1,1 @@
+scoreboard players remove @s mcpaint.using_projector_tape 1

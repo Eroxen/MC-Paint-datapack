@@ -1,0 +1,2 @@
+execute as @e[type=text_display,tag=mcpaint.entity.text_display.reload.queue,distance=..100,limit=1,sort=nearest] at @s run function mcpaint:util/reload_text_displays/internal/update
+execute unless entity @e[type=text_display,tag=mcpaint.entity.text_display.reload.queue,distance=..100,limit=1] run kill @s

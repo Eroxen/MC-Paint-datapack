@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:block/block",
+	"textures": {
+		"0": "mcpaint:item/projector_tape/origin"
+	},
+	"elements": [
+		{
+			"from": [0, 7.5, 8],
+			"to": [16, 8.5, 8],
+			"faces": {
+				"north": {"uv": [4, 0, 5, 1], "texture": "#0"},
+				"south": {"uv": [4, 0, 5, 1], "texture": "#0"}
+			}
+		}
+	],
+    "display": {
+        "fixed": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        }
+    }
+}

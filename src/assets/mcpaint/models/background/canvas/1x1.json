@@ -1,0 +1,9 @@
+{
+  "parent": "mcpaint:background/simple_sliced/1x1_d1",
+  "textures": {
+    "front": "mcpaint:item/background/canvas_front",
+    "side": "mcpaint:item/background/wooden_back",
+    "top": "mcpaint:item/background/wooden_back",
+    "back": "mcpaint:item/background/wooden_back"
+  }
+}

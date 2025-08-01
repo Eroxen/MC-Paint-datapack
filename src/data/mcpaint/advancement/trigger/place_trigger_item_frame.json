@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:item_frame",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "mcpaint" : {
+                    "trigger_item_frame": true
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mcpaint:item/trigger_item_frame/api/place"
+  }
+}

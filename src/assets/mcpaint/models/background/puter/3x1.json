@@ -1,0 +1,9 @@
+{
+  "parent": "mcpaint:background/simple_sliced/3x1_d3",
+  "textures": {
+    "front": "mcpaint:item/background/puter_front",
+    "side": "mcpaint:item/background/puter_side",
+    "top": "mcpaint:item/background/puter_top",
+    "back": "mcpaint:item/background/puter_back"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "mcpaint:studio/tool/pen/api/register",
+    "mcpaint:studio/tool/eyedropper/api/register"
+  ]
+}

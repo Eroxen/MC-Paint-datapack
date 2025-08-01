@@ -1,0 +1,97 @@
+{
+    "model": {
+        "type": "composite",
+        "models": [
+            {
+                "type": "minecraft:model",
+                "model": "mcpaint:block/projector/base"
+            },
+            {
+                "type": "condition",
+                "property": "minecraft:custom_model_data",
+                "index": 0,
+                "on_true" : {
+                    "type": "condition",
+                    "property": "minecraft:custom_model_data",
+                    "index": 1,
+                    "on_true" : {
+                        "type": "minecraft:composite",
+                        "models": [
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/0"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/1"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/2"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/3"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/4"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/5"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/6"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/7"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/8"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/9"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/10"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/11"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/12"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/13"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/14"
+                            },
+                            {
+                                "type": "minecraft:model",
+                                "model": "mcpaint:block/projector/tape_spinning/15"
+                            }
+                        ]
+                    },
+                    "on_false": {
+                        "type": "minecraft:model",
+                        "model": "mcpaint:block/projector/tape_still"
+                    }
+                },
+                "on_false": {
+                    "type": "empty"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,2 @@
+data modify storage mcpaint:calc internal.projector_tape.player_data.work.temp_entity.snap_pos merge value {x:1b,y:1b,z:1b}
+execute anchored eyes positioned ^ ^ ^5 run function mcpaint:item/projector_tape/internal/work/display/tp with storage mcpaint:calc internal.projector_tape.player_data.work.temp_entity

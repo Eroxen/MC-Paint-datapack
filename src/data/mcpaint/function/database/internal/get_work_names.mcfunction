@@ -1,0 +1,2 @@
+data modify storage mcpaint:calc internal.database.found.work_names set value []
+$data modify storage mcpaint:calc internal.database.found.work_names append from storage mcpaint:database authors[{sUUID:"$(author)"}].works[].name

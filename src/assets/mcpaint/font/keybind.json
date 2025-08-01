@@ -1,0 +1,16 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "mcpaint:font/keybind.png",
+            "height": 8,
+            "ascent": 7,
+            "chars": [
+                "\u0001",
+                "\u0002",
+                "\u0003",
+                "\u0000"
+            ]
+        }
+    ]
+}

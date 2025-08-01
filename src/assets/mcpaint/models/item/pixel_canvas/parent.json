@@ -1,0 +1,93 @@
+{
+  "textures": {
+    "0": "mcpaint:item/pixel_canvas"
+  },
+  "gui_light": "front",
+  "display": {
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2.0075,
+        0
+      ],
+      "scale": [
+        0.5075,
+        0.5075,
+        0.5
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        13.015,
+        7
+      ],
+      "scale": [
+        1.015,
+        1.015,
+        1
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3.00825,
+        1
+      ],
+      "scale": [
+        0.55825,
+        0.55825,
+        0.55
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        25
+      ],
+      "translation": [
+        1.13,
+        3.2102,
+        1.13
+      ],
+      "scale": [
+        0.6902,
+        0.6902,
+        0.68
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0.014999999999999902,
+        0
+      ],
+      "scale": [
+        1.015,
+        1.015,
+        1
+      ]
+    }
+  }
+}

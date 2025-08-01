@@ -1,0 +1,29 @@
+{
+  "condition": "value_check",
+  "range": {
+    "max": {
+      "score": "mcpaint.session",
+      "target": {
+        "name": "#reference",
+        "type": "fixed"
+      },
+      "type": "score"
+    },
+    "min": {
+      "score": "mcpaint.session",
+      "target": {
+        "name": "#reference",
+        "type": "fixed"
+      },
+      "type": "score"
+    }
+  },
+  "value": {
+    "score": "mcpaint.session",
+    "target": {
+      "target": "this",
+      "type": "context"
+    },
+    "type": "score"
+  }
+}

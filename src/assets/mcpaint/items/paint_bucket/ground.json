@@ -1,0 +1,12 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "mcpaint:block/paint_bucket_ground",
+        "tints": [
+            {
+              "type": "minecraft:potion",
+              "default": -1
+            }
+        ]
+    }
+}

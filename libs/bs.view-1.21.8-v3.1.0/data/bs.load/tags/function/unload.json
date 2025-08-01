@@ -1,0 +1,108 @@
+{
+  "values": [
+    {
+      "id": "bs.bitwise:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.block:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.color:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.dump:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.environment:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.generation:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.health:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.hitbox:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.id:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.interaction:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.link:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.log:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.math:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.move:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.position:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.random:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.raycast:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.schedule:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.sidebar:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.spline:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.string:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.time:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.tree:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.vector:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.view:__unload__",
+      "required": false
+    },
+    {
+      "id": "bs.xp:__unload__",
+      "required": false
+    }
+  ]
+}

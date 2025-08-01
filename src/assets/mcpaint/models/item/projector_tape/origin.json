@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:block/block",
+	"textures": {
+		"0": "mcpaint:item/projector_tape/origin"
+	},
+	"elements": [
+		{
+			"from": [7, 7, 7],
+			"to": [9, 9, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#0"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.5, 9, 8],
+			"to": [8.5, 11, 8],
+			"faces": {
+				"north": {"uv": [3, 0, 4, 2], "texture": "#0"},
+				"south": {"uv": [3, 0, 4, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 7.5, 8],
+			"to": [7, 8.5, 8],
+			"faces": {
+				"north": {"uv": [2, 0, 3, 2], "texture": "#0", "rotation": 90},
+				"south": {"uv": [2, 0, 3, 2], "texture": "#0", "rotation": 270}
+			}
+		},
+		{
+			"from": [8, 7.5, 5],
+			"to": [8, 8.5, 7],
+			"faces": {
+				"east": {"uv": [4, 0, 5, 2], "texture": "#0", "rotation": 90},
+				"west": {"uv": [4, 0, 5, 2], "texture": "#0", "rotation": 270}
+			}
+		}
+	],
+    "display": {
+        "fixed": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:slime",
+    "minecraft:magma_cube"
+  ]
+}

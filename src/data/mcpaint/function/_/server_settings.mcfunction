@@ -1,0 +1,1 @@
+function mcpaint:settings/api/trigger_server
