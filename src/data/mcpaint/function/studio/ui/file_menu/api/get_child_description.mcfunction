@@ -19,12 +19,12 @@
 # 12: redo
 #####################################################################
 
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 1 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.save"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.save_as"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 3 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.load"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 4 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.new_file"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 5 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.export"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 6 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.import_code"}'
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 1 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.save"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.save_as"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 3 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.load"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 4 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.new_file"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 5 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.export"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 6 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.import_code"}
 
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 11 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.undo","with":[{"keybind":"key.swapOffhand"}]}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 12 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.redo","with":[{"keybind":"key.sneak"},{"keybind":"key.swapOffhand"}]}'
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 11 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.undo","with":[{"keybind":"key.swapOffhand"}]}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 12 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.redo","with":[{"keybind":"key.sneak"},{"keybind":"key.swapOffhand"}]}

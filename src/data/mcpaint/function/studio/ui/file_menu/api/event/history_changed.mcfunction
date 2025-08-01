@@ -17,12 +17,12 @@ execute if score #studio.ui_element.text_changed mcpaint.calc matches 1 run data
 ### background text ###
 scoreboard players set #studio.ui_element.text_changed mcpaint.calc 0
 
-execute if data storage mcpaint:calc internal.studio.data.history.undo[0] store success score #studio.ui_element.temp mcpaint.calc run data modify storage mcpaint:calc internal.studio.ui.data.text_macro.undo set value "\\\\u0207"
-execute unless data storage mcpaint:calc internal.studio.data.history.undo[0] store success score #studio.ui_element.temp mcpaint.calc run data modify storage mcpaint:calc internal.studio.ui.data.text_macro.undo set value "\\\\u0217"
+execute if data storage mcpaint:calc internal.studio.data.history.undo[0] store success score #studio.ui_element.temp mcpaint.calc run data modify storage mcpaint:calc internal.studio.ui.data.text_macro.undo set value "\\u0207"
+execute unless data storage mcpaint:calc internal.studio.data.history.undo[0] store success score #studio.ui_element.temp mcpaint.calc run data modify storage mcpaint:calc internal.studio.ui.data.text_macro.undo set value "\\u0217"
 execute if score #studio.ui_element.temp mcpaint.calc matches 1 run scoreboard players set #studio.ui_element.text_changed mcpaint.calc 1
 
-execute if data storage mcpaint:calc internal.studio.data.history.redo[0] store success score #studio.ui_element.temp mcpaint.calc run data modify storage mcpaint:calc internal.studio.ui.data.text_macro.redo set value "\\\\u0208"
-execute unless data storage mcpaint:calc internal.studio.data.history.redo[0] store success score #studio.ui_element.temp mcpaint.calc run data modify storage mcpaint:calc internal.studio.ui.data.text_macro.redo set value "\\\\u0218"
+execute if data storage mcpaint:calc internal.studio.data.history.redo[0] store success score #studio.ui_element.temp mcpaint.calc run data modify storage mcpaint:calc internal.studio.ui.data.text_macro.redo set value "\\u0208"
+execute unless data storage mcpaint:calc internal.studio.data.history.redo[0] store success score #studio.ui_element.temp mcpaint.calc run data modify storage mcpaint:calc internal.studio.ui.data.text_macro.redo set value "\\u0218"
 execute if score #studio.ui_element.temp mcpaint.calc matches 1 run scoreboard players set #studio.ui_element.text_changed mcpaint.calc 1
 
 execute if score #studio.ui_element.text_changed mcpaint.calc matches 0 run return 0

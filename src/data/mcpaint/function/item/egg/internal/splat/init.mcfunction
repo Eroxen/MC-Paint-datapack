@@ -1,3 +1,5 @@
+import eroxified2:entity as e2_entity
+
 tag @s remove mcpaint.egg_splat.new
 
 data modify storage eroxified2:api entity.schedule set value {id:"mcpaint:egg_splat_phase_1",delay:1,command:"data merge entity @s {start_interpolation:0,interpolation_duration:5,transformation:{scale:[1.3f,1.3f,1f],translation:[0f,0f,0f]}}"}

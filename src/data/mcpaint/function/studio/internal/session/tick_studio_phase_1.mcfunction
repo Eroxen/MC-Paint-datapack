@@ -1,3 +1,5 @@
+import eroxified2:math.ray as e2_math_ray
+
 scoreboard players set #studio.session.response mcpaint.calc 1
 
 execute if score #studio.session.holding_brush mcpaint.calc matches 1 unless entity @s[tag=mcpaint.studio.session.brush_held] at @s run function mcpaint:studio/internal/session/brush/start_holding
