@@ -1,1 +1,0 @@
-$execute store result score #util.colour.lookup mcpaint.calc run data get storage mcpaint:database lookup.hex_to_int.$(char) 1

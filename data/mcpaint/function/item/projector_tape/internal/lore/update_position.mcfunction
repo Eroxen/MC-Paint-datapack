@@ -1,2 +1,0 @@
-$data modify storage mcpaint:calc internal.projector_tape.data.lore.position set value '{"translate":"chat.coordinates","with":[$(x),$(y),$(z)]}'
-function mcpaint:item/projector_tape/internal/lore/generate_full

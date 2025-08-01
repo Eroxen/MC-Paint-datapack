@@ -1,1 +1,0 @@
-scoreboard players remove @s mcpaint.using_brush 1

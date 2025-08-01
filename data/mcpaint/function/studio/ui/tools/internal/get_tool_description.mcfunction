@@ -1,1 +1,0 @@
-$data modify storage mcpaint:calc internal.studio.title set from storage mcpaint:calc internal.studio.tools.registry[$(i)].name

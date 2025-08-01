@@ -1,1 +1,0 @@
-$loot give @s loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"mcpaint:item/custom_painting",functions:[{function:"minecraft:set_components",components:$(components)}]}]}]}

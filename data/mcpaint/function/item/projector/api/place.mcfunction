@@ -1,3 +1,0 @@
-setblock ~ ~ ~ command_block{Command:"function mcpaint:item/projector/api/activate_command_block"}
-execute align xyz positioned ~0.5 ~1 ~0.5 run summon item_display ~ ~ ~ {Tags:["mcpaint.entity","mcpaint.projector","mcpaint.projector.root"],item:{id:"minecraft:poisonous_potato",components:{"minecraft:item_model":"mcpaint:projector","minecraft:custom_model_data":{flags:[0b,0b]},"minecraft:custom_data":{active:0b}}},item_display:"fixed",\
-Passengers:[{id:"minecraft:interaction",width:0.8f,height:0.5f,response:1b,Tags:["eroxified2.interaction","mcpaint.entity","mcpaint.projector","mcpaint.projector.interaction"]}]}

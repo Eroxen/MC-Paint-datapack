@@ -1,1 +1,0 @@
-$execute as $(uuid) run function eroxified2:entity/api/kill_stack

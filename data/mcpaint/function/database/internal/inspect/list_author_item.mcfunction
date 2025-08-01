@@ -1,1 +1,0 @@
-$tellraw @s {"text":"- ","extra":[{"text":"$(name)","color":"yellow"},{"text":" has $(works) works."}],"hoverEvent":{"action":"show_text","value":[{"text":"Click to inspect $(name)"}]},"clickEvent":{"action":"run_command","value":"/function mcpaint:database/api/inspect_author_page {UUID:$(UUID),page:0}"}}

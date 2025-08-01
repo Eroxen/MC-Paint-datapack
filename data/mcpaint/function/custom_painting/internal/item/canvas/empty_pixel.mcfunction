@@ -1,2 +1,0 @@
-data modify storage mcpaint:calc internal.custom_painting.generate_item_canvas.flags append value 0b
-data modify storage mcpaint:calc internal.custom_painting.generate_item_canvas.colors append value -1

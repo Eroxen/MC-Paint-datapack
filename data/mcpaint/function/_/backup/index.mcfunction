@@ -1,2 +1,0 @@
-execute unless data storage mcpaint_backup:database index[0] run return run tellraw @s {"text":"No backups available."}
-tellraw @s {"storage":"mcpaint_backup:database","nbt": "index[]","separator": "\n"}

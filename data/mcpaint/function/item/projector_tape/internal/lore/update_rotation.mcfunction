@@ -1,2 +1,0 @@
-$data modify storage mcpaint:calc internal.projector_tape.data.lore.rotation set value '{"translate":"mcpaint.format.rotation","with":[$(yaw),$(pitch)]}'
-function mcpaint:item/projector_tape/internal/lore/generate_full

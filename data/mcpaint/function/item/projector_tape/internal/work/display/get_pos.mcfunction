@@ -1,1 +1,0 @@
-$data modify storage mcpaint:calc internal.projector_tape.settings.pos set from entity $(uuid) Pos

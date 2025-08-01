@@ -1,1 +1,0 @@
-execute summon item_display run function mcpaint:item/projector_tape/internal/work/display/init

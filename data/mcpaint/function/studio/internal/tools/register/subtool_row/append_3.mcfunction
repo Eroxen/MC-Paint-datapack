@@ -1,1 +1,0 @@
-$data modify storage mcpaint:calc internal.studio.tools.register.subtool_text_rows append value '{$(1a)$(1b)$(1c),"extra":[{$(2a)$(2b)$(2c)},{$(3a)$(3b)$(3c)}]}'

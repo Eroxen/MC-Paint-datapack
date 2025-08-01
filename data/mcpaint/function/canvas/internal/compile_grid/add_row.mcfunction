@@ -1,1 +1,0 @@
-$data modify storage mcpaint:calc internal.canvas.compile_grid.compiled_rows.$(i) set from storage mcpaint:calc api.canvas.compiled_row

@@ -1,1 +1,0 @@
-$function mcpaint:canvas/internal/compile_grid/glue_rows/$(i) with storage mcpaint:calc internal.canvas.compile_grid.compiled_rows

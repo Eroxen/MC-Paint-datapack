@@ -1,1 +1,0 @@
-$data modify storage mcpaint:calc api.util.hex set from storage mcpaint:database lookup.hexadecimal_len2[$(int)]

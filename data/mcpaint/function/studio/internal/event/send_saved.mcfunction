@@ -1,1 +1,0 @@
-$function mcpaint:studio/ui/$(name)/api/event/saved

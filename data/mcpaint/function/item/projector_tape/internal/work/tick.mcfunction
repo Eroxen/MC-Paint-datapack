@@ -1,2 +1,0 @@
-execute as @a[tag=mcpaint.player.projector_tape.working] at @s run function mcpaint:item/projector_tape/internal/work/tick_player
-execute if entity @a[tag=mcpaint.player.projector_tape.working,limit=1] run schedule function mcpaint:item/projector_tape/internal/work/tick 1t replace
