@@ -1,0 +1,1 @@
+$execute positioned 0.0 0.0 0.0 positioned ~$(x) ~$(y) ~$(z) summon text_display run function mcpaint:item/projector_tape/internal/display/init

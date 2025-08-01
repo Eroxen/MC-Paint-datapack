@@ -2,8 +2,11 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "flags": {
-      "is_sneaking": true
+    "type_specific": {
+      "type": "minecraft:player",
+      "input": {
+        "sneak": true
+      }
     }
   }
 }

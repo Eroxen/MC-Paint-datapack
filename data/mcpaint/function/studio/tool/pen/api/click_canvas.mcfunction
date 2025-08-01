@@ -1,3 +1,5 @@
+execute if score #studio.session.is_holding_sprint mcpaint.calc matches 1 run return run function mcpaint:studio/tool/eyedropper/api/click_canvas
+
 data modify storage mcpaint:calc internal.studio.event set value {event:"set_pixel",parameters:{u:0,v:0,colour:0}}
 data modify storage mcpaint:calc internal.studio.event.parameters.colour set from storage mcpaint:calc internal.studio.data.colour.selected
 execute store result storage mcpaint:calc internal.studio.event.parameters.u int 1 run scoreboard players get #studio.ui_element.v.px mcpaint.calc

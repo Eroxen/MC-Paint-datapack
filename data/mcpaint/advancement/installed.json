@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:poisonous_potato",
       "components": {
-        "minecraft:custom_model_data": 360000
+        "minecraft:item_model": "mcpaint:brush"
       }
     },
     "title": "MC Paint",

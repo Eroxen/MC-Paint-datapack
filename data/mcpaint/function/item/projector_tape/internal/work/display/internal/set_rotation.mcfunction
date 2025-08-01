@@ -1,0 +1,2 @@
+data modify entity @s Rotation set from storage mcpaint:calc internal.projector_tape.player_data.work.temp_entity.rotation
+execute on passengers run data modify entity @s Rotation set from storage mcpaint:calc internal.projector_tape.player_data.work.temp_entity.rotation

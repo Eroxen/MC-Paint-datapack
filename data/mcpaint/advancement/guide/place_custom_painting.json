@@ -4,7 +4,7 @@
     "icon": {
       "id": "minecraft:item_frame",
       "components": {
-        "minecraft:custom_model_data": 360001
+        "minecraft:item_model": "mcpaint:custom_painting"
       }
     },
     "title": {

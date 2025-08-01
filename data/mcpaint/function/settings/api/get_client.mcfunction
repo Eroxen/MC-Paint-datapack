@@ -3,6 +3,9 @@
 # written by Eroxen
 #
 # Gets the executing player's client settings.
+#
+# Storage output:
+# - mcpaint:calc api.settings.client: client settings
 #####################################################################
 
 data modify storage mcpaint:calc api.settings.client set from storage mcpaint:calc internal.settings.client_default

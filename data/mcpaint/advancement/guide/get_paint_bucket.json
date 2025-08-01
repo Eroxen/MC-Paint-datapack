@@ -4,8 +4,8 @@
     "icon": {
       "id": "minecraft:lingering_potion",
       "components": {
-        "custom_model_data": 360000,
-        "potion_contents": {
+        "minecraft:item_model": "mcpaint:paint_bucket",
+        "minecraft:potion_contents": {
           "custom_color": 15834424
         }
       }

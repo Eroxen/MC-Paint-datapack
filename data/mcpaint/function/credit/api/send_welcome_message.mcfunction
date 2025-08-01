@@ -1,5 +1,7 @@
 execute if entity @s[tag=mcpaint.player.has_seen_welcome_message] run return fail
 tag @s add mcpaint.player.has_seen_welcome_message
+function mcpaint:settings/api/get_client
+execute if data storage mcpaint:calc api.settings.client{send_welcome_message:0b} run return fail
 
 tellraw @s {"text":"　　　　　　　　　　　　　　　　　　　　　","color":"yellow","strikethrough": true}
 tellraw @s {"translate":"mcpaint.message.welcome.description","color":"light_purple","with":[{"storage":"mcpaint:calc","nbt":"internal.credit.datapack_version"}],"fallback": "MC Paint %s by Eroxen"}

@@ -2,7 +2,14 @@
   "parent": "mcpaint:guide/place_custom_painting",
   "display": {
     "icon": {
-      "id": "minecraft:shears"
+      "id": "minecraft:item_frame",
+      "components": {
+        "minecraft:item_model": "mcpaint:custom_painting",
+        "minecraft:custom_model_data": {
+          "floats":[2.0,1.0],
+          "strings":["empty"]
+        }
+      }
     },
     "title": {
       "translate": "mcpaint.advancements.set_no_background.title"
