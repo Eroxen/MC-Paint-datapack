@@ -8,4 +8,4 @@
 # - mcpaint:calc api.canvas.text: text element
 #####################################################################
 
-data modify storage mcpaint:calc api.canvas.text set value '{"storage":"mcpaint:calc","nbt":"api.canvas.canvas.resolved_text","interpret":true,"font":"mcpaint:ink/fullbright"}'
+data modify storage mcpaint:calc api.canvas.text set value {"storage":"mcpaint:calc","nbt":"api.canvas.canvas.resolved_text","interpret":true,"font":"mcpaint:ink/fullbright"}

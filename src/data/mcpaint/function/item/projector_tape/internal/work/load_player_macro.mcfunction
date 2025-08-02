@@ -1,1 +1,0 @@
-$data modify storage mcpaint:calc internal.projector_tape.player_data set from storage mcpaint:calc internal.projector_tape.player_data_storage.$(id)

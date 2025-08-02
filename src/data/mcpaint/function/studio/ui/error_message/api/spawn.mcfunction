@@ -22,7 +22,7 @@ data modify storage mcpaint:calc internal.studio.ui.definition set value {name:"
 function mcpaint:studio/internal/ui/spawn_element/init_values
 $function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"message_transform",relative:{translation:[0f,$(bottom_line)f,0.01f]}}
 
-$data modify storage mcpaint:calc internal.studio.ui.data merge value {message:'$(message)',on_ok:"$(on_ok)"}
+$data modify storage mcpaint:calc internal.studio.ui.data merge value {message:$(message),on_ok:"$(on_ok)"}
 
 function mcpaint:studio/ui/error_message/internal/summon with storage mcpaint:calc internal.studio.ui.spawn
 

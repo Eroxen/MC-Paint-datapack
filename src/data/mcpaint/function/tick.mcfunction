@@ -1,5 +1,4 @@
 execute as @a[scores={mcpaint.using_brush=1..}] at @s run function mcpaint:item/brush/api/has_score
-execute as @a[scores={mcpaint.using_projector_tape=1..}] at @s run function mcpaint:item/projector_tape/api/has_score
 execute as @a[tag=mcpaint.player.in_session] at @s run function mcpaint:studio/api/player_in_session_tick
 
 execute as @a[scores={mcpaint.reload=1..}] at @s run function mcpaint:util/reload_text_displays/api/trigger

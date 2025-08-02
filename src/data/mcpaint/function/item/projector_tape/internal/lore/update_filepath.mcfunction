@@ -1,2 +1,0 @@
-$data modify storage mcpaint:calc internal.projector_tape.data.lore.filepath set value '{"translate":"mcpaint.format.work_by_author","with":["$(title)","$(author)"]}'
-function mcpaint:item/projector_tape/internal/lore/generate_full

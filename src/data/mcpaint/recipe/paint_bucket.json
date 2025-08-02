@@ -29,7 +29,8 @@
       ],
       "minecraft:tooltip_display": {
         "hidden_components": [
-          "minecraft:attribute_modifiers"
+          "minecraft:attribute_modifiers",
+          "minecraft:potion_contents"
         ]
       },
       "minecraft:custom_data": "{mcpaint:{paint_bucket:true},eroxified2:{item:{throwable:{detect:true,stopsound:true,run_command:\"function mcpaint:item/paint_bucket/api/used\"}},datafixer:{version:1}}}",

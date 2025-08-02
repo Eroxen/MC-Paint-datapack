@@ -14,7 +14,7 @@ data modify storage mcpaint:calc internal.studio.ui.definition set value {name:"
 function mcpaint:studio/internal/ui/spawn_element/init_values
 function mcpaint:studio/internal/ui/spawn_element/additional_transform {key:"filename_transform",relative:{translation:[0f,-0.395f,0.01f]}}
 
-data modify storage mcpaint:calc internal.studio.ui.data merge value {filename_text:'{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.filepath.name","color":"white"}'}
+data modify storage mcpaint:calc internal.studio.ui.data merge value {filename_text:{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.filepath.name","color":"white"}}
 data modify storage mcpaint:calc internal.studio.ui.data.filepath set from storage mcpaint:calc internal.studio.data.filepath
 data modify storage mcpaint:calc internal.studio.ui.data.filepath.author set from entity @p[predicate=mcpaint:same_session] UUID
 execute unless data storage mcpaint:calc internal.studio.ui.data.filepath.name run function mcpaint:database/api/get_default_filename with storage mcpaint:calc internal.studio.ui.data.filepath

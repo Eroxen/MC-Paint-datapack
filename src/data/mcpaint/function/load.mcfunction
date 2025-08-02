@@ -7,7 +7,6 @@ data modify storage mcpaint:calc internal.credit.rp_version_message set value '{
 scoreboard objectives add mcpaint.calc dummy
 scoreboard objectives add mcpaint.session dummy
 scoreboard objectives add mcpaint.using_brush dummy
-scoreboard objectives add mcpaint.using_projector_tape dummy
 scoreboard objectives add mcpaint.ui.u1 dummy
 scoreboard objectives add mcpaint.ui.u2 dummy
 scoreboard objectives add mcpaint.ui.v1 dummy

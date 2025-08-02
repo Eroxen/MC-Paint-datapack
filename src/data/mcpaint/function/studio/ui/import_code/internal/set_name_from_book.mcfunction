@@ -7,4 +7,4 @@ function mcpaint:database/api/validate_filename
 execute if score #database.valid mcpaint.calc matches 0 run return run tellraw @p[predicate=mcpaint:same_session] {"storage":"mcpaint:calc","nbt":"api.database.error_message","color":"red","interpret":true}
 
 data modify storage mcpaint:calc internal.studio.ui.data.filepath.name set from storage mcpaint:calc api.database.filename
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.import_code.filename,distance=..0.1,limit=1] text set value '{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.filepath.name","color":"white"}'
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.import_code.filename,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.filepath.name","color":"white"}

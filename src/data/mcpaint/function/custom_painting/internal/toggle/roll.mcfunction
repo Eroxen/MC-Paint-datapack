@@ -2,7 +2,7 @@ function mcpaint:database/api/get_work with entity @s item.components.minecraft:
 execute if score #database.found mcpaint.calc matches 0 run return fail
 data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc api.database.work.canvas
 
-data modify storage mcpaint:calc internal.temp set value {merge:{start_interpolation:0,interpolation_duration:4}}
+data modify storage mcpaint:calc internal.temp set value {merge:{}}
 $data modify storage mcpaint:calc internal.temp.lookup set from storage mcpaint:calc internal.custom_painting.rolls[$(roll)]
 data modify storage mcpaint:calc internal.temp.merge.transformation.left_rotation set from storage mcpaint:calc internal.temp.lookup.left_rotation
 data modify entity @s {} merge from storage mcpaint:calc internal.temp.merge

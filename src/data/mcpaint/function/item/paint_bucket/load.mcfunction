@@ -1,3 +1,5 @@
+import eroxified2:item.throwable as e2_item_throwable
+
 data modify storage mcpaint:calc internal.paint_bucket set value {item_interactions:[]}
 
 data modify storage mcpaint:calc internal.paint_bucket.item_interactions append value {\

@@ -22,15 +22,15 @@
 # 18: decrease pixel height
 #####################################################################
 
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 1 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.ok"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.cancel"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 3 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.set_name_from_item","with":[{"translate":"item.minecraft.writable_book"}]}'
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 1 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.ok"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.cancel"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 3 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.set_name_from_item","with":[{"translate":"item.minecraft.writable_book"}]}
 
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 11 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.increase_block_width"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 12 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.decrease_block_width"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 13 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.increase_pixel_width"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 14 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.decrease_pixel_width"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 15 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.increase_block_height"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 16 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.decrease_block_height"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 17 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.increase_pixel_height"}'
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 18 run data modify storage mcpaint:calc internal.studio.title set value '{"translate":"mcpaint.ui.button.decrease_pixel_height"}'
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 11 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.increase_block_width"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 12 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.decrease_block_width"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 13 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.increase_pixel_width"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 14 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.decrease_pixel_width"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 15 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.increase_block_height"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 16 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.decrease_block_height"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 17 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.increase_pixel_height"}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 18 run data modify storage mcpaint:calc internal.studio.title set value {"translate":"mcpaint.ui.button.decrease_pixel_height"}

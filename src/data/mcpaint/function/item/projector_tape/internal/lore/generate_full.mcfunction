@@ -1,3 +1,0 @@
-data modify storage mcpaint:calc internal.macro set value {filepath:'{"translate":"item.mcpaint.projector_tape.lore.unset"}',position:'{"translate":"item.mcpaint.projector_tape.lore.unset"}',rotation:'{"translate":"item.mcpaint.projector_tape.lore.unset"}',scale:"1.00"}
-data modify storage mcpaint:calc internal.macro merge from storage mcpaint:calc internal.projector_tape.data.lore
-function mcpaint:item/projector_tape/internal/lore/generate_full_macro with storage mcpaint:calc internal.macro
