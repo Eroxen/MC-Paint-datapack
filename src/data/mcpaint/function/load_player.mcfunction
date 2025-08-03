@@ -1,1 +1,0 @@
-execute unless data storage mcpaint:calc internal.database.chars at @a[limit=1] summon item_display run function mcpaint:database/api/load_chars
