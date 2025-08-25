@@ -107,8 +107,6 @@
   "mcpaint.studio_tool.pen": "Ручка",
   "mcpaint.studio_tool.eyedropper": "Пипетка",
   "mcpaint.format.work_by_author": "\"%s\" за авторством %s",
-  "mcpaint.format.rp_missing": "",
-  "mcpaint.format.rp_version": "%s",
-  "mcpaint.format.rp_version.1.5": "Ресурспак версии 1.5 установлен! %2$s %3$s",
+  "mcpaint.format.rp_version": "Ресурспак версии %1$s установлен! %2$s %3$s",
   "mcpaint.format.page_n_of": "%s/%s"
 }

@@ -5,10 +5,49 @@
   "pause": false,
   "body": [
     {
-      "type": "minecraft:plain_message",
-      "width": 300,
-      "contents": {
-        "text":"howdy"
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:painting"
+      },
+      "description": {
+        "text": "",
+        "extra": [
+          {
+            "text":"MC Paint",
+            "color": "gold"
+          },
+          {
+            "text": " is a Datapack that adds "
+          },
+          {
+            "text": "in-game paintable custom paintings",
+            "color": "gold"
+          },
+          {
+            "text": " to Minecraft! To get started, craft a "
+          },
+          {
+            "text": "Studio",
+            "color": "gold"
+          },
+          {
+            "text": " by throwing an "
+          },
+          {
+            "text": "Egg",
+            "color": "gold"
+          },
+          {
+            "text": " at a Vanilla "
+          },
+          {
+            "text": "Painting",
+            "color": "gold"
+          },
+          {
+            "text": ". For a full breakdown of all the features, check out the wiki linked below!"
+          }
+        ]
       }
     }
   ],
@@ -18,7 +57,7 @@
       "label": "Download Page",
       "action": {
         "type": "minecraft:open_url",
-        "url": "https://modrinth.com/datapack/catenary"
+        "url": "https://modrinth.com/datapack/mc-paint"
       }
     },
     {
@@ -40,37 +79,35 @@
       "label": "Wiki",
       "action": {
         "type": "minecraft:open_url",
-        "url": "https://github.com/Eroxen/Catenary-datapack/wiki"
-      }
-    },
-    {
-      "label": {
-        "translate": "gui.stats"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "/trigger catenary.dialog set 101"
+        "url": "https://github.com/Eroxen/MC-Paint-datapack/wiki"
       }
     },
     {
       "label": "Report an Issue",
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "catenary:report_an_issue"
+        "dialog": "mcpaint:report_an_issue"
       }
     },
     {
       "label": "Credits",
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "catenary:credits"
+        "dialog": "mcpaint:credits"
       }
     },
     {
-      "label": "Config",
+      "label": "Client Config",
       "action": {
         "type": "minecraft:run_command",
-        "command": "/function catenary:config/show_dialog"
+        "command": "/trigger mcpaint.settings"
+      }
+    },
+    {
+      "label": "Server Config",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/function mcpaint:settings/api/trigger_server"
       }
     }
   ]

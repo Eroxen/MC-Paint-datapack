@@ -1,3 +1,8 @@
+
+
+
+
+
 data modify storage mcpaint:calc internal.settings.server_menu set value {\
 allow_decode:'{"text":"\\u0001","font":"mcpaint:chat_ui","clickEvent":{"action":"run_command","value":"/function mcpaint:settings/api/merge_server {value:{allow_decode:0b}}"}}'\
 }

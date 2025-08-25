@@ -1,0 +1,94 @@
+{
+  "type": "minecraft:notice",
+  "title": "Credits",
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {"name":"Eroxen"}
+        }
+      },
+      "description": {
+        "text": "Datapack created by ",
+        "extra": [
+          {
+            "text":"Eroxen",
+            "color": "blue",
+            "underlined": true,
+            "click_event": {
+              "action": "open_url",
+              "url": "https://modrinth.com/user/Eroxen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:cod"
+      },
+      "description": {
+        "text": "Uses the datapack library ",
+        "extra": [
+          {
+            "text":"Bookshelf",
+            "color": "blue",
+            "underlined": true,
+            "click_event": {
+              "action": "open_url",
+              "url": "https://modrinth.com/organization/mcbookshelf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:beetroot"
+      },
+      "description": {
+        "text": "Built using ",
+        "extra": [
+          {
+            "text":"Beet",
+            "color": "blue",
+            "underlined": true,
+            "click_event": {
+              "action": "open_url",
+              "url": "https://github.com/mcbeet/beet"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:cartography_table"
+      },
+      "description": {
+        "text": "Translators: ",
+        "extra": [
+          {"color":"yellow","with":[{"text":"ZeroIceBear"},{"translate":"mcpaint.lang.zh_cn"}],"translate":"mcpaint.format.contributor_contribution","fallback":"%s - %s"},
+          {"text":", "},
+          {"color":"yellow","with":[{"text":"_dzudzu_"},{"translate":"mcpaint.lang.ru_ru"}],"translate":"mcpaint.format.contributor_contribution","fallback":"%s - %s"},
+          {"text":", "},
+          {"color":"yellow","with":[{"text":"Sataken"},{"translate":"mcpaint.lang.ja_jp"}],"translate":"mcpaint.format.contributor_contribution","fallback":"%s - %s"},
+          {"text":", "},
+          {"color":"yellow","with":[{"text":"Atten007"},{"translate":"mcpaint.lang.de_de"}],"translate":"mcpaint.format.contributor_contribution","fallback":"%s - %s"},
+          {"text":", "},
+          {"color":"yellow","with":[{"text":"Legokocka31"},{"translate":"mcpaint.lang.hu_hu"}],"translate":"mcpaint.format.contributor_contribution","fallback":"%s - %s"}
+        ]
+      }
+    }
+  ],
+  "action": {
+    "label": {
+      "translate": "gui.done"
+    }
+  }
+}

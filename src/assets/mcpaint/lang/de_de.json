@@ -150,8 +150,6 @@
   "mcpaint.studio_tool.eyedropper": "Pipette",
   "mcpaint.format.work_by_author": "\"%s\" von %s",
   "mcpaint.format.contributor_contribution": "%s - %s",
-  "mcpaint.format.rp_missing": "",
-  "mcpaint.format.rp_version": "%s",
-  "mcpaint.format.rp_version.1.5": "RP v1.5 installiert! %2$s %3$s",
+  "mcpaint.format.rp_version": "RP %1$s installiert! %2$s %3$s",
   "mcpaint.format.page_n_of": "%s/%s"
 }

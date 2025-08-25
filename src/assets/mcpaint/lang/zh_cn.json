@@ -107,8 +107,6 @@
   "mcpaint.studio_tool.pen": "笔",
   "mcpaint.studio_tool.eyedropper": "吸管",
   "mcpaint.format.work_by_author": "\"%s\" by %s",
-  "mcpaint.format.rp_missing": "",
-  "mcpaint.format.rp_version": "%s",
-  "mcpaint.format.rp_version.1.5": "RP v1.5 已安装! %2$s %3$s",
+  "mcpaint.format.rp_version": "RP %1$s 已安装! %2$s %3$s",
   "mcpaint.format.page_n_of": "%s/%s"
 }

@@ -1,0 +1,7 @@
+from beet import Language
+
+def add_internal_translation(key: str, value: str):
+    lang = ctx.assets.languages.get("mcpaint_internal:en_us", {data:{}}).data
+    lang[key] = value
+    ctx.assets.languages["mcpaint_internal:en_us"] = Language(lang)
+    return key

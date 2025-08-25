@@ -1,3 +1,7 @@
+from eroxified2:core import run_at_pack_tick
+
+run_at_pack_tick()
+
 execute as @a[scores={mcpaint.using_brush=1..}] at @s run function mcpaint:item/brush/api/has_score
 execute as @a[tag=mcpaint.player.in_session] at @s run function mcpaint:studio/api/player_in_session_tick
 

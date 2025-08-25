@@ -1,3 +1,7 @@
+from eroxified2:core import run_at_pack_load
+
+run_at_pack_load()
+
 scoreboard objectives add mcpaint.calc dummy
 scoreboard objectives add mcpaint.session dummy
 scoreboard objectives add mcpaint.using_brush dummy

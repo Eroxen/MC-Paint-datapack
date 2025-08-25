@@ -5,7 +5,6 @@ scoreboard players set #custom_painting.interaction.grant_advancement mcpaint.ca
 scoreboard players set #custom_painting.interaction.transform_item mcpaint.calc 0
 scoreboard players set #custom_painting.interaction.clicked mcpaint.calc 1
 
-execute on target run function mcpaint:credit/api/send_welcome_message
 execute on target store success score #custom_painting.interaction.is_sneaking mcpaint.calc if predicate mcpaint:is_sneaking
 execute on target run data modify storage mcpaint:calc internal.custom_painting.user set from entity @s UUID
 

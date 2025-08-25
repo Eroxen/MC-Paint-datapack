@@ -143,8 +143,6 @@
   "mcpaint.settings.client.header": "MC Paint client-instellingen",
   "mcpaint.settings.client.send_rp_message.title": "Bronpakketmelding sturen",
   "mcpaint.settings.client.send_rp_message.info": "Stuurt 10 seconden nadat je de wereld binnenkomt een melding om de status van het geïnstalleerde bronpakket weer te geven en het reload-commando uit te leggen.",
-  "mcpaint.settings.client.send_welcome_message.title": "Verwelkoming sturen",
-  "mcpaint.settings.client.send_welcome_message.info": "Stuurt, de eerste keer dat je een Studio of Schilderij gebruikt nadat je de wereld binnen bent gekomen, een bericht met links naar externe hulpbronnen zoals de wiki.",
   "mcpaint.settings.client.protect_studio.title": "Studio-bescherming",
   "mcpaint.settings.client.protect_studio.info": "Voorkomt dat andere spelers een studio kunnen gebruiken waar jij een bestand open hebt staan.",
   "mcpaint.settings.client.egg_banter.title": "Eierspot",
@@ -156,8 +154,6 @@
   "mcpaint.studio_tool.eyedropper": "Pipet",
   "mcpaint.format.work_by_author": "\"%s\" door %s",
   "mcpaint.format.contributor_contribution": "%s - %s",
-  "mcpaint.format.rp_missing": "",
-  "mcpaint.format.rp_version": "%s",
-  "mcpaint.format.rp_version.1.5": "Bronpakket v1.5 geïnstalleerd! %2$s %3$s",
+  "mcpaint.format.rp_version": "Bronpakket %1$s geïnstalleerd! %2$s %3$s",
   "mcpaint.format.page_n_of": "%s/%s"
 }

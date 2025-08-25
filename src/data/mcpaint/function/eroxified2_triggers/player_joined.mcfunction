@@ -1,4 +1,6 @@
-tag @s remove mcpaint.player.has_seen_welcome_message
+from eroxified2:core import call_on_player_joined
+
+call_on_player_joined()
 
 function mcpaint:util/api/enable_all_triggers
 

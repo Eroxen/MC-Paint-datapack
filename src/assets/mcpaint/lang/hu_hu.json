@@ -143,8 +143,6 @@
 "mcpaint.settings.client.header": "MC Paint kliensbeállítások",
 "mcpaint.settings.client.send_rp_message.title": "Erőforráscsomag üzenet küldése",
 "mcpaint.settings.client.send_rp_message.info": "Üzenet küldése a játékhoz való csatlakozás után 10 másodperccel, amely tájékoztat az erőforráscsomag állapotáról, és magyarázatot ad a /trigger mcpaint.reload parancs használatáról.",
-"mcpaint.settings.client.send_welcome_message.title": "Üdvözlő üzenet küldése",
-"mcpaint.settings.client.send_welcome_message.info": "Üzenet küldése, amikor először lép kapcsolatba egy Stúdióval vagy Festménnyel a világba való belépés után, külső erőforrások, például az adatcsomag wiki linkjével.",
 "mcpaint.settings.client.protect_studio.title": "Stúdió védelme",
 "mcpaint.settings.client.protect_studio.info": "Megakadályozza, hogy más játékosok hozzáférjenek egy Stúdióhoz, ahol Ön egy mentett fájlt nyitott meg.",
 "mcpaint.settings.client.egg_banter.title": "Egg Banter",
@@ -156,8 +154,6 @@
 "mcpaint.studio_tool.eyedropper": "Pipetta",
 "mcpaint.format.work_by_author": "\"%s\" szerzője: %s",
 "mcpaint.format.contributor_contribution": "%s - %s",
-"mcpaint.format.rp_missing": "",
-"mcpaint.format.rp_version": "%s",
-"mcpaint.format.rp_version.1.5": "RP v1.5 telepítve! %2$s %3$s",
+"mcpaint.format.rp_version": "RP %1$s telepítve! %2$s %3$s",
 "mcpaint.format.page_n_of": "%s/%s"
 }
