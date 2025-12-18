@@ -3,6 +3,7 @@
   "item.mcpaint.illegal_item": "Uh oh, you're not supposed to have this.",
   "item.mcpaint.brush": "Brush",
   "item.mcpaint.studio": "Studio",
+  "item.mcpaint.easel": "Easel",
   "item.mcpaint.custom_painting": "Custom Painting",
   "item.mcpaint.custom_painting.lore.work_name": "%s",
   "item.mcpaint.custom_painting.lore.author_name": "%s",

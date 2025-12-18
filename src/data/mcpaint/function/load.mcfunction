@@ -15,8 +15,8 @@ scoreboard objectives add mcpaint.reload trigger
 scoreboard objectives add mcpaint.settings trigger
 scoreboard objectives add mcpaint.credits trigger
 
-execute store result score maxCommandChainLength mcpaint.calc run gamerule maxCommandChainLength
-execute unless score maxCommandChainLength mcpaint.calc matches 1000000.. run gamerule maxCommandChainLength 1000000
+execute store result score max_command_sequence_length mcpaint.calc run gamerule max_command_sequence_length
+execute unless score max_command_sequence_length mcpaint.calc matches 1000000.. run gamerule max_command_sequence_length 1000000
 
 scoreboard players set #const.-1 mcpaint.calc -1
 scoreboard players set #const.2 mcpaint.calc 2

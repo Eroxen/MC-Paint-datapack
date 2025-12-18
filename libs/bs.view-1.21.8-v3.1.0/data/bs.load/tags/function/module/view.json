@@ -1,7 +1,0 @@
-{
-  "replace": true,
-  "values": [
-    "#bs.load:module/raycast",
-    "bs.view:__load__"
-  ]
-}

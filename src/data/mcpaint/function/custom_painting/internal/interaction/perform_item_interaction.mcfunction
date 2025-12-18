@@ -4,15 +4,21 @@ data modify storage mcpaint:calc internal.custom_painting.data merge from entity
 
 scoreboard players set #custom_painting.interaction.modifying mcpaint.calc 1
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction{special:"copy_paste"} if score #custom_painting.interaction.is_sneaking mcpaint.calc matches 1 run scoreboard players set #custom_painting.interaction.modifying mcpaint.calc 0
-execute if score #custom_painting.interaction.modifying mcpaint.calc matches 1 if entity @s[tag=mcpaint.custom_painting.locked] unless data storage mcpaint:calc internal.custom_painting.item_interaction{toggle_option:{option:"locked"}} run return fail
+execute if score #custom_painting.interaction.modifying mcpaint.calc matches 1 if entity @s[tag=mcpaint.custom_painting.locked] unless data storage mcpaint:calc internal.custom_painting.item_interaction.merge_options.locked run return fail
+
 
 scoreboard players set #custom_painting.changed mcpaint.calc 0
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction.merge_options store success score #custom_painting.changed mcpaint.calc run data modify storage mcpaint:calc internal.custom_painting.data.options merge from storage mcpaint:calc internal.custom_painting.item_interaction.merge_options
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction.toggle_option run function mcpaint:custom_painting/internal/interaction/toggle_option with storage mcpaint:calc internal.custom_painting.item_interaction.toggle_option
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction{special:"copy_paste"} run function mcpaint:custom_painting/internal/interaction/copy
+execute if data storage mcpaint:calc internal.custom_painting.item_interaction.merge_options{locked:0b} run data modify storage mcpaint:calc internal.custom_painting.compare_uuid set from storage mcpaint:calc internal.custom_painting.data.owner
+execute if data storage mcpaint:calc internal.custom_painting.item_interaction.merge_options{locked:0b} store success score #custom_painting.different mcpaint.calc run data modify storage mcpaint:calc internal.custom_painting.compare_uuid set from storage mcpaint:calc internal.custom_painting.user
+execute if data storage mcpaint:calc internal.custom_painting.item_interaction.merge_options{locked:0b} if score #custom_painting.different mcpaint.calc matches 1 run return fail
+execute if data storage mcpaint:calc internal.custom_painting.item_interaction.merge_options.locked run function mcpaint:custom_painting/internal/toggle/locked
 execute if score #custom_painting.changed mcpaint.calc matches 0 run return fail
 
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction.sound run function mcpaint:custom_painting/internal/interaction/play_sound with storage mcpaint:calc internal.custom_painting.item_interaction.sound
+execute if data storage mcpaint:calc internal.custom_painting.item_interaction.particle run function mcpaint:custom_painting/internal/interaction/play_particle with storage mcpaint:calc internal.custom_painting.item_interaction.particle
 
 execute if data storage mcpaint:calc internal.custom_painting.item_interaction.grant_advancement run scoreboard players set #custom_painting.interaction.grant_advancement mcpaint.calc 1
 

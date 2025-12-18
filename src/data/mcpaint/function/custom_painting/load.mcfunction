@@ -66,11 +66,25 @@ items:["minecraft:writable_book"],\
 toggle_option:{option:"show_lore",values:2},\
 grant_advancement:"mcpaint:guide/custom_painting_lore"}
 
+# data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
+# items:["minecraft:tripwire_hook"],\
+# toggle_option:{option:"locked",values:2},\
+# true_sound:{name:"minecraft:block.iron_door.close",parameters:"1 0.7"},\
+# false_sound:{name:"minecraft:block.iron_door.open",parameters:"1 1.3"}}
+
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
-items:["minecraft:tripwire_hook"],\
-toggle_option:{option:"locked",values:2},\
-true_sound:{name:"minecraft:block.iron_door.close",parameters:"1 0.7"},\
-false_sound:{name:"minecraft:block.iron_door.open",parameters:"1 1.3"}}
+items:["minecraft:honeycomb"],\
+merge_options:{locked:1b},\
+sound:{name:"minecraft:item.honeycomb.wax_on",parameters:"1 1"},\
+particle:{name:"minecraft:wax_on",parameters:"0.15 0.15 0.15 0 5"},\
+grant_advancement:"minecraft:husbandry/wax_on"}
+
+data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
+items:["minecraft:wooden_axe","minecraft:stone_axe","minecraft:copper_axe","minecraft:iron_axe","minecraft:golden_axe","minecraft:diamond_axe","minecraft:netherite_axe"],\
+merge_options:{locked:0b},\
+sound:{name:"minecraft:item.axe.wax_off",parameters:"1 1"},\
+particle:{name:"minecraft:wax_off",parameters:"0.15 0.15 0.15 0 5"},\
+grant_advancement:"minecraft:husbandry/wax_off"}
 
 data modify storage mcpaint:calc internal.custom_painting.item_interactions append value {\
 items:["minecraft:ender_eye"],\

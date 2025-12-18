@@ -1,0 +1,1 @@
+$function mcpaint:item/trigger_armor_stand/data/trigger/$(trigger)

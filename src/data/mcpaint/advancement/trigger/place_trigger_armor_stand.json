@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:armor_stand",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "mcpaint" : {
+                    "trigger_armor_stand": true
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mcpaint:item/trigger_armor_stand/api/place"
+  }
+}

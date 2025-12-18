@@ -9,7 +9,9 @@
 #   - (width): (int) block width
 #   - (height): (int) block height
 #   - (variant): (string) skin variant, default "canvas"
-#   - (z_origin): (float) surface height of the display entity 
+#   - (z_origin): (float) surface height of the display entity
+#   - (y_origin): (float) vertical offset
+#   - (center_x): (bool)
 #   - (enforce_surface): (float) surface height of the front of the model
 #
 # Storage output :
@@ -40,3 +42,11 @@ execute store result storage mcpaint:calc api.assets.model.surface float 0.0001 
 execute store result score #assets.z mcpaint.calc run data get storage mcpaint:calc api.assets.model.transformation.translation[2] 10000
 scoreboard players operation #assets.z mcpaint.calc -= #assets.z_origin mcpaint.calc
 execute store result storage mcpaint:calc api.assets.model.transformation.translation[2] float 0.0001 run scoreboard players get #assets.z mcpaint.calc
+
+execute store result score #assets.y_origin mcpaint.calc run data get storage mcpaint:calc api.assets.get_model.y_origin 10000
+execute store result score #assets.y mcpaint.calc run data get storage mcpaint:calc api.assets.model.transformation.translation[1] 10000
+scoreboard players operation #assets.y mcpaint.calc += #assets.y_origin mcpaint.calc
+execute store result storage mcpaint:calc api.assets.model.transformation.translation[1] float 0.0001 run scoreboard players get #assets.y mcpaint.calc
+
+execute if data storage mcpaint:calc api.assets.get_model{center_x:true,width:2} run data modify storage mcpaint:calc api.assets.model.transformation.translation[0] set value -0.5
+execute if data storage mcpaint:calc api.assets.get_model{center_x:true,width:4} run data modify storage mcpaint:calc api.assets.model.transformation.translation[0] set value -0.5

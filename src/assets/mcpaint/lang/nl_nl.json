@@ -3,6 +3,7 @@
   "item.mcpaint.illegal_item": "Oeps, dit hoor je niet te hebben.",
   "item.mcpaint.brush": "Kwast",
   "item.mcpaint.studio": "Studio",
+  "item.mcpaint.easel": "Ezel",
   "item.mcpaint.custom_painting": "Eigen Schilderij",
   "item.mcpaint.custom_painting.lore.work_name": "%s",
   "item.mcpaint.custom_painting.lore.author_name": "%s",

@@ -1,20 +1,20 @@
 name: MC Paint
-version: v1.6.0
+version: v1.7.0
 output: build
 
 data_pack:
-  pack_format: 81
   description: "Create custom paintings!\nBy Eroxen."
-  supported_formats: [80, 81]
+  min_format: [94, 1]
+  max_format: 94
   zipped: true
   load:
     - src
 
 resource_pack:
   zipped: true
-  pack_format: 64
   description: "Create custom paintings!\nBy Eroxen."
-  supported_formats: [63, 64]
+  min_format: [75, 0]
+  max_format: 75
   load:
     - src
 

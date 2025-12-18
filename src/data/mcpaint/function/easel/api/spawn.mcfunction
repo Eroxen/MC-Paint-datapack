@@ -1,0 +1,9 @@
+data merge entity @s {Tags:["mcpaint.entity","mcpaint.easel","mcpaint.easel.armor_stand"],data:{}}
+data modify storage mcpaint:calc internal.macro set value {}
+data modify storage mcpaint:calc internal.macro.rotation set from entity @s Rotation[0]
+with storage mcpaint:calc internal.macro:
+  $summon interaction ~ ~ ~ {Tags:["mcpaint.entity","mcpaint.easel","mcpaint.easel.root","mcpaint.easel.root.new"],width:0f,height:-1.975f,Passengers:[{id:"minecraft:item_display",Rotation:[$(rotation)f,0f],Tags:["mcpaint.entity","mcpaint.easel"],item:{id:"minecraft:egg",components:{"minecraft:item_model":"mcpaint:easel_block"}},item_display:"head"},{id:"minecraft:interaction",Tags:["mcpaint.entity","mcpaint.easel","mcpaint.easel.interaction","eroxified2.interaction"],width:0.9f,height:2f,response:1b},{id:"minecraft:item_display",Rotation:[$(rotation)f,0f],Tags:["mcpaint.entity","mcpaint.easel","mcpaint.easel.painting_background"],item_display:"fixed",view_range:0.66f},{id:"minecraft:text_display",Rotation:[$(rotation)f,0f],Tags:["mcpaint.entity","mcpaint.easel","mcpaint.easel.painting_ink","mcpaint.entity.text_display.reload"],background:0,line_width:10000,view_range:0.4f}]}
+ride @n[type=interaction,tag=mcpaint.easel.root.new,distance=..1] mount @s
+execute on passengers run tag @s remove mcpaint.easel.root.new
+
+execute if entity @e[type=minecart,distance=..1.5,predicate=mcpaint:has_no_passengers] run ride @s mount @n[type=minecart,distance=..1.5,predicate=mcpaint:has_no_passengers]

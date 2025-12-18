@@ -2,7 +2,7 @@
 # custom_painting/api/spawn.mcfunction
 # written by Eroxen
 #
-# Summons a new studio.
+# Summons a new custom painting.
 #
 # Storage input:
 # - mcpaint:calc api.custom_painting.spawn:
@@ -11,6 +11,14 @@
 #   - filepath: filepath
 #   - options: options
 #####################################################################
+
+execute if data storage mcpaint:calc api.trigger_item_frame.placer{is_sneaking:0b} if block ^ ^ ^-1 minecraft:water_cauldron run return:
+  playsound minecraft:entity.villager.work_leatherworker block @a[distance=..16]
+  give @p[tag=mcpaint.player.trigger_item_frame.placer] painting
+  execute positioned ^ ^ ^-1:
+    execute if block ~ ~ ~ minecraft:water_cauldron[level=1] run setblock ~ ~ ~ minecraft:cauldron
+    execute if block ~ ~ ~ minecraft:water_cauldron[level=2] run setblock ~ ~ ~ minecraft:water_cauldron[level=1]
+    execute if block ~ ~ ~ minecraft:water_cauldron[level=3] run setblock ~ ~ ~ minecraft:water_cauldron[level=2]
 
 data modify storage mcpaint:calc internal.custom_painting.user set from storage mcpaint:calc api.trigger_item_frame.placer.UUID
 data modify storage mcpaint:calc internal.database.filepath set from storage mcpaint:calc api.custom_painting.spawn.filepath
