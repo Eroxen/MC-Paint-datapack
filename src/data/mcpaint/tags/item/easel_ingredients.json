@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        { "required": false, "id": "#minecraft:wooden_slabs" },
+        { "required": false, "id": "minecraft:stick" },
+        { "required": false, "id": "minecraft:item_frame" }
+    ]
+}

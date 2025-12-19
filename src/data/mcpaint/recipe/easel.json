@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " s ",
+    "sfs",
+    "sbs"
+  ],
+  "key": {
+    "s": "minecraft:stick",
+    "f": "minecraft:item_frame",
+    "b": "#minecraft:wooden_slabs"
+  },
+  "result": {
+    "id": "minecraft:armor_stand",
+    "components": {
+      "minecraft:item_name": {
+        "translate": "item.mcpaint.easel"
+      },
+      "minecraft:item_model": "mcpaint:easel",
+      "minecraft:entity_data": {
+        "id": "minecraft:armor_stand",
+        "Silent": true,
+        "Invisible": true,
+        "Invulnerable": true,
+        "Tags": [
+          "mcpaint.trigger_armor_stand"
+        ],
+        "data": {
+          "mcpaint": {
+            "trigger": "easel"
+          }
+        }
+      },
+      "minecraft:custom_data": "{mcpaint:{trigger_armor_stand:true,easel:true},eroxified2:{datafixer:{version:1}}}",
+      "minecraft:tooltip_style": "mcpaint:default"
+    }
+  }
+}
