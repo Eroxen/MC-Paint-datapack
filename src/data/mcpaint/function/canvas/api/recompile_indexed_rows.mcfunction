@@ -25,4 +25,3 @@ execute if data storage mcpaint:calc internal.canvas.recompile_indexed_rows.list
 
 execute store result storage mcpaint:calc internal.canvas.recompile_indexed_rows.macro.i int 1 run scoreboard players get #canvas.compile_grid.i mcpaint.calc
 function mcpaint:canvas/internal/recompile/glue_rows with storage mcpaint:calc internal.canvas.recompile_indexed_rows.macro
-execute store result storage mcpaint:calc api.canvas.canvas.resolved_text_size int 1 run data get storage mcpaint:calc api.canvas.canvas.resolved_text

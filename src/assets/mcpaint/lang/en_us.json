@@ -8,7 +8,7 @@
   "item.mcpaint.custom_painting.lore.work_name": "%s",
   "item.mcpaint.custom_painting.lore.author_name": "%s",
   "item.mcpaint.custom_painting.lore.size": "%sx%s %s",
-  "item.mcpaint.custom_painting.lore.size_detail": "(%sx%spx, %s)",
+  "item.mcpaint.custom_painting.lore.size_detail": "(%sx%spx)",
   "item.mcpaint.custom_painting.lore.options.background": "Background: %s",
   "item.mcpaint.custom_painting.lore.options.locked": "Locked",
   "item.mcpaint.custom_painting.lore.options.glowing": "Glowing",

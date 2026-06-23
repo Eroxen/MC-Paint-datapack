@@ -13,7 +13,7 @@ execute as @e[type=text_display,tag=mcpaint.studio.ui_element.import_code.canvas
 
 execute unless data storage mcpaint:calc internal.studio.ui.data.filepath.name run function mcpaint:database/api/get_default_filename with storage mcpaint:calc internal.studio.ui.data.filepath
 execute unless data storage mcpaint:calc internal.studio.ui.data.filepath.name run data modify storage mcpaint:calc internal.studio.ui.data.filepath.name set from storage mcpaint:calc api.database.filename
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.import_code.filename,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.filepath.name"}
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.import_code.filename,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","interpret":true,"nbt":"internal.studio.ui.data.filepath.name"}
 
 execute on vehicle run data modify entity @s text set value {"text":"\u1001\u0305","color":"white","font":"mcpaint:studio_ui"}
 data modify storage mcpaint:calc internal.studio.ui.data.can_ok set value 1b

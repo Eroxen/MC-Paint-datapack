@@ -2,7 +2,7 @@ data modify storage mcpaint:calc internal.studio.data.unsaved_changes set value 
 
 data modify storage mcpaint:calc api.canvas.canvas set from storage mcpaint:calc internal.studio.data.canvas
 function mcpaint:database/api/save_canvas with storage mcpaint:calc internal.studio.data.filepath
-tellraw @p[predicate=mcpaint:same_session] {"translate":"mcpaint.message.saved","with":[{"storage":"mcpaint:calc","nbt":"internal.studio.data.filepath.name"}]}
+tellraw @p[predicate=mcpaint:same_session] {"translate":"mcpaint.message.saved","with":[{"storage":"mcpaint:calc","interpret":true,"nbt":"internal.studio.data.filepath.name"}]}
 advancement grant @p[predicate=mcpaint:same_session] only mcpaint:guide/save_work
 
 data modify storage mcpaint:calc internal.studio.event_stack set from storage mcpaint:calc internal.studio.ui.data

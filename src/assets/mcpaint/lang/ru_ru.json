@@ -6,7 +6,7 @@
   "item.mcpaint.custom_painting.lore.work_name": "%s",
   "item.mcpaint.custom_painting.lore.author_name": "%s",
   "item.mcpaint.custom_painting.lore.size": "%sx%s %s",
-  "item.mcpaint.custom_painting.lore.size_detail": "(%sx%spx, %s)",
+  "item.mcpaint.custom_painting.lore.size_detail": "(%sx%spx)",
   "item.mcpaint.custom_painting.lore.options.background": "Фон: %s",
   "item.mcpaint.custom_painting.lore.options.locked": "Зафиксированна",
   "item.mcpaint.custom_painting.lore.options.glowing": "Светиться",

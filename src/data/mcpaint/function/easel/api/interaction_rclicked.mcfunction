@@ -50,7 +50,7 @@ execute if score #temp mcpaint.calc matches 1 return:
 
 execute on target store success score #temp mcpaint.calc if items entity @s weapon.mainhand *
 execute if score #temp mcpaint.calc matches 0 return:
-  execute on target store success score #temp mcpaint.calc if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{type_specific:{type:"minecraft:player",input:{sneak:1b}}}}
+  execute on target store success score #temp mcpaint.calc if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{input:{sneak:1b}}}}
   execute on vehicle on vehicle:
     execute unless data entity @s data.painting run return fail
     execute if score #temp mcpaint.calc matches 1 run scoreboard players set #temp mcpaint.calc -1

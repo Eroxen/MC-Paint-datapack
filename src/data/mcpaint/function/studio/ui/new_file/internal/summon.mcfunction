@@ -8,10 +8,10 @@ $summon text_display ~ ~ ~ {Rotation:$(rotation),Tags:["mcpaint.entity","mcpaint
 ]}
 
 data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.filename,distance=..0.1,limit=1] text set from storage mcpaint:calc internal.studio.ui.data.filename_text
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.width_blocks,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.width_blocks","color":"white"}
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.width_px,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.width_px","color":"white"}
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.height_blocks,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.height_blocks","color":"white"}
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.height_px,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.height_px","color":"white"}
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.width_blocks,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","plain":true,"nbt":"internal.studio.ui.data.width_blocks","color":"white"}
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.width_px,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","plain":true,"nbt":"internal.studio.ui.data.width_px","color":"white"}
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.height_blocks,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","plain":true,"nbt":"internal.studio.ui.data.height_blocks","color":"white"}
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.height_px,distance=..0.1,limit=1] text set value {"storage":"mcpaint:calc","plain":true,"nbt":"internal.studio.ui.data.height_px","color":"white"}
 
 data merge entity @e[type=text_display,tag=mcpaint.studio.ui_element.new_file,distance=..0.1,limit=1] {transformation:{scale:[0.625f,0.625f,0.625f]},start_interpolation:0,interpolation_duration:5}
 execute as @e[type=text_display,tag=mcpaint.studio.ui_element.new_file.child,distance=..0.1] run data merge entity @s {transformation:{scale:[0.4f,0.4f,0.4f]},start_interpolation:0,interpolation_duration:5}

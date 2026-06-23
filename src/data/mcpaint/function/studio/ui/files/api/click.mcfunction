@@ -26,7 +26,7 @@ execute if score #studio.ui_element.focused_child mcpaint.calc matches 3 if data
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 4 if data storage mcpaint:calc internal.studio.ui.data{can_next:1b} run function mcpaint:studio/ui/files/internal/change_page {direction:"add"}
 
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 5 run data modify storage mcpaint:calc api.database.filename set from storage mcpaint:calc internal.studio.ui.data.filepath.name
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 5 run function mcpaint:studio/ui/error_message/api/spawn {on_ok:"execute as @e[type=marker,tag=mcpaint.studio.ui_element.files,distance=..0.1,limit=1] run function mcpaint:studio/ui/files/internal/delete",message:{"translate":"mcpaint.message.confirm_delete_file","color":"black","with":[{"storage":"mcpaint:calc","nbt":"api.database.filename"}]},bottom_line:-0.7f}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 5 run function mcpaint:studio/ui/error_message/api/spawn {on_ok:"execute as @e[type=marker,tag=mcpaint.studio.ui_element.files,distance=..0.1,limit=1] run function mcpaint:studio/ui/files/internal/delete",message:{"translate":"mcpaint.message.confirm_delete_file","color":"black","with":[{"storage":"mcpaint:calc","interpret":true,"nbt":"api.database.filename"}]},bottom_line:-0.7f}
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 6 run function mcpaint:studio/ui/files/internal/export
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 7 run function mcpaint:studio/ui/files/internal/encode
 

@@ -17,8 +17,6 @@
 #   - height_px: height in pixels
 #   - width_blocks: width in blocks
 #   - height_blocks: height in blocks
-#   - text_size: text size in bytes
-#   - text_size_formatted: text size as formatted text
 #
 # Scoreboard output:
 # - #database.found mcpaint.calc: (bool) whether or not the requested data was found
@@ -37,7 +35,3 @@ execute store result storage mcpaint:calc api.database.features.width_px int 1 r
 execute store result storage mcpaint:calc api.database.features.height_px int 1 run scoreboard players get #canvas.height_px mcpaint.calc
 execute store result storage mcpaint:calc api.database.features.width_blocks int 1 run scoreboard players get #canvas.width_blocks mcpaint.calc
 execute store result storage mcpaint:calc api.database.features.height_blocks int 1 run scoreboard players get #canvas.height_blocks mcpaint.calc
-execute store result storage mcpaint:calc api.database.features.text_size int 1 run scoreboard players get #canvas.text_size mcpaint.calc
-scoreboard players operation #api.util.bytes mcpaint.calc = #canvas.text_size mcpaint.calc
-function mcpaint:util/api/format_bytes
-data modify storage mcpaint:calc api.database.features.text_size_formatted set from storage mcpaint:calc api.util.str

@@ -21,5 +21,5 @@ execute if score #database.page.items mcpaint.calc matches ..6 run data modify s
 execute if score #database.page.items mcpaint.calc matches ..7 run data modify storage mcpaint:calc internal.studio.ui.data.filenames append value ""
 
 
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.files.page_index,distance=..0.1,limit=1] text set value {"translate":"mcpaint.format.page_n_of","with":[{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.selected_page"},{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.pages"}],"color":"white"}
-data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.files.filenames,distance=..0.1,limit=1] text set value {"text":"","extra":[{"font":"mcpaint:studio_ui","text":"\u2256\n"},{"storage":"mcpaint:calc","nbt":"internal.studio.ui.data.filenames[]","separator":"\n"}],"color":"white"}
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.files.page_index,distance=..0.1,limit=1] text set value {"translate":"mcpaint.format.page_n_of","with":[{"storage":"mcpaint:calc","plain":true,"nbt":"internal.studio.ui.data.selected_page"},{"storage":"mcpaint:calc","plain":true,"nbt":"internal.studio.ui.data.pages"}],"color":"white"}
+data modify entity @e[type=text_display,tag=mcpaint.studio.ui_element.files.filenames,distance=..0.1,limit=1] text set value {"text":"","extra":[{"font":"mcpaint:studio_ui","text":"\u2256\n"},{"storage":"mcpaint:calc","interpret":true,"nbt":"internal.studio.ui.data.filenames[]","separator":"\n"}],"color":"white"}

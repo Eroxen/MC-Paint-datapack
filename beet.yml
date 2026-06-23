@@ -1,11 +1,17 @@
+# changelog
+# fixed a bug where dropping the brush while a different item was in your mainhand would cause that item to be deleted
+# fixed a bug where scheduled events didn't work properly on modded servers with multiverse-mc
+#
+#
+
 name: MC Paint
-version: v1.7.0
+version: v1.8.0-beta1
 output: build
 
 data_pack:
   description: "Create custom paintings!\nBy Eroxen."
-  min_format: [94, 1]
-  max_format: 94
+  min_format: [107, 1]
+  max_format: 107
   zipped: true
   load:
     - src
@@ -13,8 +19,8 @@ data_pack:
 resource_pack:
   zipped: true
   description: "Create custom paintings!\nBy Eroxen."
-  min_format: [75, 0]
-  max_format: 75
+  min_format: [88, 0]
+  max_format: 88
   load:
     - src
 

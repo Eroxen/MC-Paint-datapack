@@ -20,4 +20,3 @@ execute if data storage mcpaint:calc internal.canvas.compile_grid.input[0] run f
 function mcpaint:canvas/internal/compile_grid/glue_rows with storage mcpaint:calc internal.canvas.compile_grid.macro
 
 data modify storage mcpaint:calc api.canvas.canvas.resolved_rows set from storage mcpaint:calc internal.canvas.compile_grid.compiled_rows
-execute store result storage mcpaint:calc api.canvas.canvas.resolved_text_size int 1 run data get storage mcpaint:calc api.canvas.canvas.resolved_text

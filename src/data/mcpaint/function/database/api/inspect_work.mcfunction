@@ -21,8 +21,7 @@ tellraw @s {"text":"================================","color":"light_purple"}
 
 execute if score #canvas.width_px mcpaint.calc matches ..32 run tellraw @s {"font":"mcpaint:ink/chat","nbt":"api.canvas.canvas.resolved_text","storage":"mcpaint:calc","interpret":true}
 execute if score #canvas.width_px mcpaint.calc matches 33.. run tellraw @s {"font":"mcpaint:ink/chat_small","nbt":"api.canvas.canvas.resolved_text","storage":"mcpaint:calc","interpret":true}
-tellraw @s {"text":"- name: ","extra":[{"nbt":"api.database.work.name","storage":"mcpaint:calc","color":"yellow"}]}
+tellraw @s {"text":"- name: ","extra":[{"interpret":true,"nbt":"api.database.work.name","storage":"mcpaint:calc","color":"yellow"}]}
 tellraw @s {"text":"- size (blocks): ","extra":[{"score":{"name":"#canvas.width_blocks","objective":"mcpaint.calc"},"color":"red"},{"text":" x "},{"score":{"name":"#canvas.height_blocks","objective":"mcpaint.calc"},"color":"red"}]}
 tellraw @s {"text":"- size (pixels): ","extra":[{"score":{"name":"#canvas.width_px","objective":"mcpaint.calc"},"color":"red"},{"text":" x "},{"score":{"name":"#canvas.height_px","objective":"mcpaint.calc"},"color":"red"}]}
-tellraw @s {"text":"- text size: ","extra":[{"nbt":"api.canvas.canvas.resolved_text_size","storage":"mcpaint:calc","color":"red"},{"text":" bytes"}]}
 $tellraw @s {"text":"====","color":"light_purple","extra":[{"text":"[←back]","color":"white","hoverEvent":{"action":"show_text","value":[{"text":"Back to overview"}]},"clickEvent":{"action":"run_command","value":"/function mcpaint:database/api/inspect_author_page {UUID:$(author),page:$(page)}"}},{"text":"======================"}]}
