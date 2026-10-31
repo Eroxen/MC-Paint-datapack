@@ -1,6 +1,6 @@
 {
-  "condition": "value_check",
-  "range": {
+  "type": "int_value_check",
+  "test": {
     "max": {
       "score": "mcpaint.session",
       "target": {

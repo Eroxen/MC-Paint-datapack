@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mcpaint:item/custom_painting/canvas_wide"
+    "layer0": "mcpaint:item/custom_painting/canvas_wide",
+    "particle": "mcpaint:item/custom_painting/canvas_wide"
   }
 }

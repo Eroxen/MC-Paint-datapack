@@ -1,4 +1,4 @@
 {
-  "condition": "minecraft:reference",
-  "name": "mcpaint:permission/template/allow_unless_adventure"
+  "type": "minecraft:all_of",
+  "terms": "mcpaint:permission/template/allow_unless_adventure"
 }

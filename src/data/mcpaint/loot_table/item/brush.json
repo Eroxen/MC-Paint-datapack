@@ -6,9 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:poisonous_potato",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mcpaint:brush",
                 "minecraft:attribute_modifiers": [
@@ -43,7 +43,7 @@
               }
             },
             {
-              "function": "minecraft:set_name",
+              "type": "minecraft:set_name",
               "target": "item_name",
               "name": {
                 "translate": "item.mcpaint.brush"

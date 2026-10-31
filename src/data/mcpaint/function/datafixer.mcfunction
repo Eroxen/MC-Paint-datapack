@@ -5,10 +5,10 @@ from eroxified2:datafixer import run_on_clock_player, run_inventory_fixer
 function ~/clock:
   run_on_clock_player()
   run_inventory_fixer({
-    "condition": "minecraft:all_of",
+    "type": "minecraft:all_of",
     "terms": [
       {
-        "condition": "minecraft:entity_properties",
+        "type": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
           "slots": {
@@ -23,9 +23,9 @@ function ~/clock:
         }
       },
       {
-        "condition": "minecraft:inverted",
+        "type": "minecraft:inverted",
         "term": {
-          "condition": "minecraft:entity_properties",
+          "type": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "slots": {
@@ -46,10 +46,10 @@ function ~/clock:
   execute as @e[type=marker,tag=mcpaint.studio.marker,distance=f"..{DIST}",predicate=mcpaint:datafixer/outdated,limit=1,sort=nearest] at @s run function mcpaint:datafixer/internal/update/studio
 
 predicate ~/outdated {
-  "condition": "inverted",
+  "type": "inverted",
   "term": {
-    "condition": "value_check",
-    "range": {
+    "type": "int_value_check",
+    "test": {
       "min": DATA_VERSION_BLOCK
     },
     "value": {
@@ -97,28 +97,28 @@ function ~/internal:
   function ~/update_inventory:
     data modify storage mcpaint:calc internal.datafixer.old_item set from entity @s item
 
-    execute if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{paint_bucket:1b}}"}}}}} run function mcpaint:datafixer/internal/update/item/paint_bucket:
+    execute if predicate {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{paint_bucket:1b}}"}}}}} run function mcpaint:datafixer/internal/update/item/paint_bucket:
       data modify storage mcpaint:calc internal.datafixer.old_item set from entity @s item
       loot replace entity @s contents loot mcpaint:item/paint_bucket
       data modify entity @s item.count set from storage mcpaint:calc internal.datafixer.old_item.count
       data modify entity @s item.components.minecraft:potion_contents.custom_color set from storage mcpaint:calc internal.datafixer.old_item.components.minecraft:potion_contents.custom_color
 
-    execute if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{custom_painting:1b}}"}}}}} \
+    execute if predicate {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{custom_painting:1b}}"}}}}} \
     run function mcpaint:datafixer/internal/update/item/custom_painting
-    execute unless predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{custom_painting:1b}}"}}}}} \
-    if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{trigger_item_frame:1b}}"}}}}} \
+    execute unless predicate {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{custom_painting:1b}}"}}}}} \
+    if predicate {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{trigger_item_frame:1b}}"}}}}} \
     if data entity @s item.components.minecraft:entity_data.Item.components.minecraft:custom_data.mcpaint{trigger:"custom_painting"} \
     run function mcpaint:datafixer/internal/update/item/custom_painting:
       function mcpaint:custom_painting/api/insert_contents with storage mcpaint:calc internal.datafixer.old_item.components.minecraft:entity_data.Item.components.minecraft:custom_data.mcpaint.custom_painting.filepath
 
-    execute if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{studio:1b}}"}}}}} \
+    execute if predicate {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{studio:1b}}"}}}}} \
     run loot replace entity @s contents loot mcpaint:item/studio
-    execute unless predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{studio:1b}}"}}}}} \
-    if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{trigger_item_frame:1b}}"}}}}} \
+    execute unless predicate {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{studio:1b}}"}}}}} \
+    if predicate {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{trigger_item_frame:1b}}"}}}}} \
     if data entity @s item.components.minecraft:entity_data.Item.components.minecraft:custom_data.mcpaint{trigger:"studio"} \
     run loot replace entity @s contents loot mcpaint:item/studio
 
-    execute if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{brush:1b}}"}}}}} \
+    execute if predicate {"type":"minecraft:entity_properties","entity":"this","predicate":{"slots":{"contents":{"predicates":{"minecraft:custom_data":"{mcpaint:{brush:1b}}"}}}}} \
     run loot replace entity @s contents loot mcpaint:item/brush
 
     data modify entity @s item.count set from storage mcpaint:calc internal.datafixer.old_item.count

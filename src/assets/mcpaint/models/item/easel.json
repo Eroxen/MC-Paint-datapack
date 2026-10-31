@@ -1,6 +1,7 @@
 {
-    "parent": "item/generated", 
-    "textures": {
-        "layer0": "mcpaint:item/easel"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mcpaint:item/easel",
+    "particle": "mcpaint:item/easel"
+  }
 }

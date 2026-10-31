@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mcpaint:item/custom_painting/empty_tall"
+    "layer0": "mcpaint:item/custom_painting/empty_tall",
+    "particle": "mcpaint:item/custom_painting/empty_tall"
   }
 }

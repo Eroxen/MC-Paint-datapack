@@ -6,16 +6,16 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:armor_stand",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_name",
+              "type": "minecraft:set_name",
               "target": "item_name",
               "name": {
                 "translate": "item.mcpaint.easel"
               }
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mcpaint:easel",
                 "minecraft:entity_data": {

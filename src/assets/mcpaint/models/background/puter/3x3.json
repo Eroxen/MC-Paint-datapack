@@ -4,6 +4,7 @@
     "front": "mcpaint:item/background/puter_front",
     "side": "mcpaint:item/background/puter_side",
     "top": "mcpaint:item/background/puter_top",
-    "back": "mcpaint:item/background/puter_back"
+    "back": "mcpaint:item/background/puter_back",
+    "particle": "mcpaint:item/background/puter_front"
   }
 }

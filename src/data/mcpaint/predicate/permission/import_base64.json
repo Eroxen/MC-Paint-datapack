@@ -1,9 +1,9 @@
 {
-  "condition": "minecraft:value_check",
+  "type": "minecraft:int_value_check",
   "value": {
     "type": "minecraft:storage",
     "storage": "mcpaint:calc",
     "path": "api.settings.server.allow_decode"
   },
-  "range": 1
+  "test": 1
 }

@@ -1,6 +1,7 @@
 {
   "textures": {
-    "0": "mcpaint:item/pixel_canvas"
+    "0": "mcpaint:item/pixel_canvas",
+    "particle": "mcpaint:item/pixel_canvas"
   },
   "gui_light": "front",
   "display": {

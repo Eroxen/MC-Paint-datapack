@@ -1,4 +1,5 @@
-execute if score #studio.session.is_holding_sprint mcpaint.calc matches 1 run return run function mcpaint:studio/tool/eyedropper/api/click_canvas
+execute if score #studio.session.is_holding_sprint mcpaint.calc matches 1 as @p[predicate=mcpaint:same_session] run function mcpaint:settings/api/get_client
+execute if score #studio.session.is_holding_sprint mcpaint.calc matches 1 if data storage mcpaint:calc api.settings.client{eyedropper_keybind:1b} run return run function mcpaint:studio/tool/eyedropper/api/click_canvas
 
 data modify storage mcpaint:calc internal.studio.event set value {event:"set_pixel",parameters:{u:0,v:0,colour:0}}
 data modify storage mcpaint:calc internal.studio.event.parameters.colour set from storage mcpaint:calc internal.studio.data.colour.selected

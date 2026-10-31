@@ -6,9 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lingering_potion",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mcpaint:paint_bucket",
                 "minecraft:attribute_modifiers": [

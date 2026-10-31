@@ -13,7 +13,7 @@
       },
       "has_the_recipe": {
         "conditions": {
-          "recipe": "mcpaint:easel"
+          "recipes": ["mcpaint:easel"]
         },
         "trigger": "minecraft:recipe_unlocked"
       }

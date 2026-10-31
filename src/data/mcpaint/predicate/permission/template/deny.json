@@ -1,4 +1,4 @@
 {
-  "condition": "minecraft:any_of",
+  "type": "minecraft:any_of",
   "terms": []
 }

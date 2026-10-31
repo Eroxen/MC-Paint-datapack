@@ -1,6 +1,7 @@
 {
-    "parent": "item/handheld_rod", 
-    "textures": {
-        "layer0": "mcpaint:item/brush"
-    }
+  "parent": "item/handheld_rod",
+  "textures": {
+    "layer0": "mcpaint:item/brush",
+    "particle": "mcpaint:item/brush"
+  }
 }

@@ -6,9 +6,9 @@
         {
           "type": "minecraft:loot_table",
           "value": "mcpaint:item/paint_bucket",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
                   "custom_color": 16754334,
@@ -26,9 +26,9 @@
         {
           "type": "minecraft:loot_table",
           "value": "mcpaint:item/paint_bucket",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
                   "custom_color": 16446429,
@@ -46,9 +46,9 @@
         {
           "type": "minecraft:loot_table",
           "value": "mcpaint:item/paint_bucket",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
                   "custom_color": 12120806,
@@ -66,9 +66,9 @@
         {
           "type": "minecraft:loot_table",
           "value": "mcpaint:item/paint_bucket",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
                   "custom_color": 11459040,
@@ -86,9 +86,9 @@
         {
           "type": "minecraft:loot_table",
           "value": "mcpaint:item/paint_bucket",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:potion_contents": {
                   "custom_color": 6186098,
