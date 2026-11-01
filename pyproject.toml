@@ -1,0 +1,17 @@
+[project]
+name = "mcpaint"
+version = "1.10.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beet>=0.115.0",
+    "bolt>=0.50.1",
+    "bolt-control-flow>=0.4.0",
+    "bolt-expressions>=0.19.2",
+    "ps-beet-bolt>=1.0.0",
+    "eroxified2"
+]
+
+[tool.uv.sources]
+eroxified2 = { path = "../../bolt libs/eroxified2", editable = true }
