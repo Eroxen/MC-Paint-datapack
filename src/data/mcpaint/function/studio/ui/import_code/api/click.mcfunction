@@ -22,7 +22,7 @@ execute if score #studio.ui_element.focused_child mcpaint.calc matches 1 if data
 
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 2 run return run function mcpaint:studio/internal/ui/close
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 3 run function mcpaint:studio/ui/import_code/internal/set_name_from_book
-execute if score #studio.ui_element.focused_child mcpaint.calc matches 4 run tellraw @p[predicate=mcpaint:same_session] {"translate":"mcpaint.ui.button.image_converter_website.chat","color":"aqua","underlined":true,"hover_event":{"action":"show_text","value":[{"text":"eroxen.github.io"}]},"click_event":{"action":"open_url","url":"https://eroxen.github.io/MC-paint-image-convert/"}}
+execute if score #studio.ui_element.focused_child mcpaint.calc matches 4 run tellraw @p[predicate=mcpaint:same_session] {"translate":"mcpaint.ui.button.image_converter_website.chat","color":"aqua","underlined":true,"hover_event":{"action":"show_text","value":[{"text":"eroxen.github.io"}]},"click_event":{"action":"open_url","url":f"https://eroxen.github.io/MC-paint-image-convert?dpv={ctx.project_version}"}}
 execute if score #studio.ui_element.focused_child mcpaint.calc matches 5 run function mcpaint:studio/ui/import_code/internal/decode_from_book
 
 data modify entity @s data set from storage mcpaint:calc internal.studio.ui.data

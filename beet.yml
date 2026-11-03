@@ -4,7 +4,7 @@
 # added setting for eyedropper keybind
 
 name: MC Paint
-version: v1.10.0-beta1
+version: v1.10.0
 output: build
 
 data_pack:
